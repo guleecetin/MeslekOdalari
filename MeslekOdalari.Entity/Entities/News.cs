@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MeslekOdalari.Entity.Entities
+﻿namespace MeslekOdalari.Entity.Entities
 {
     public class News: BaseEntity
     {

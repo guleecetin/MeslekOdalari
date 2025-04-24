@@ -44,6 +44,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxVcGRhdGVDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Counter/CreateCounter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRlclxDcmVhdGVDb3VudGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Counter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Counter/UpdateCounter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRlclxVcGRhdGVDb3VudGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

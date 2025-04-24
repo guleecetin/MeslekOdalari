@@ -1,0 +1,11 @@
+﻿using MongoDB.Bson;
+
+namespace MeslekOdalari.Dto.Dtos.VideoDtos
+{
+    public class ResultVideoDto
+    {
+        public ObjectId Id { get; set; }
+        public string VideoUrl { get; set; }
+
+    }
+}

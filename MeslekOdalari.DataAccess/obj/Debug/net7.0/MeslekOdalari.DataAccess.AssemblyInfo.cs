@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeslekOdalari.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5a4bf39d34240d2fbe6031b1b7247461876af3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63d6487819027024153d2b8d9ffd7f9f5a26545a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeslekOdalari.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeslekOdalari.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
