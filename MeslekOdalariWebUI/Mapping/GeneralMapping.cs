@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MeslekOdalari.Dto.Dtos.BannerDtos;
+using MeslekOdalari.Dto.Dtos.ContactDtos;
 using MeslekOdalari.Entity.Entities;
 
 namespace MeslekOdalariWebUI.Mapping
@@ -11,6 +12,12 @@ namespace MeslekOdalariWebUI.Mapping
             CreateMap<ResultBannerDto, Banner>().ReverseMap();
             CreateMap<UpdateBannerDto, Banner>().ReverseMap();
             CreateMap<CreateBannerDto, Banner>().ReverseMap();
+
+            CreateMap<ResultContactDto, Contact>().ReverseMap();
+            CreateMap<UpdateContactDto, Contact>().ReverseMap();
+            CreateMap<CreateContactDto, Contact>().ReverseMap();
+
+
         }
     }
 }
