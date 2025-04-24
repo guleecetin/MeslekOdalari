@@ -1,0 +1,13 @@
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\bin\Debug\net7.0\MeslekOdalari.Dto.deps.json
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\bin\Debug\net7.0\MeslekOdalari.Dto.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\bin\Debug\net7.0\MeslekOdalari.Dto.pdb
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\MeslekOdalari.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\MeslekOdalari.Dto.AssemblyInfoInputs.cache
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\MeslekOdalari.Dto.AssemblyInfo.cs
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\MeslekOdalari.Dto.csproj.CoreCompileInputs.cache
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\MeslekOdalari.Dto.sourcelink.json
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\MeslekOdalari.Dto.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\refint\MeslekOdalari.Dto.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\MeslekOdalari.Dto.pdb
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\ref\MeslekOdalari.Dto.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Dto\obj\Debug\net7.0\MeslekOdalari.Dto.csproj.AssemblyReference.cache

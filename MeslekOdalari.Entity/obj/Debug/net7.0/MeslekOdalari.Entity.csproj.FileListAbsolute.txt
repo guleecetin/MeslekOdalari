@@ -1,0 +1,13 @@
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\bin\Debug\net7.0\MeslekOdalari.Entity.deps.json
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\bin\Debug\net7.0\MeslekOdalari.Entity.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\bin\Debug\net7.0\MeslekOdalari.Entity.pdb
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\MeslekOdalari.Entity.csproj.AssemblyReference.cache
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\MeslekOdalari.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\MeslekOdalari.Entity.AssemblyInfoInputs.cache
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\MeslekOdalari.Entity.AssemblyInfo.cs
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\MeslekOdalari.Entity.csproj.CoreCompileInputs.cache
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\MeslekOdalari.Entity.sourcelink.json
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\MeslekOdalari.Entity.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\refint\MeslekOdalari.Entity.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\MeslekOdalari.Entity.pdb
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.Entity\obj\Debug\net7.0\ref\MeslekOdalari.Entity.dll

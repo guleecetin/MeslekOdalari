@@ -1,0 +1,16 @@
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\bin\Debug\net7.0\MeslekOdalari.DataAccess.deps.json
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\bin\Debug\net7.0\MeslekOdalari.DataAccess.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\bin\Debug\net7.0\MeslekOdalari.DataAccess.pdb
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\bin\Debug\net7.0\MeslekOdalari.Entity.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\bin\Debug\net7.0\MeslekOdalari.Entity.pdb
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOdalari.DataAccess.csproj.AssemblyReference.cache
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOdalari.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOdalari.DataAccess.AssemblyInfoInputs.cache
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOdalari.DataAccess.AssemblyInfo.cs
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOdalari.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOdalari.DataAccess.sourcelink.json
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOd.9805955A.Up2Date
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOdalari.DataAccess.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\refint\MeslekOdalari.DataAccess.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\MeslekOdalari.DataAccess.pdb
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalari.DataAccess\obj\Debug\net7.0\ref\MeslekOdalari.DataAccess.dll

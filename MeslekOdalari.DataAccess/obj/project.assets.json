@@ -275,19 +275,19 @@
           }
         }
       },
-      "MongoDB.Bson/3.3.0": {
+      "MongoDB.Bson/2.22.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5",
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
         },
         "compile": {
-          "lib/net6.0/MongoDB.Bson.dll": {
+          "lib/netstandard2.1/MongoDB.Bson.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/MongoDB.Bson.dll": {
+          "lib/netstandard2.1/MongoDB.Bson.dll": {
             "related": ".xml"
           }
         }
@@ -493,7 +493,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "MongoDB.Bson": "3.3.0"
+          "MongoDB.Bson": "2.22.0"
         },
         "compile": {
           "bin/placeholder/MeslekOdalari.Entity.dll": {}
@@ -953,21 +953,21 @@
         "version.txt"
       ]
     },
-    "MongoDB.Bson/3.3.0": {
-      "sha512": "6y1uFFmU3O7tIAOcWmOkFImar+VtSeaia3bzaZTDXc30CP1zsPaUNLhM8CzUCzEzGc02rQlEaWQwV/LzA0NlXA==",
+    "MongoDB.Bson/2.22.0": {
+      "sha512": "7Z+uP+PeIBrkzzRORTCjrMSYhzQgXxLYkXyML8WsBN7tHddicNY9Xh8Cmp5gRR4U4NuEbXCQtHplju0iVY/KuA==",
       "type": "package",
-      "path": "mongodb.bson/3.3.0",
+      "path": "mongodb.bson/2.22.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "README.md",
+        "LICENSE.md",
         "lib/net472/MongoDB.Bson.dll",
         "lib/net472/MongoDB.Bson.xml",
-        "lib/net6.0/MongoDB.Bson.dll",
-        "lib/net6.0/MongoDB.Bson.xml",
+        "lib/netstandard2.0/MongoDB.Bson.dll",
+        "lib/netstandard2.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.3.3.0.nupkg.sha512",
+        "mongodb.bson.2.22.0.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]

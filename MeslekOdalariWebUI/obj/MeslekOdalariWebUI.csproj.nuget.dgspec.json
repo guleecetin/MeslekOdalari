@@ -4,6 +4,84 @@
     "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj": {}
   },
   "projects": {
+    "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Business\\MeslekOdalari.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Business\\MeslekOdalari.Business.csproj",
+        "projectName": "MeslekOdalari.Business",
+        "projectPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Business\\MeslekOdalari.Business.csproj",
+        "packagesPath": "C:\\Users\\gulen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gulen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.DataAccess\\MeslekOdalari.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.DataAccess\\MeslekOdalari.DataAccess.csproj"
+              },
+              "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Entity\\MeslekOdalari.Entity.csproj": {
+                "projectPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Entity\\MeslekOdalari.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.DataAccess\\MeslekOdalari.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -83,6 +161,77 @@
         }
       }
     },
+    "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Dto\\MeslekOdalari.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Dto\\MeslekOdalari.Dto.csproj",
+        "projectName": "MeslekOdalari.Dto",
+        "projectPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Dto\\MeslekOdalari.Dto.csproj",
+        "packagesPath": "C:\\Users\\gulen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gulen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Entity\\MeslekOdalari.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -131,7 +280,7 @@
           "dependencies": {
             "MongoDB.Bson": {
               "target": "Package",
-              "version": "[3.3.0, )"
+              "version": "[2.22.0, )"
             }
           },
           "imports": [
@@ -182,8 +331,17 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Business\\MeslekOdalari.Business.csproj": {
+                "projectPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Business\\MeslekOdalari.Business.csproj"
+              },
               "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.DataAccess\\MeslekOdalari.DataAccess.csproj": {
                 "projectPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.DataAccess\\MeslekOdalari.DataAccess.csproj"
+              },
+              "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Dto\\MeslekOdalari.Dto.csproj": {
+                "projectPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Dto\\MeslekOdalari.Dto.csproj"
+              },
+              "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Entity\\MeslekOdalari.Entity.csproj": {
+                "projectPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Entity\\MeslekOdalari.Entity.csproj"
               }
             }
           }
@@ -203,6 +361,28 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            },
+            "MongoDB.Driver.Core": {
+              "target": "Package",
+              "version": "[2.22.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
