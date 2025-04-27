@@ -1,0 +1,28 @@
+﻿@model CreateNewsDto
+@{
+    ViewData["Title"] = "Yeni Haber Ekleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Tür</label>
+    <input type="text" asp-for="Type" class="form-control" />
+    <br />
+
+    <label>Resim Url</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+
+    <label>Başlık</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-dark">Kaydet</button>
+
+</form>
+
+

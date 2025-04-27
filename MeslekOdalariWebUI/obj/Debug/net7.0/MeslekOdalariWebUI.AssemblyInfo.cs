@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeslekOdalariWebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63d6487819027024153d2b8d9ffd7f9f5a26545a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3b1e86f585c2d07e38164ec052db358b01a499b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeslekOdalariWebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeslekOdalariWebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

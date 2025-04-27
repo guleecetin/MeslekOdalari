@@ -5,6 +5,222 @@
       "PackagePath": "staticwebassets\\MeslekOdalariWebUI.1cfence7s7.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\css\\flex-slider.css",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\css\\flex-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\css\\owl.css",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\css\\owl.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\css\\templatemo-villa-agency.css",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\css\\templatemo-villa-agency.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\banner-01.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\banner-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\banner-02.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\banner-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\banner-03.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\banner-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\contact-bg.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\contact-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\deal-01.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\deal-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\deal-02.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\deal-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\deal-03.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\deal-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\email-icon.png",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\email-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\featured-icon.png",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\featured-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\featured.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\featured.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\info-icon-01.png",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\info-icon-01.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\info-icon-02.png",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\info-icon-02.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\info-icon-03.png",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\info-icon-03.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\info-icon-04.png",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\info-icon-04.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\page-heading-bg.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\page-heading-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\phone-icon.png",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\phone-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\property-01.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\property-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\property-02.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\property-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\property-03.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\property-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\property-04.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\property-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\property-05.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\property-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\property-06.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\property-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\single-property.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\single-property.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\video-bg.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\video-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\images\\video-frame.jpg",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\images\\video-frame.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\js\\counter.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\js\\counter.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\js\\isotope.min.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\js\\isotope.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\js\\owl-carousel.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\js\\owl-carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\contact.html",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\index.html",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\properties.html",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\properties.html"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\property-details.html",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\property-details.html"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\vendor\\jquery\\jquery.slim.min.map"
+    },
+    {
       "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

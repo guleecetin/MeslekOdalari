@@ -1,0 +1,29 @@
+﻿@model UpdateNewsDto
+@{
+    ViewData["Title"] = "Haber Güncelleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-formaction="Id"/>
+    <label>Tür</label>
+    <input type="text" asp-for="Type" class="form-control" />
+    <br />
+
+    <label>Resim Url</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+
+    <label>Başlık</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-dark">Güncelle</button>
+
+</form>
+
+
