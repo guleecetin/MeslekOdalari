@@ -1,0 +1,37 @@
+﻿@model UpdateFeatureDto
+@{
+    ViewData["Title"] = "Öne Çıkan Bilgisi Güncelleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="Id"/>
+    <label>Resim Url</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+
+    <label>Üyelik Durumu</label>
+    <select asp-for="MembershipStatus" class="form-control">
+        <option>Seçiminizi Yapın</option>
+        <option value="True">Aktif</option>
+        <option value="False">Pasif</option>
+    </select>
+    <br />
+    <label>Üye Sayısı</label>
+    <input type="text" asp-for="NumberofMembers" class="form-control" />
+    <br />
+
+    <label>Proje Sayısı</label>
+    <input type="text" asp-for="NumberofProjects" class="form-control" />
+    <br />
+
+    <label>Uzmanlık Alanı</label>
+    <input type="text" asp-for="AreasofExpertise" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-dark">Güncelle</button>
+
+</form>
+
+
+

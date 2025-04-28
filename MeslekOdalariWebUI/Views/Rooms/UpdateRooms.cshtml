@@ -1,0 +1,60 @@
+﻿@model UpdateRoomsDto
+@{
+    ViewData["Title"] = "Meslek Odaları Güncelleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <input type="hidden" asp-for="Id"/>
+    <label>Resim Url</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+
+    <label>Başlık</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br />
+
+    <label>Üye Sayısı</label>
+    <input type="text" asp-for="MemberCount" class="form-control" />
+    <br />
+
+    <label> Email</label>
+    <input type="text" asp-for=" Email" class="form-control" />
+    <br />
+
+    <label>Odanın Lisans Numarası</label>
+    <input type="text" asp-for="LicenseNumber" class="form-control" />
+    <br />
+
+    <label>Odanın Kurulduğu Tarih</label>
+    <input type="text" asp-for="Established" class="form-control" />
+    <br />
+
+    <label>Başkanın Adı</label>
+    <input type="text" asp-for="PresidentName" class="form-control" />
+    <br />
+
+    <label>Başkanın Fotoğrafı</label>
+    <input type="text" asp-for="PresidentImageUrl" class="form-control" />
+    <br />
+
+    <label>Adres</label>
+    <input type="text" asp-for="Address" class="form-control" />
+    <br />
+
+    <label>Telefon</label>
+    <input type="text" asp-for="Phone" class="form-control" />
+    <br />
+
+    <label>WebSite</label>
+    <input type="text" asp-for="WebSite" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-dark">Güncelle</button>
+
+</form>
+

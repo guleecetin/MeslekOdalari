@@ -4,17 +4,128 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<form method="post">
-    <input type="hidden" asp-for="Id"/>
-    <label>Başlık</label>
-    <input type="text" asp-for="Title" class="form-control" />
-    <br />
+<div class="container-fluid py-4">
+    <input type="hidden" asp-for="Id" />
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Yeni Sayaç Bilgisi Ekle</h3>
+            <p class="text-muted">Sisteme yeni bir sayaç değeri eklemek için formu doldurun</p>
+        </div>
+        <a href="/Counter/Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Sayaç Listesine Dön
+        </a>
+    </div>
 
-    <label>Değer</label>
-    <input type="text" asp-for="Count" class="form-control" />
-    <br />
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-success"><i class="bi bi-plus-circle me-2"></i>Sayaç Bilgileri</h5>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="mb-4">
+                    <label for="Title" class="form-label fw-bold">Başlık</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-light"><i class="bi bi-tag"></i></span>
+                        <input type="text" asp-for="Title" class="form-control" placeholder="Sayaç başlığını giriniz" />
+                    </div>
+                    <small class="text-muted">Örnek: Mutlu Müşteriler, Tamamlanan Projeler, vb.</small>
+                </div>
 
-    <button class="btn btn-outline-dark">Güncelle</button>
+                <div class="mb-4">
+                    <label for="Count" class="form-label fw-bold">Değer</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-light"><i class="bi bi-123"></i></span>
+                        <input type="text" asp-for="Count" class="form-control" placeholder="Sayaç değerini giriniz" />
+                    </div>
+                    <small class="text-muted">Sadece sayısal değerler giriniz</small>
+                </div>
 
-</form>
+                <div class="mb-3">
+                    <div class="card bg-light border-0 mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="counter-preview bg-success text-white me-3">
+                                    <i class="bi bi-123"></i>
+                                </div>
+                                <div>
+                                    <h5 class="preview-title mb-1">Başlık Önizleme</h5>
+                                    <span class="badge bg-light text-dark fs-6 px-3 py-2 preview-count">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="reset" class="btn btn-light">
+                        <i class="bi bi-x-circle me-2"></i>Temizle
+                    </button>
+                    <button type="submit" class="btn btn-success px-4">
+                        <i class="bi bi-check-circle me-2"></i>Sayacı Güncelle
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control:focus, .input-group-text {
+        border-color: #ddd;
+        box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+    }
+
+    .counter-preview {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+</style>
+
+<script>
+    // Canlı önizleme için
+    document.addEventListener('DOMContentLoaded', function() {
+        const titleInput = document.querySelector('input[name="Title"]');
+        const countInput = document.querySelector('input[name="Count"]');
+        const previewTitle = document.querySelector('.preview-title');
+        const previewCount = document.querySelector('.preview-count');
+
+        titleInput.addEventListener('input', function() {
+            previewTitle.textContent = this.value || 'Başlık Önizleme';
+        });
+
+        countInput.addEventListener('input', function() {
+            previewCount.textContent = this.value || '0';
+        });
+
+        // Form gönderimi öncesi doğrulama
+        document.querySelector('form').addEventListener('submit', function(e) {
+            if (!titleInput.value.trim()) {
+                e.preventDefault();
+                alert('Lütfen bir başlık giriniz.');
+                titleInput.focus();
+                return false;
+            }
+
+            if (!countInput.value.trim()) {
+                e.preventDefault();
+                alert('Lütfen bir değer giriniz.');
+                countInput.focus();
+                return false;
+            }
+
+            if (isNaN(countInput.value)) {
+                e.preventDefault();
+                alert('Sayaç değeri sadece sayısal olmalıdır.');
+                countInput.focus();
+                return false;
+            }
+        });
+    });
+</script>

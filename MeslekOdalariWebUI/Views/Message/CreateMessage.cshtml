@@ -1,0 +1,102 @@
+﻿@model CreateMessageDto
+@{
+    ViewData["Title"] = "Yeni Mesaj Ekleme";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Yeni Mesaj Oluştur</h3>
+            <p class="text-muted">Sisteme yeni bir mesaj eklemek için formu doldurun</p>
+        </div>
+        <a asp-controller="Message" asp-action="Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Mesaj Listesine Dön
+        </a>
+    </div>
+
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary"><i class="bi bi-pencil-square me-2"></i>Mesaj Bilgileri</h5>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Name" class="form-label fw-bold">Ad Soyad</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-person"></i></span>
+                            <input type="text" asp-for="Name" class="form-control" placeholder="Gönderen adını giriniz" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="Email" class="form-label fw-bold">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light"><i class="bi bi-envelope"></i></span>
+                            <input type="email" asp-for="Email" class="form-control" placeholder="Email adresini giriniz" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Subject" class="form-label fw-bold">Konu</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-light"><i class="bi bi-chat-left-text"></i></span>
+                        <input type="text" asp-for="Subject" class="form-control" placeholder="Mesaj konusunu giriniz" />
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="MessageContent" class="form-label fw-bold">Mesaj İçeriği</label>
+                    <textarea asp-for="MessageContent" class="form-control" rows="8"
+                              placeholder="Mesajınızı buraya yazınız..."></textarea>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="reset" class="btn btn-light">
+                        <i class="bi bi-x-circle me-2"></i>Temizle
+                    </button>
+                    <button type="submit" class="btn btn-primary px-4">
+                        <i class="bi bi-check-circle me-2"></i>Mesajı Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control:focus, .input-group-text {
+        border-color: #ddd;
+        box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+</style>
+
+<script>
+    // Form gönderimi öncesi onay isteği
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        Swal.fire({
+            title: 'Mesajı kaydetmek istediğinize emin misiniz?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#0d6efd',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Evet, Kaydet',
+            cancelButtonText: 'İptal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                this.submit();
+            }
+        });
+    });
+</script>

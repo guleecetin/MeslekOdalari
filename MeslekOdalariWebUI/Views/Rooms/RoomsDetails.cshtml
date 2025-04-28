@@ -1,0 +1,63 @@
+﻿@model ResultRoomsDto
+@{
+    ViewData["Title"] = "Meslek Odası Detayları";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container py-4">
+    <div class="card shadow border-0">
+        <div class="card-header bg-dark text-white">
+            <h4 class="mb-0">Mesaj Detayları</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <th class="text-secondary">Başkanın Fotoğrafı:</th>
+                        <th><img src="@Model.PresidentImageUrl" style="height:200px;width:200px" /></th>
+                    </tr>
+                    <tr>
+                        <th style="width: 30%" class="text-secondary">Üye Sayısı:</th>
+                        <td>@Model.MemberCount</td>
+                    </tr>
+                    <tr>
+                        <th class="text-secondary">Email:</th>
+                        <td>@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <th class="text-secondary">Odanın Lisans Numarası:</th>
+                        <td>@Model.LicenseNumber</td>
+                    </tr>
+                    <tr>
+                        <th class="text-secondary">Odanın Kurulduğu Tarih:</th>
+                        <td>@Model.Established</td>
+                    </tr>
+                    <tr>
+                        <th class="text-secondary">Başkanın Adı:</th>
+                        <td>@Model.PresidentName</td>
+                    </tr>
+                  
+                    <tr>
+                        <th class="text-secondary">Adres:</th>
+                        <td>@Model.Address</td>
+                    </tr>
+                    <tr>
+                        <th class="text-secondary">Telefon:</th>
+                        <td>@Model.Phone</td>
+                    </tr>
+                    <tr>
+                        <th class="text-secondary">WebSite:</th>
+                        <td>@Model.WebSite</td>
+                    </tr>
+                 
+                </tbody>
+            </table>
+            <div class="mt-3">
+                <a asp-controller="Rooms" asp-action="Index" class="btn btn-dark">
+                    <i class="bi bi-arrow-left me-2"></i>Odalara geri dön
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
