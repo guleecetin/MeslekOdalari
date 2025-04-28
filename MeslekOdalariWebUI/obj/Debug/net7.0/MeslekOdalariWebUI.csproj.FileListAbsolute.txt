@@ -252,3 +252,5 @@ C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\Au
 C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\MeslekOdalari.Dto.dll
 C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\MeslekOdalari.Dto.pdb
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

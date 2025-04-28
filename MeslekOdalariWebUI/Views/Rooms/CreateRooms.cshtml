@@ -1,63 +1,257 @@
 ﻿@model CreateRoomsDto
 @{
-    ViewData["Title"] = "Yeni Meslek Odası Ekleme Sayfası";
+    ViewData["Title"] = "Yeni Meslek Odası Ekleme";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<form method="post">
-    <label>Resim Url</label>
-    <input type="text" asp-for="ImageUrl" class="form-control" />
-    <br />
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Yeni Meslek Odası Ekleme</h3>
+            <p class="text-muted">Sisteme yeni bir meslek odası eklemek için aşağıdaki formu doldurunuz</p>
+        </div>
+        <a asp-controller="Rooms" asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Listeye Dön
+        </a>
+    </div>
 
-    <label>Başlık</label>
-    <input type="text" asp-for="Title" class="form-control" />
-    <br />
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary"><i class="bi bi-building-add me-2"></i>Meslek Odası Bilgileri</h5>
+        </div>
+        <div class="card-body">
+            <form method="post" id="roomsForm" class="needs-validation" novalidate>
+                <div class="row">
+                    <!-- Sol Kolon -->
+                    <div class="col-md-6">
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <div class="card-header bg-light">
+                                <h6 class="mb-0">Temel Bilgiler</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="Title" class="form-label fw-bold">Başlık <span class="text-danger">*</span></label>
+                                    <input type="text" asp-for="Title" class="form-control" required />
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
 
-    <label>Açıklama</label>
-    <input type="text" asp-for="Description" class="form-control" />
-    <br />
+                                <div class="mb-3">
+                                    <label for="Description" class="form-label fw-bold">Açıklama <span class="text-danger">*</span></label>
+                                    <textarea asp-for="Description" class="form-control" rows="3" required></textarea>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div>
 
-    <label>Üye Sayısı</label>
-    <input type="text" asp-for="MemberCount" class="form-control" />
-    <br />
+                                <div class="mb-3">
+                                    <label for="ImageUrl" class="form-label fw-bold">Resim URL</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-image"></i></span>
+                                        <input type="text" asp-for="ImageUrl" class="form-control" />
+                                    </div>
+                                    <div class="form-text">Oda logosu için resim bağlantısı</div>
+                                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                                </div>
 
-    <label> Email</label>
-    <input type="text" asp-for=" Email" class="form-control" />
-    <br />
+                                <div class="mb-3">
+                                    <label for="MemberCount" class="form-label fw-bold">Üye Sayısı</label>
+                                    <input type="number" asp-for="MemberCount" class="form-control" min="0" />
+                                    <span asp-validation-for="MemberCount" class="text-danger"></span>
+                                </div>
 
-    <label>Odanın Lisans Numarası</label>
-    <input type="text" asp-for="LicenseNumber" class="form-control" />
-    <br />
+                                <div class="mb-3">
+                                    <label for="LicenseNumber" class="form-label fw-bold">Lisans Numarası</label>
+                                    <input type="text" asp-for="LicenseNumber" class="form-control" />
+                                    <span asp-validation-for="LicenseNumber" class="text-danger"></span>
+                                </div>
 
-    <label>Odanın Kurulduğu Tarih</label>
-    <input type="text" asp-for="Established" class="form-control" />
-    <br />
+                                <div class="mb-3">
+                                    <label for="Established" class="form-label fw-bold">Kuruluş Tarihi</label>
+                                    <input type="date" asp-for="Established" class="form-control" />
+                                    <span asp-validation-for="Established" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <label>Başkanın Adı</label>
-    <input type="text" asp-for="PresidentName" class="form-control" />
-    <br />
+                    <!-- Sağ Kolon -->
+                    <div class="col-md-6">
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <div class="card-header bg-light">
+                                <h6 class="mb-0">İletişim Bilgileri</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="Email" class="form-label fw-bold">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" asp-for="Email" class="form-control" />
+                                    </div>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
 
-    <label>Başkanın Fotoğrafı</label>
-    <input type="text" asp-for="PresidentImageUrl" class="form-control" />
-    <br />
+                                <div class="mb-3">
+                                    <label for="Phone" class="form-label fw-bold">Telefon</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                        <input type="tel" asp-for="Phone" class="form-control" />
+                                    </div>
+                                    <span asp-validation-for="Phone" class="text-danger"></span>
+                                </div>
 
-    <label>Adres</label>
-    <input type="text" asp-for="Address" class="form-control" />
-    <br />
+                                <div class="mb-3">
+                                    <label for="WebSite" class="form-label fw-bold">Web Sitesi</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-globe"></i></span>
+                                        <input type="url" asp-for="WebSite" class="form-control" />
+                                    </div>
+                                    <span asp-validation-for="WebSite" class="text-danger"></span>
+                                </div>
 
-    <label>Telefon</label>
-    <input type="text" asp-for="Phone" class="form-control" />
-    <br />
+                                <div class="mb-3">
+                                    <label for="Address" class="form-label fw-bold">Adres</label>
+                                    <textarea asp-for="Address" class="form-control" rows="3"></textarea>
+                                    <span asp-validation-for="Address" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
 
-    <label>WebSite</label>
-    <input type="text" asp-for="WebSite" class="form-control" />
-    <br />
+                        <div class="card mb-4 border-0 shadow-sm">
+                            <div class="card-header bg-light">
+                                <h6 class="mb-0">Başkan Bilgileri</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="PresidentName" class="form-label fw-bold">Başkanın Adı</label>
+                                    <input type="text" asp-for="PresidentName" class="form-control" />
+                                    <span asp-validation-for="PresidentName" class="text-danger"></span>
+                                </div>
 
-    <button class="btn btn-outline-dark">Kaydet</button>
+                                <div class="mb-3">
+                                    <label for="PresidentImageUrl" class="form-label fw-bold">Başkanın Fotoğrafı</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person-square"></i></span>
+                                        <input type="text" asp-for="PresidentImageUrl" class="form-control" />
+                                    </div>
+                                    <span asp-validation-for="PresidentImageUrl" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</form>
+                <!-- Düğmeler -->
+                <div class="mt-4 d-flex justify-content-end">
+                    <button type="reset" class="btn btn-outline-secondary me-2">
+                        <i class="bi bi-x-circle me-1"></i>Formu Temizle
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle me-1"></i>Meslek Odasını Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
+<style>
+    .form-label {
+        font-size: 0.9rem;
+    }
 
+    .card {
+        transition: all 0.3s ease;
+    }
 
+        .card:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
 
+    .btn {
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s;
+    }
 
+    .btn-primary {
+        background-color: #4e73df;
+        border-color: #4e73df;
+    }
+
+        .btn-primary:hover {
+            background-color: #2e59d9;
+            border-color: #2653d4;
+        }
+
+    .card-header {
+        border-bottom: 1px solid rgba(0,0,0,.125);
+    }
+</style>
+
+<script>
+    // Form doğrulama için Bootstrap validasyonu etkinleştir
+    (function () {
+      'use strict'
+
+      // Tüm formları seç
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Form gönderimini engelle ve doğrulama yap
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+
+              // Form hataları için SweetAlert ile bildirim göster
+              Swal.fire({
+                title: "Form Eksik",
+                text: "Lütfen zorunlu alanları doldurunuz.",
+                icon: "warning",
+                confirmButtonText: "Tamam"
+              });
+            } else {
+              // Form başarılı gönderim için SweetAlert bildirimi
+              event.preventDefault();
+              Swal.fire({
+                title: "Kaydediliyor...",
+                text: "Meslek odası bilgileri kaydediliyor",
+                icon: "info",
+                showConfirmButton: false,
+                allowOutsideClick: false,
+                willOpen: () => {
+                  Swal.showLoading();
+                  setTimeout(() => {
+                    form.submit();
+                  }, 1000);
+                }
+              });
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+
+    // Input alanları için otomatik formatlama
+    $(document).ready(function() {
+        // Telefon formatı
+        $("#Phone").on("input", function() {
+            var value = $(this).val().replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 3) {
+                    value = '(' + value;
+                } else if (value.length <= 6) {
+                    value = '(' + value.substring(0, 3) + ') ' + value.substring(3);
+                } else {
+                    value = '(' + value.substring(0, 3) + ') ' + value.substring(3, 6) + '-' + value.substring(6, 10);
+                }
+            }
+            $(this).val(value);
+        });
+
+        // Form ipuçları için tooltip
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+</script>

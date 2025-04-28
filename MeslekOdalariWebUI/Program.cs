@@ -1,3 +1,4 @@
+using FluentValidation;
 using MeslekOdalari.DataAccess.Context;
 using MeslekOdalariWebUI.Extensions;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +20,8 @@ builder.Services.AddDbContext<MeslekOdalariContext>(option =>
     option.UseMongoDB(mongoDatabase.Client, mongoDatabase.DatabaseNamespace.DatabaseName);
 });
 
+
+builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
