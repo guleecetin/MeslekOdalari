@@ -1,79 +1,134 @@
-﻿ <div class="quixnav">
-            <div class="quixnav-scroll">
-                <ul class="metismenu" id="menu">
-                    <li class="nav-label first">Admin Paneli</li>
-
-                    <li>
-                        <a asp-controller="Banner" asp-action="Index" aria-expanded="false">
-                            <i class="fa fa-image"></i><span class="nav-text">Banner</span>
-                        </a>
-                       
-                    </li>
+﻿<div class="quixnav">
+    <div class="quixnav-scroll">
+        <ul class="metismenu" id="menu">
+            <li class="nav-label first">Admin Paneli</li>
 
             <li>
-                <a asp-controller="Contact" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-envelope"></i><span class="nav-text">İletişim Bilgisi</span>
+                <a asp-controller="Banner" asp-action="Index">
+                    <i class="fa fa-image"></i>
+                    <span class="nav-text">Banner</span>
                 </a>
-
             </li>
 
             <li>
-                <a asp-controller="Counter" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-calculator"></i><span class="nav-text">Sayaç</span>
+                <a asp-controller="Contact" asp-action="Index">
+                    <i class="fa fa-envelope"></i>
+                    <span class="nav-text">İletişim Bilgisi</span>
                 </a>
-
             </li>
 
             <li>
-                <a asp-controller="Feature" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-list"></i><span class="nav-text">Öne Çıkanlar</span>
+                <a asp-controller="Counter" asp-action="Index">
+                    <i class="fa fa-calculator"></i>
+                    <span class="nav-text">Sayaç</span>
                 </a>
-
             </li>
 
             <li>
-                <a asp-controller="Message" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-comment"></i><span class="nav-text">Gelen Mesajlar</span>
+                <a asp-controller="Feature" asp-action="Index">
+                    <i class="fa fa-list"></i>
+                    <span class="nav-text">Öne Çıkanlar</span>
                 </a>
-
-            </li>
-
-
-            <li>
-                <a asp-controller="News" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-tag"></i><span class="nav-text">Haberler</span>
-                </a>
-
             </li>
 
             <li>
-                <a asp-controller="Question" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-question"></i><span class="nav-text">Sorular-Cevaplar</span>
+                <a asp-controller="Message" asp-action="Index">
+                    <i class="fa fa-comment"></i>
+                    <span class="nav-text">Gelen Mesajlar</span>
                 </a>
-
             </li>
 
             <li>
-                <a asp-controller="Rooms" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-building"></i><span class="nav-text">Meslek Odaları</span>
+                <a asp-controller="News" asp-action="Index">
+                    <i class="fa fa-tag"></i>
+                    <span class="nav-text">Haberler</span>
                 </a>
-
             </li>
 
             <li>
-                <a asp-controller="Video" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-play"></i><span class="nav-text">Video</span>
+                <a asp-controller="Question" asp-action="Index">
+                    <i class="fa fa-question"></i>
+                    <span class="nav-text">Sorular-Cevaplar</span>
                 </a>
-
             </li>
 
             <li>
-                <a asp-controller="Default" asp-action="Index" aria-expanded="false">
-                    <i class="fa fa-laptop"></i><span class="nav-text">Siteye Git</span>
+                <a asp-controller="Rooms" asp-action="Index">
+                    <i class="fa fa-building"></i>
+                    <span class="nav-text">Meslek Odaları</span>
                 </a>
-
             </li>
-                   
-                </ul>
-            </div>
-        </div>
+
+            <li>
+                <a asp-controller="Video" asp-action="Index">
+                    <i class="fa fa-play"></i>
+                    <span class="nav-text">Video</span>
+                </a>
+            </li>
+
+            <li>
+                <a asp-controller="Default" asp-action="Index">
+                    <i class="fa fa-laptop"></i>
+                    <span class="nav-text">Siteye Git</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .quixnav {
+        background-color: #2c3e50;
+        width: 275px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 0px;
+    }
+
+    .quixnav-scroll {
+        overflow-y: auto;
+        max-height: 90vh;
+        padding: 0 10px;
+    }
+
+    .metismenu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .metismenu li {
+            margin-bottom: 15px;
+        }
+
+        .metismenu a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 20px; /* Yazı büyütüldü */
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+            .metismenu a:hover {
+                background-color: #34495e;
+                transform: translateX(5px);
+            }
+
+        .metismenu i {
+            margin-right: 10px;
+            font-size: 24px; /* İkon da biraz büyütüldü */
+        }
+
+    .nav-label {
+        font-size: 20px; /* Admin Paneli yazısı büyüklüğü korunuyor */
+        font-weight: bold;
+        color: #bdc3c7;
+        margin-bottom: 20px;
+        padding-left: 15px;
+    }
+
+</style>

@@ -164,8 +164,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Shared/_UILayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VSUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/SubHeader/CreateSubHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViSGVhZGVyXENyZWF0ZVN1YkhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/SubHeader/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViSGVhZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/SubHeader/UpdateSubHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViSGVhZGVyXFVwZGF0ZVN1YkhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Video/CreateVideo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9cQ3JlYXRlVmlkZW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Video/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Video/UpdateVideo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9cVXBkYXRlVmlkZW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/_ViewImports.cshtml]

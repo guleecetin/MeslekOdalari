@@ -389,6 +389,10 @@
             "MongoDB.Driver.Core": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.7.1, )"
             }
           },
           "imports": [

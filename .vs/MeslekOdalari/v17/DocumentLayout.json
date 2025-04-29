@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\question\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\question\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\subheader\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\subheader\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\question\\updatequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\question\\updatequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\subheader\\updatesubheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\subheader\\updatesubheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\question\\createquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\question\\createquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\subheader\\createsubheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\subheader\\createsubheader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\controllers\\subheadercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\controllers\\subheadercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\shared\\_uilayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\shared\\_uilayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +29,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 974,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 1245,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,59 +46,73 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateQuestion.cshtml",
-              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Question\\CreateQuestion.cshtml",
-              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Question\\CreateQuestion.cshtml",
-              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Question\\CreateQuestion.cshtml",
-              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Question\\CreateQuestion.cshtml",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAwFoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UpdateSubHeader.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\SubHeader\\UpdateSubHeader.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\SubHeader\\UpdateSubHeader.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\SubHeader\\UpdateSubHeader.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\SubHeader\\UpdateSubHeader.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T22:49:31.102Z",
+              "WhenOpened": "2025-04-29T14:38:43.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateSubHeader.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\SubHeader\\CreateSubHeader.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\SubHeader\\CreateSubHeader.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\SubHeader\\CreateSubHeader.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\SubHeader\\CreateSubHeader.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T14:33:59.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Question\\Index.cshtml",
-              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Question\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Question\\Index.cshtml",
-              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Question\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\SubHeader\\Index.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\SubHeader\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\SubHeader\\Index.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\SubHeader\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T22:36:47.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateQuestion.cshtml",
-              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Question\\UpdateQuestion.cshtml",
-              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Question\\UpdateQuestion.cshtml",
-              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Question\\UpdateQuestion.cshtml",
-              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Question\\UpdateQuestion.cshtml",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAAAGMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T16:56:38.494Z",
+              "WhenOpened": "2025-04-29T14:22:39.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "QuestionController.cs",
-              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\QuestionController.cs",
-              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Controllers\\QuestionController.cs",
-              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\QuestionController.cs",
-              "RelativeToolTip": "MeslekOdalariWebUI\\Controllers\\QuestionController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowDcAAAAyAAAAAAAAAA==",
+              "Title": "SubHeaderController.cs",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\SubHeaderController.cs",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Controllers\\SubHeaderController.cs",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\SubHeaderController.cs",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Controllers\\SubHeaderController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwDIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:37:08.313Z"
+              "WhenOpened": "2025-04-29T13:59:10.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_UILayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T12:43:26.487Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 737,
+          "DockedWidth": 466,
           "SelectedChildIndex": -1,
           "Children": [
             {

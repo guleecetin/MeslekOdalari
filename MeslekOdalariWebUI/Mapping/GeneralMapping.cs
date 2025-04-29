@@ -7,6 +7,7 @@ using MeslekOdalari.Dto.Dtos.MessageDtos;
 using MeslekOdalari.Dto.Dtos.NewsDtos;
 using MeslekOdalari.Dto.Dtos.QuestDtos;
 using MeslekOdalari.Dto.Dtos.RoomsDto;
+using MeslekOdalari.Dto.Dtos.SubHeaderDtos;
 using MeslekOdalari.Dto.Dtos.VideoDtos;
 using MeslekOdalari.Entity.Entities;
 
@@ -51,6 +52,10 @@ namespace MeslekOdalariWebUI.Mapping
             CreateMap<ResultVideoDto, Video>().ReverseMap();
             CreateMap<UpdateVideoDto, Video>().ReverseMap();
             CreateMap<CreateVideoDto, Video>().ReverseMap();
+
+            CreateMap<ResultSubHeaderDto, SubHeader>().ReverseMap();
+            CreateMap<UpdateSubHeaderDto, SubHeader>().ReverseMap();
+            CreateMap<CreateSubHeaderDto, SubHeader>().ReverseMap();
 
 
         }

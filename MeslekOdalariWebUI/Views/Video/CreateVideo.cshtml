@@ -1,0 +1,168 @@
+﻿@model CreateVideoDto
+@{
+    ViewData["Title"] = "Yeni Video Ekleme";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Yeni Video Ekle</h3>
+            <p class="text-muted fs-5">Sisteme yeni bir video bağlantısı ekleyebilirsiniz</p>
+        </div>
+        <a asp-controller="Video" asp-action="Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Listeye Dön
+        </a>
+    </div>
+
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary fs-4"><i class="bi bi-film me-2"></i>Video Bilgileri</h5>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="row">
+                    <div class="col-lg-12 mb-4">
+                        <div class="form-group">
+                            <label for="VideoUrl" class="form-label fs-5 mb-2">Video URL <span class="text-danger">*</span></label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-light"><i class="bi bi-link-45deg"></i></span>
+                                <input type="url" id="VideoUrl" asp-for="VideoUrl" class="form-control form-control-lg fs-5"
+                                       placeholder="https://www.youtube.com/watch?v=..." required />
+                            </div>
+                            <div class="form-text fs-6 mt-2">
+                                <i class="bi bi-info-circle me-1"></i>YouTube, Vimeo veya diğer video platformlarından geçerli bir video bağlantısı giriniz.
+                            </div>
+                            <span asp-validation-for="VideoUrl" class="text-danger fs-6"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-top pt-4 mt-2">
+                    <div class="d-flex justify-content-end">
+                        <a asp-controller="Video" asp-action="Index" class="btn btn-lg btn-outline-secondary me-2 fs-5">
+                            <i class="bi bi-x-circle me-2"></i>İptal
+                        </a>
+                        <button type="submit" class="btn btn-lg btn-primary fs-5">
+                            <i class="bi bi-check-circle me-2"></i>Kaydet
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Video Preview -->
+    <div class="card border-0 shadow-sm mt-4">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary fs-4"><i class="bi bi-eye me-2"></i>Video Önizleme</h5>
+        </div>
+        <div class="card-body text-center">
+            <div id="videoPreviewPlaceholder" class="py-5">
+                <i class="bi bi-camera-video text-muted" style="font-size: 4rem;"></i>
+                <h5 class="mt-3 fs-5">Video bağlantısı girildiğinde önizleme burada görüntülenecektir</h5>
+            </div>
+            <div id="videoPreview" class="ratio ratio-16x9 d-none">
+                <iframe src="" title="Video Önizleme" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-control:focus {
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        border-color: #86b7fe;
+    }
+
+    .input-group-text {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .form-control {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .btn {
+        border-radius: 5px;
+        transition: all 0.2s;
+    }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+    .fs-5 {
+        font-size: 1.1rem !important;
+    }
+</style>
+
+<script>
+    // Sayfa yüklendiğinde çalışacak kod
+    $(document).ready(function() {
+        // Video URL değişikliğini izle
+        $('#VideoUrl').on('input', function() {
+            updateVideoPreview($(this).val());
+        });
+
+        // Sayfa yüklendiğinde içerik varsa ön izleme yap
+        if ($('#VideoUrl').val()) {
+            updateVideoPreview($('#VideoUrl').val());
+        }
+    });
+
+    // Video URL'inden embed URL'i oluştur
+    function updateVideoPreview(url) {
+        if (!url) {
+            // URL boşsa önizlemeyi gizle
+            $('#videoPreview').addClass('d-none');
+            $('#videoPreviewPlaceholder').removeClass('d-none');
+            return;
+        }
+
+        let embedUrl = '';
+
+        // YouTube
+        if (url.includes('youtube.com/watch') || url.includes('youtu.be')) {
+            let videoId = '';
+            if (url.includes('youtube.com/watch')) {
+                videoId = new URL(url).searchParams.get('v');
+            } else if (url.includes('youtu.be')) {
+                videoId = url.split('youtu.be/')[1].split('?')[0];
+            }
+
+            if (videoId) {
+                embedUrl = 'https://www.youtube.com/embed/' + videoId;
+            }
+        }
+        // Vimeo
+        else if (url.includes('vimeo.com')) {
+            let vimeoId = url.split('vimeo.com/')[1];
+            if (vimeoId) {
+                embedUrl = 'https://player.vimeo.com/video/' + vimeoId;
+            }
+        }
+
+        if (embedUrl) {
+            // Embed URL oluşturulduysa iframe'i güncelle ve göster
+            $('#videoPreview iframe').attr('src', embedUrl);
+            $('#videoPreview').removeClass('d-none');
+            $('#videoPreviewPlaceholder').addClass('d-none');
+        } else {
+            // Tanınmayan URL formatı
+            $('#videoPreview').addClass('d-none');
+            $('#videoPreviewPlaceholder').removeClass('d-none');
+        }
+    }
+</script>

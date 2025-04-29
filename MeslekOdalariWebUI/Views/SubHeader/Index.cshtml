@@ -1,0 +1,43 @@
+﻿@model List<ResultSubHeaderDto>
+@{
+    ViewData["Title"] = "Üst Bilgi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-hover table-bordered">
+    @{
+        int count = 0;
+    }
+    <tr>
+        <th>#</th>
+        <th>Adres</th>
+        <th>Email</th>
+        <th>Facebook</th>
+        <th>Twitter</th>
+        <th>Linkedln</th>
+        <th>Instagram</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td>@item.Address</td>
+            <td>@item.Email</td
+            <td><a href="@item.Facebook" target="_blank">Facebook</a></td>
+            <td><a href="@item.Twitter" target="_blank">Twitter</a></td>
+            <td><a href="@item.Linkedln" target="_blank">Linkedln</a></td>
+            <td><a href="@item.Instagram" target="_blank">Instagram</a></td>
+            <td>
+                <a asp-controller="SubHeader" asp-action="DeleteSubHeader" asp-route-id="@item.Id" class="btn btn-outline-danger">Sil</a>
+                <a asp-controller="SubHeader" asp-action="UpdateSubHeader" asp-route-id="@item.Id" class="btn btn-outline-info">Güncelle</a>
+            </td>
+        </tr>
+
+    }
+
+</table>
+<a asp-controller="SubHeader" asp-action="CreateSubHeader" class="btn btn-outline-dark">Yeni Üst Bilgi Ekle</a>
+
+
+
