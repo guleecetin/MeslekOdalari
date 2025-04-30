@@ -155,38 +155,37 @@
 </div>
 
 <style>
-    .form-label {
-        font-size: 0.9rem;
+    /* Tüm form öğelerinde yazı büyüklüğü */
+    .form-control,
+    .form-label,
+    .form-text,
+    .input-group-text,
+    .btn,
+    textarea,
+    select {
+        font-size: 1.1rem !important;
     }
 
-    .card {
-        transition: all 0.3s ease;
+    /* Başlıklar */
+    h3, h4, h5, h6, p {
+        font-size: 1.2rem;
     }
 
-        .card:hover {
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-        }
-
-    .btn {
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-        transition: all 0.3s;
+    .card-header h6 {
+        font-size: 1.15rem;
     }
 
-    .btn-primary {
-        background-color: #4e73df;
-        border-color: #4e73df;
+    /* Buton içindeki ikonlarla metni hizala */
+    .btn i {
+        font-size: 1rem;
     }
 
-        .btn-primary:hover {
-            background-color: #2e59d9;
-            border-color: #2653d4;
-        }
-
-    .card-header {
-        border-bottom: 1px solid rgba(0,0,0,.125);
+    /* Validation mesajları */
+    .text-danger {
+        font-size: 1rem;
     }
 </style>
+
 
 <script>
     // Form doğrulama için Bootstrap validasyonu etkinleştir

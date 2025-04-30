@@ -4124,6 +4124,10 @@ wwwroot\VillaAgency-1.0.0\assets\images\contact-bg.jpg
 wwwroot\VillaAgency-1.0.0\assets\images\deal-01.jpg
 wwwroot\VillaAgency-1.0.0\assets\images\deal-02.jpg
 wwwroot\VillaAgency-1.0.0\assets\images\deal-03.jpg
+wwwroot\VillaAgency-1.0.0\assets\images\elazıghaber1.jpg
+wwwroot\VillaAgency-1.0.0\assets\images\elazıghaber2.jpg
+wwwroot\VillaAgency-1.0.0\assets\images\elazıghaber3.webp
+wwwroot\VillaAgency-1.0.0\assets\images\elazıghaber5.jpg
 wwwroot\VillaAgency-1.0.0\assets\images\email-icon.png
 wwwroot\VillaAgency-1.0.0\assets\images\featured.jpg
 wwwroot\VillaAgency-1.0.0\assets\images\featured-icon.png

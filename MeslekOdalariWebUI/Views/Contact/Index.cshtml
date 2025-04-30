@@ -4,33 +4,127 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<table class="table table-hover table-bordered">
-    @{
-        int count = 0;
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="text-dark mb-1">İletişim Bilgileri</h2>
+            <p class="text-muted fs-5">Sistemde kayıtlı tüm iletişim bilgilerini buradan yönetebilirsiniz</p>
+        </div>
+        <a asp-controller="Contact" asp-action="CreateContact" class="btn btn-lg btn-primary">
+            <i class="bi bi-plus-circle me-2"></i>Yeni İletişim Bilgisi Ekle
+        </a>
+    </div>
+
+    <!-- Table Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h4 class="mb-0 text-primary"><i class="bi bi-telephone me-2"></i>İletişim Bilgileri Listesi</h4>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0 fs-5">
+                    <thead class="bg-light">
+                        <tr>
+                            <th class="ps-4">#</th>
+                            <th>Harita</th>
+                            <th>Telefon</th>
+                            <th>Email</th>
+                            <th class="text-end pe-4">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int count = 0;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <td class="ps-4 fw-bold">@count</td>
+                                <td>
+                                    <a href="@item.MapUrl" target="_blank" class="text-decoration-none text-primary">
+                                        <i class="bi bi-geo-alt-fill me-1"></i>Harita Linki
+                                    </a>
+                                </td>
+                                <td>@item.Phone</td>
+                                <td>@item.Email</td>
+                                <td class="text-end pe-4">
+                                    <button onclick="deleteContact(this)" data-id="@item.Id" data-email="@item.Email"
+                                            class="btn btn-sm btn-outline-danger me-2">
+                                        <i class="bi bi-trash me-1"></i>Sil
+                                    </button>
+                                    <a asp-controller="Contact" asp-action="UpdateContact" asp-route-id="@item.Id"
+                                       class="btn btn-sm btn-outline-info">
+                                        <i class="bi bi-pencil-square me-1"></i>Güncelle
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                        @if (count == 0)
+                        {
+                            <tr>
+                                <td colspan="5" class="text-center py-5">
+                                    <div class="py-4">
+                                        <i class="bi bi-telephone fs-1 text-muted"></i>
+                                        <h5 class="mt-3">Henüz iletişim bilgisi eklenmemiş</h5>
+                                        <p class="text-muted">Yeni bir iletişim bilgisi eklemek için yukarıdaki butonu kullanabilirsiniz</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stil -->
+<style>
+    .table th, .table td {
+        vertical-align: middle;
     }
-    <tr>
-        <th>#</th>
-        <th>Harita</th>
-        <th>Telefon</th>
-        <th>Email</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        count++;
-        <tr>
-            <th>@count</th>
-            <td><a href="@item.MapUrl" target="_blank">Harita Linki</a></td>
-            <td>@item.Phone</td>
-            <td>@item.Email</td>
-            <td>
-                <a asp-controller="Contact" asp-action="DeleteContact" asp-route-id="@item.Id" class="btn btn-outline-danger">Sil</a>
-                <a asp-controller="Contact" asp-action="UpdateContact" asp-route-id="@item.Id" class="btn btn-outline-info">Güncelle</a>
-            </td>
-        </tr>
 
+    .btn-outline-info:hover,
+    .btn-outline-danger:hover {
+        color: white;
     }
 
-</table>
-<a asp-controller="Contact" asp-action="CreateContact" class="btn btn-outline-dark">Yeni İletişim Bilgisi Ekle</a>
+    tbody tr:hover {
+        background-color: #f8f9fa;
+        transition: background-color 0.3s;
+    }
 
+    .fs-5 {
+        font-size: 1.25rem;
+    }
+</style>
 
+<!-- SweetAlert & Script -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function deleteContact(button) {
+        var id = button.getAttribute("data-id");
+        var email = button.getAttribute("data-email");
+
+        Swal.fire({
+            title: "İletişim Bilgisini Silmek İstediğinize Emin Misiniz?",
+            html: '<strong>' + email + '</strong> adresine ait iletişim bilgisi silinecek.',
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Evet, Sil!",
+            cancelButtonText: "İptal"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/Contact/DeleteContact/" + id;
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+</script>

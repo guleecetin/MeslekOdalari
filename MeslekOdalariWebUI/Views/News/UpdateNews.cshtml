@@ -4,26 +4,130 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<form method="post">
-    <input type="hidden" asp-formaction="Id"/>
-    <label>Tür</label>
-    <input type="text" asp-for="Type" class="form-control" />
-    <br />
+<div class="container py-4">
+    <div class="card border-0 shadow-sm">
+        <div class="card-header" style="background-color:#b39ddb; color: white;">
+            <h4 class="mb-0"><i class="bi bi-pencil-square me-2"></i>Haberi Güncelle</h4>
+        </div>
+        <div class="card-body">
+            <form method="post" class="needs-validation" novalidate>
+                <input type="hidden" asp-for="Id" />
 
-    <label>Resim Url</label>
-    <input type="text" asp-for="ImageUrl" class="form-control" />
-    <br />
+                <div class="mb-3">
+                    <label class="form-label fw-bold fs-5">Haber Türü</label>
+                    <input type="text" asp-for="Type" class="form-control form-control-lg" placeholder="Örn: Duyuru, Haber" required />
+                    <span asp-validation-for="Type" class="text-danger"></span>
+                </div>
 
-    <label>Başlık</label>
-    <input type="text" asp-for="Title" class="form-control" />
-    <br />
+                <div class="mb-3">
+                    <label class="form-label fw-bold fs-5">Resim URL</label>
+                    <input type="text" asp-for="ImageUrl" class="form-control form-control-lg" placeholder="https://..." required />
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                </div>
 
-    <label>Açıklama</label>
-    <input type="text" asp-for="Description" class="form-control" />
-    <br />
+                <div class="mb-3">
+                    <label class="form-label fw-bold fs-5">Başlık</label>
+                    <input type="text" asp-for="Title" class="form-control form-control-lg" placeholder="Haber başlığını girin" required />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
 
-    <button class="btn btn-outline-dark">Güncelle</button>
+                <div class="mb-3">
+                    <label class="form-label fw-bold fs-5">Açıklama</label>
+                    <textarea asp-for="Description" class="form-control form-control-lg" rows="4" placeholder="Haberin detaylarını yazın" required></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
 
-</form>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary btn-lg" id="cancelButton">
+                        <i class="bi bi-arrow-left-circle me-1"></i>Vazgeç
+                    </button>
+                    <button type="submit" class="btn btn-success btn-lg">
+                        <i class="bi bi-check-circle me-1"></i>Güncelle
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
+<style>
+    .form-label {
+        font-size: 1.25rem;
+    }
 
+    .form-control {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        border-radius: 5px;
+        padding: 0.5rem 1.25rem;
+    }
+
+    .card:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    (function () {
+        'use strict'
+
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+
+                        Swal.fire({
+                            title: "Form Eksik",
+                            text: "Lütfen tüm zorunlu alanları doldurunuz.",
+                            icon: "warning",
+                            confirmButtonText: "Tamam"
+                        });
+                    } else {
+                        event.preventDefault();
+                        Swal.fire({
+                            title: "Güncelleniyor...",
+                            text: "Haber kaydı güncelleniyor.",
+                            icon: "info",
+                            showConfirmButton: false,
+                            allowOutsideClick: false,
+                            willOpen: () => {
+                                Swal.showLoading();
+                                setTimeout(() => {
+                                    form.submit();
+                                }, 1000);
+                            }
+                        });
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })();
+
+    $("#cancelButton").click(function () {
+        Swal.fire({
+            title: 'Emin misiniz?',
+            text: "Değişiklikler kaydedilmeyecek!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Evet, geri dön!',
+            cancelButtonText: 'Hayır, kalmak istiyorum'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.history.back();
+            }
+        });
+    });
+</script>

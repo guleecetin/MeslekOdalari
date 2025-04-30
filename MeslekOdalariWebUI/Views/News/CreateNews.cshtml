@@ -4,25 +4,55 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<form method="post">
-    <label>Tür</label>
-    <input type="text" asp-for="Type" class="form-control" />
-    <br />
+<div class="container-fluid py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header" style="background-color:#b39ddb; color: white;">
+                    <h5 class="mb-0">
+                        <i class="bi bi-plus-circle me-2"></i>Yeni Haber Ekle
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Haber Türü</label>
+                            <input type="text" asp-for="Type" class="form-control" placeholder="Örn: Duyuru, Haber, Etkinlik" />
+                        </div>
 
-    <label>Resim Url</label>
-    <input type="text" asp-for="ImageUrl" class="form-control" />
-    <br />
+                        <div class="mb-3">
+                            <label class="form-label">Resim URL</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control" placeholder="https://..." />
+                        </div>
 
-    <label>Başlık</label>
-    <input type="text" asp-for="Title" class="form-control" />
-    <br />
+                        <div class="mb-3">
+                            <label class="form-label">Başlık</label>
+                            <input type="text" asp-for="Title" class="form-control" placeholder="Haber başlığını girin" />
+                        </div>
 
-    <label>Açıklama</label>
-    <input type="text" asp-for="Description" class="form-control" />
-    <br />
+                        <div class="mb-3">
+                            <label class="form-label">Açıklama</label>
+                            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Haberin detaylarını yazın"></textarea>
+                        </div>
 
-    <button class="btn btn-outline-dark">Kaydet</button>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-dark">
+                                <i class="bi bi-save me-1"></i>Kaydet
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-</form>
+<style>
+    .form-label {
+        font-weight: 500;
+    }
 
-
+    textarea.form-control {
+        resize: vertical;
+    }
+</style>

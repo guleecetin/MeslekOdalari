@@ -7,34 +7,57 @@
 <div class="container py-4">
     <div class="card shadow border-0">
         <div class="card-header bg-dark text-white">
-            <h4 class="mb-0">Mesaj Detayları</h4>
+            <h4 class="mb-0" style="font-size: 1.8rem;">Mesaj Detayları</h4>
         </div>
         <div class="card-body">
             <table class="table table-hover">
                 <tbody>
                     <tr>
-                        <th style="width: 30%" class="text-secondary">Gönderen Ad Soyad:</th>
-                        <td>@Model.Name</td>
+                        <th style="width: 30%; font-size: 1.2rem;" class="text-secondary">Gönderen Ad Soyad:</th>
+                        <td style="font-size: 1.2rem;">@Model.Name</td>
                     </tr>
                     <tr>
-                        <th class="text-secondary">Gönderen Email:</th>
-                        <td>@Model.Email</td>
+                        <th style="font-size: 1.2rem;" class="text-secondary">Gönderen Email:</th>
+                        <td style="font-size: 1.2rem;">@Model.Email</td>
                     </tr>
                     <tr>
-                        <th class="text-secondary">Konu:</th>
-                        <td>@Model.Subject</td>
+                        <th style="font-size: 1.2rem;" class="text-secondary">Konu:</th>
+                        <td style="font-size: 1.2rem;">@Model.Subject</td>
                     </tr>
                     <tr>
-                        <th class="text-secondary">Mesaj İçeriği:</th>
-                        <td class="bg-light p-3 rounded">@Model.MessageContent</td>
+                        <th style="font-size: 1.2rem;" class="text-secondary">Mesaj İçeriği:</th>
+                        <td class="bg-light p-3 rounded" style="font-size: 1.2rem;">@Model.MessageContent</td>
                     </tr>
                 </tbody>
             </table>
             <div class="mt-3">
-                <a asp-controller="Message" asp-action="Index" class="btn btn-dark">
+                <a asp-controller="Message" asp-action="Index" class="btn btn-dark" style="font-size: 1.2rem;">
                     <i class="bi bi-arrow-left me-2"></i>Mesajlara geri dön
                 </a>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    .card-header h4 {
+        font-size: 2rem; /* Başlık font büyüklüğü */
+    }
+
+    .table th, .table td {
+        font-size: 1.2rem; /* Tablo içeriklerinin yazı büyüklüğü */
+    }
+
+    .btn {
+        font-size: 1.2rem; /* Buton yazı büyüklüğü */
+    }
+
+    .table th {
+        font-weight: bold;
+    }
+
+    .bg-light {
+        font-size: 1.2rem;
+    }
+</style>
+div>

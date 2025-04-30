@@ -22,7 +22,8 @@
             <div class="card bg-primary text-white mb-4">
                 <div class="card-body d-flex align-items-center justify-content-between">
                     <div>
-                        <h4 class="mb-0">@Model.Count()</h4>
+                        <h4 class="mb-0">@Model?.Count()</h4>
+
                         <div class="small">Toplam Mesaj</div>
                     </div>
                     <i class="bi bi-envelope fs-1 opacity-50"></i>
@@ -49,37 +50,38 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @{
-                            int count = 0;
-                        }
-                        @foreach (var item in Model)
+                        @if (Model != null && Model.Any())
                         {
-                            count++;
-                            <tr>
-                                <td class="ps-4 fw-bold">@count</td>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar-circle bg-primary text-white me-2">
-                                            @(item.Name.Substring(0, 1).ToUpper())
+                            int count = 0;
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <td class="ps-4 fw-bold">@count</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar-circle bg-primary text-white me-2">
+                                                @(item.Name?.Substring(0, 1).ToUpper() ?? "")
+                                            </div>
+                                            <span>@item.Name</span>
                                         </div>
-                                        <span>@item.Name</span>
-                                    </div>
-                                </td>
-                                <td><span class="text-primary">@item.Email</span></td>
-                                <td>@item.Subject</td>
-                                <td class="text-end pe-4">
-                                    <a asp-controller="Message" asp-action="MessageDetails" asp-route-id="@item.Id"
-                                       class="btn btn-sm btn-outline-primary me-2">
-                                        <i class="bi bi-envelope-open me-1"></i>Görüntüle
-                                    </a>
-                                    <button onclick="deleteMessage(this)" id="@item.Id" data-subject="@item.Subject"
-                                            data-name="@item.Name" class="btn btn-sm btn-outline-danger">
-                                        <i class="bi bi-trash me-1"></i>Sil
-                                    </button>
-                                </td>
-                            </tr>
+                                    </td>
+                                    <td><span class="text-primary">@item.Email</span></td>
+                                    <td>@item.Subject</td>
+                                    <td class="text-end pe-4">
+                                        <a asp-controller="Message" asp-action="MessageDetails" asp-route-id="@item.Id"
+                                           class="btn btn-sm btn-outline-primary me-2">
+                                            <i class="bi bi-envelope-open me-1"></i>Görüntüle
+                                        </a>
+                                        <button onclick="deleteMessage(this)" id="@item.Id" data-subject="@item.Subject"
+                                                data-name="@item.Name" class="btn btn-sm btn-outline-danger">
+                                            <i class="bi bi-trash me-1"></i>Sil
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
                         }
-                        @if (count == 0)
+                        else
                         {
                             <tr>
                                 <td colspan="5" class="text-center py-5">
@@ -111,8 +113,22 @@
 
     .table th, .table td {
         vertical-align: middle;
+        font-size: 1.2rem; /* Yazıları büyütme */
+    }
+
+    h3, h4, h5 {
+        font-size: 1.5rem; /* Başlıkları büyütme */
+    }
+
+    .text-muted {
+        font-size: 1.1rem; /* Metinleri biraz büyütme */
+    }
+
+    .btn {
+        font-size: 1.1rem; /* Buton yazılarını büyütme */
     }
 </style>
+
 
 <script>
     function deleteMessage(button) {

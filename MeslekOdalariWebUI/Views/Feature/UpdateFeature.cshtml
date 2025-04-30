@@ -4,34 +4,98 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<form method="post">
-    <input type="hidden" asp-for="Id"/>
-    <label>Resim Url</label>
-    <input type="text" asp-for="ImageUrl" class="form-control" />
-    <br />
+<div class="container-fluid py-4">
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary">Öne Çıkan Bilgisi Güncelle</h5>
+        </div>
+        <div class="card-body p-4">
+            <form method="post">
+                <input type="hidden" asp-for="Id" />
 
-    <label>Üyelik Durumu</label>
-    <select asp-for="MembershipStatus" class="form-control">
-        <option>Seçiminizi Yapın</option>
-        <option value="True">Aktif</option>
-        <option value="False">Pasif</option>
-    </select>
-    <br />
-    <label>Üye Sayısı</label>
-    <input type="text" asp-for="NumberofMembers" class="form-control" />
-    <br />
+                <div class="mb-3">
+                    <label class="form-label">Resim Url</label>
+                    <input type="text" asp-for="ImageUrl" class="form-control" placeholder="Resim URL'si girin" />
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.ImageUrl)</span>
+                </div>
 
-    <label>Proje Sayısı</label>
-    <input type="text" asp-for="NumberofProjects" class="form-control" />
-    <br />
+                <div class="mb-3">
+                    <label class="form-label">Üyelik Durumu</label>
+                    <select asp-for="MembershipStatus" class="form-select">
+                        <option value="">Seçiminizi Yapın</option>
+                        <option value="True">Aktif</option>
+                        <option value="False">Pasif</option>
+                    </select>
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.MembershipStatus)</span>
+                </div>
 
-    <label>Uzmanlık Alanı</label>
-    <input type="text" asp-for="AreasofExpertise" class="form-control" />
-    <br />
+                <div class="mb-3">
+                    <label class="form-label">Üye Sayısı</label>
+                    <input type="text" asp-for="NumberofMembers" class="form-control" placeholder="Üye sayısını girin" />
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.NumberofMembers)</span>
+                </div>
 
-    <button class="btn btn-outline-dark">Güncelle</button>
+                <div class="mb-3">
+                    <label class="form-label">Proje Sayısı</label>
+                    <input type="text" asp-for="NumberofProjects" class="form-control" placeholder="Proje sayısını girin" />
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.NumberofProjects)</span>
+                </div>
 
-</form>
+                <div class="mb-3">
+                    <label class="form-label">Uzmanlık Alanı</label>
+                    <input type="text" asp-for="AreasofExpertise" class="form-control" placeholder="Uzmanlık alanını girin" />
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.AreasofExpertise)</span>
+                </div>
 
+                <button type="submit" class="btn btn-outline-dark mt-3">Güncelle</button>
+            </form>
+        </div>
+    </div>
+</div>
 
+<style>
+    .form-label {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
 
+    .form-control, .form-select {
+        font-size: 1rem;
+        padding: 0.75rem;
+        border-radius: 0.375rem;
+        transition: border-color 0.3s;
+    }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #0069d9;
+            box-shadow: 0 0 5px rgba(0, 105, 217, 0.5);
+        }
+
+    .btn-outline-dark {
+        border-color: #343a40;
+        color: #343a40;
+        padding: 0.75rem 1.25rem;
+        font-size: 1.1rem;
+    }
+
+        .btn-outline-dark:hover {
+            background-color: #343a40;
+            color: white;
+        }
+
+    .card-header {
+        font-size: 1.3rem;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .mb-3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .container-fluid {
+        padding: 2rem;
+    }
+</style>
