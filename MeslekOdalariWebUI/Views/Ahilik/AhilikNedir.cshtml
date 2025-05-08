@@ -1,0 +1,311 @@
+﻿@{
+    ViewData["Title"] = "Ahilik Nedir?";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<!-- Custom CSS -->
+<style>
+    .page-heading {
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.55)), url('/api/placeholder/1920/800');
+        background-position: center;
+        background-size: cover;
+        padding: 150px 0;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .page-heading h1 {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 64px !important;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+    .highlight-subtitle {
+        font-size: 32px !important;
+        color: #ffcc66;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        font-weight: 600;
+        display: inline-block;
+        padding: 5px 15px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        border-left: 4px solid #ffcc66;
+        border-right: 4px solid #ffcc66;
+    }
+
+    h2, h3 {
+        color: #1e3a5c;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 12px;
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+        h2:after, h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: #c8a97e;
+        }
+
+    p {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    .custom-list {
+        list-style: none;
+        padding-left: 5px;
+        margin-bottom: 30px;
+    }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+        }
+
+            .custom-list li i {
+                position: absolute;
+                left: 0;
+                top: 5px;
+                color: #c8a97e;
+                font-size: 18px;
+            }
+
+    .info-card {
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        padding: 30px;
+        transition: all 0.3s ease;
+        margin-bottom: 25px;
+        border-left: 6px solid #c8a97e;
+    }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+    .feature-item {
+        display: flex;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+    }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+    .feature-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        background-color: #1e3a5c;
+        color: #fff;
+        font-size: 32px;
+    }
+
+    .feature-content {
+        padding: 20px;
+        flex-grow: 1;
+    }
+
+        .feature-content h4 {
+            color: #1e3a5c;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature-content span {
+            color: #6c757d;
+            font-size: 16px;
+        }
+
+    .quote-box {
+        background-color: #f8f9fa;
+        border-left: 4px solid #c8a97e;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        font-style: italic;
+    }
+
+    @@media (max-width: 991px) {
+        .feature-item
+
+    {
+        margin-bottom: 15px;
+    }
+
+    }
+</style>
+
+<!-- Link to Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="page-heading header-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Ahilik Nedir?</h1>
+                <span class="highlight-subtitle">Anadolu'nun Kadim Meslek ve Dayanışma Teşkilatı</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="info-card mb-4">
+                <h2>Ahilik Nedir?</h2>
+                <p>
+                    Ahilik, 13. yüzyılda Anadolu'da Ahi Evran-ı Veli tarafından kurulan, esnaf ve sanatkârları içine alan, onları belli kurallar içerisinde teşkilatlandıran sosyal, kültürel, ekonomik, dini ve politik işlevleri olan bir kurumdur. "Ahi" kelimesi Arapça'da "kardeşim" anlamına gelir ve kurumun temelinde kardeşlik, dayanışma ve yardımlaşma ilkeleri yatar.
+                </p>
+            </div>
+
+            <div class="info-card mb-4">
+                <h3>Ahiliğin Tarihçesi</h3>
+                <p>
+                    Ahilik, Anadolu Selçukluları döneminde Ahi Evran-ı Veli'nin önderliğinde gelişmiştir. Kökenlerini İslam dünyasındaki fütüvvet teşkilatından ve Türk geleneklerinden almıştır. Özellikle Moğol istilası sonrası sosyal düzenin sağlanmasında ve ekonomik hayatın canlanmasında önemli roller üstlenmiştir.
+                </p>
+                <div class="quote-box">
+                    <i class="fas fa-quote-left fa-lg text-muted me-2"></i>
+                    Ahilik, sadece bir meslek örgütü değil, aynı zamanda toplumsal düzeni sağlayan, ahlaki değerleri yükselten bir yaşam felsefesidir.
+                    <i class="fas fa-quote-right fa-lg text-muted ms-2"></i>
+                </div>
+            </div>
+
+            <div class="info-card mb-4">
+                <h3>Ahi Evran-ı Veli Kimdir?</h3>
+                <p>
+                    Ahi Evran-ı Veli (1171-1261), Ahilik teşkilatının kurucusudur. Asıl adı Mahmud bin Ahmed el-Hoyi'dir. Horasan'dan Anadolu'ya göç etmiş, önce Kayseri'ye yerleşmiş, daha sonra Kırşehir'de yaşamıştır. Debbağlık (dericilik) mesleğiyle uğraşmış, hem dini ilimlerde hem de tıp ve kimya gibi bilimlerde derin bilgi sahibi olmuştur. Anadolu'da sosyal ve ekonomik düzeni sağlamak amacıyla Ahilik teşkilatını kurmuştur.
+                </p>
+            </div>
+
+            <div class="info-card mb-4">
+                <h3>Ahiliğin İşleyişi</h3>
+                <p>
+                    Ahilik sistemi, mesleki eğitimi "çırak-kalfa-usta" hiyerarşisi içinde verir. Bu sadece mesleki bir eğitim değil, aynı zamanda ahlaki bir eğitimdir. Ahi zaviyeleri (Ahi Evleri), hem meslek eğitiminin verildiği hem de sosyal etkinliklerin düzenlendiği mekânlardır. Esnaf ve sanatkârlar arasındaki ilişkiler, mesleğe kabul törenleri ve kuralları, fütüvvetnamelerde (Ahilik ilke ve kurallarını içeren kitaplar) belirlenmiştir.
+                </p>
+            </div>
+
+            <div class="info-card mb-4">
+                <h3>Ahiliğin Değerleri</h3>
+                <ul class="custom-list">
+                    <li><i class="fas fa-check-circle"></i> Doğruluk ve dürüstlük</li>
+                    <li><i class="fas fa-lock"></i> Güvenilirlik</li>
+                    <li><i class="fas fa-hand-holding-heart"></i> Cömertlik</li>
+                    <li><i class="fas fa-praying-hands"></i> Alçakgönüllülük</li>
+                    <li><i class="fas fa-hands-helping"></i> İşbirliği ve dayanışma</li>
+                    <li><i class="fas fa-tasks"></i> Disiplin ve düzen</li>
+                    <li><i class="fas fa-medal"></i> Kaliteli üretim</li>
+                    <li><i class="fas fa-user-shield"></i> Tüketici hakları</li>
+                    <li><i class="fas fa-users"></i> Sosyal sorumluluk</li>
+                    <li><i class="fas fa-home"></i> Misafirperverlik</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>Ahiliğin Günümüzdeki Önemi</h3>
+                <p>
+                    Ahilik sistemi, günümüz esnaf ve sanatkâr odaları, ticaret odaları ve meslek kuruluşlarının temelini oluşturur. Ayrıca, mesleki eğitim kurumları, iş ahlakı, kalite standartları ve sosyal sorumluluk anlayışı gibi modern kavramlara da ışık tutmaktadır. Günümüzde çeşitli etkinliklerle yaşatılmaya çalışılan Ahilik kültürü, toplumsal dayanışma, kaliteli hizmet ve üretim anlayışının geliştirilmesi açısından hâlâ büyük önem taşımaktadır.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Kardeşlik</h4>
+                    <span>Ahiliğin Temeli</span>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Çırak-Kalfa-Usta</h4>
+                    <span>Mesleki Hiyerarşi</span>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-mosque"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Ahi Zaviyeleri</h4>
+                    <span>Eğitim Merkezleri</span>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>40 Kural</h4>
+                    <span>Meslek İlkeleri</span>
+                </div>
+            </div>
+
+            <div class="info-card mt-4">
+                <h4 class="text-center mb-3" style="color: #1e3a5c;">Ahi Ahlakı</h4>
+                <p class="text-center">
+                    <i class="fas fa-quote-left fa-lg text-muted me-2"></i>
+                    Elini açık tut, kapını açık tut, sofranı açık tut.
+                    <i class="fas fa-quote-right fa-lg text-muted ms-2"></i>
+                </p>
+            </div>
+
+            <div class="info-card mt-4">
+                <h4 class="text-center mb-3" style="color: #1e3a5c;">Ahilik İlkeleri</h4>
+                <ul class="custom-list">
+                    <li><i class="fas fa-leaf"></i> İnsan-ı kâmil olmak</li>
+                    <li><i class="fas fa-balance-scale"></i> Adaleti gözetmek</li>
+                    <li><i class="fas fa-heart"></i> Sevgi ve saygıya önem vermek</li>
+                    <li><i class="fas fa-star"></i> İşinde mükemmelliği aramak</li>
+                </ul>
+            </div>
+
+            <div class="info-card mt-4">
+                <h4 class="text-center mb-3" style="color: #1e3a5c;">Ahilik Haftası</h4>
+                <p class="text-center">
+                    Her yıl Eylül ayının üçüncü haftasında kutlanmaktadır.
+                </p>
+                <div class="text-center mt-3">
+                    <i class="fas fa-calendar-alt fa-3x" style="color: #c8a97e;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

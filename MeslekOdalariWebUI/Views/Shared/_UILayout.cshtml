@@ -1,12 +1,11 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,83 +22,298 @@
     <link rel="stylesheet" href="~/VillaAgency-1.0.0/assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="~/VillaAgency-1.0.0/assets/css/owl.css">
     <link rel="stylesheet" href="~/VillaAgency-1.0.0/assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-TemplateMo 591 villa agency
+    <!-- Dropdown için geliştirilmiş özel CSS -->
+    <style>
+        .main-nav .nav .dropdown-menu {
+            background-color: #f0f0f0;
+            border-radius: 0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none;
+            min-width: 200px;
+            border-top: 3px solid #f35525;
+            animation: fadeIn 0.3s ease;
+            position: absolute;
+            text-align: left;
+            z-index: 1000;
+            left: 0 !important;
+            top: 100%;
+            width: max-content !important;
+        }
 
-https://templatemo.com/tm-591-villa-agency
+        @@keyframes fadeIn {
+            from
 
--->
-  </head>
+        {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+
+        .main-nav .nav .dropdown-menu .dropdown-item {
+            padding: 4px 12px !important; /* Üst padding'i artırdık */
+            margin: 0 !important;
+            color: #000 !important;
+            font-size: 18px !important;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.2s ease-in-out;
+            background-color: transparent !important;
+            border-radius: 0 !important;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            line-height: 1.1 !important;
+            border: none !important;
+            height: auto !important;
+            white-space: nowrap; /* kelimeler satıra sığsın, taşmasın */
+        }
+
+            .main-nav .nav .dropdown-menu .dropdown-item:hover {
+                background-color: #e0e0e0 !important;
+                color: #f35525 !important;
+                padding-left: 15px !important;
+            }
+
+                .main-nav .nav .dropdown-menu .dropdown-item:hover::before {
+                    content: "›";
+                    position: absolute;
+                    left: 8px;
+                    color: #f35525;
+                    font-weight: bold;
+                }
+
+        .main-nav .nav .dropdown-menu li:nth-child(2) > .dropdown-item:hover {
+            background-color: #e0e0e0 !important;
+            color: #f35525 !important;
+            padding-left: 15px !important;
+            /* Daha hoş bir görünüm için ekstra stil */
+            padding-top: 12px !important;
+            padding-bottom: 6px !important;
+            border-radius: 4px;
+        }
+
+        .main-nav .nav .dropdown-menu li:nth-child(1) > .dropdown-item:hover {
+            background-color: #e0e0e0 !important;
+            color: #f35525 !important;
+            padding-left: 15px !important;
+            /* Daha hoş bir görünüm için ekstra stil */
+            padding-top: 12px !important;
+            padding-bottom: 6px !important;
+            border-radius: 4px;
+        }
+
+        .main-nav .nav .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 5px;
+            vertical-align: middle;
+            content: "";
+            border-top: 4px solid #1e1e1e;
+            border-right: 4px solid transparent;
+            border-bottom: 0;
+            border-left: 4px solid transparent;
+            transition: transform 0.3s;
+        }
+
+        .main-nav .nav .nav-item.dropdown:hover .dropdown-toggle::after {
+            transform: rotate(180deg);
+            border-top-color: #f35525;
+        }
+
+        .main-nav .nav .nav-item.dropdown:hover .dropdown-toggle {
+            color: #f35525;
+        }
+
+        .main-nav .nav .nav-item.dropdown {
+            position: relative;
+        }
+
+        @@media (max-width: 991px) {
+            .main-nav .nav .dropdown-menu
+
+        {
+            background-color: rgba(250, 250, 250, 0.95);
+            margin-top: 0;
+            padding: 0 15px;
+            border-radius: 0;
+            box-shadow: none;
+            border-top: none;
+        }
+
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 2rem !important;
+        }
+
+        .main-nav ul.nav > li > a {
+            font-size: 20px !important; /* Mevcut */
+            padding: 0 20px; /* YENİ - Menü öğeleri arasında eşit boşluk */
+            height: 100px; /* YENİ - Tüm menü öğelerinin eşit yükseklikte olması */
+            line-height: 100px; /* YENİ - Dikey hizalama için */
+            display: inline-block; /* YENİ - Blok element olarak görüntülenme */
+            font-weight: 400; /* YENİ - Tutarlı font kalınlığı */
+            text-transform: capitalize; /* YENİ - Metin dönüşümü tutarlılığı */
+            color: #1e1e1e; /* YENİ - Renk tutarlılığı */
+            transition: all 0.3s ease 0s; /* YENİ - Animasyon geçişleri için */
+        }
+
+        .main-nav .dropdown-menu .dropdown-item {
+            font-size: 18px !important;
+        }
+
+        footer p {
+            font-size: 18px !important;
+        }
+
+        .main-nav .nav-item.dropdown .dropdown-menu {
+            left: 0;
+            margin-left: 0;
+        }
+
+     
+
+        /* İkinci öğe için padding-top ve margin-top düzenlemeleri */
+        .main-nav .nav .dropdown-menu li:nth-child(2) > .dropdown-item {
+            font-weight: 600 !important;
+            padding-top: 0px !important;
+            margin-top: -20px !important;
+            line-height: 1.1 !important;
+        }
+
+        .main-nav .nav .dropdown-menu li:nth-child(1) > .dropdown-item {
+            font-weight: 600 !important;
+            padding-top: 0px !important;
+            margin-top: 20px !important;
+            line-height: 1.1 !important;
+        }
+
+        main-nav ul.nav > li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav ul.nav {
+            display: flex;
+            align-items: center;
+            height: 100px;
+        }
+
+            /* YENİ - Simge stillerinin tutarlı olması için */
+            .main-nav ul.nav > li > a i {
+                margin-right: 5px;
+            }
+
+            * YENİ - Hover ve active durumları için tutarlı görünüm */
+            .main-nav ul.nav > li > a.active,
+            .main-nav ul.nav > li > a:hover {
+                color: #f35525;
+            }
+
+    </style>
+ 
+</head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
-
-  @await Component.InvokeAsync("_UISubHeader")
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <h1>Odalar</h1>
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                      <li><a href="index.html" class="active">AnaSayfa</a></li>
-                      <li><a href="#properties">Meslek Odalarımız</a></li>
-                     
-                      <li><a href="#contact">İletişim</a></li>
-                      <li><a href="#"><i class="fa fa-calendar"></i> Detaylar</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+    <!-- ***** Preloader End ***** -->
+    @await Component.InvokeAsync("_UISubHeader")
 
- @RenderBody()
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h1>ElazığESO</h1>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="#" class="active">AnaSayfa</a></li>
+                            <li><a href="#properties">Odalar</a></li>
+                            <li><a href="/UIProject/Index">Projeler</a></li>
+                            <li><a href="#">Mevzuat</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" href="#" id="ahilikDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ahilik
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="ahilikDropdown">
+                                    <li><a class="dropdown-item" href="/Ahilik/AhilikKulturu">Ahilik Kültürü</a></li>
+                                    <li><a class="dropdown-item" href="/Ahilik/AhilikNedir">Ahilik Nedir?</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact">İletişim</a></li>
+                            <li><a href="/Uye/KayitBilgileri">Üye Kayıt İşlemleri</a></li>
+                        </ul>
 
-  <footer>
-    <div class="container">
-      <div class="col-lg-8">
-        <p>© @DateTime.Now.Year Meslek Odaları.Ltd,Tüm Hakları Saklıdır. 
-        
-        Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a> Distribution: <a href="https://themewagon.com">ThemeWagon</a></p>
-      </div>
-    </div>
-  </footer>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    @RenderBody()
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
+    <footer>
+        <div class="container">
+            <div class="col-lg-8">
+                <p>
+                    © @DateTime.Now.Year Meslek Odaları.Ltd,Tüm Hakları Saklıdır.
+
+                    Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a> Distribution: <a href="https://themewagon.com">ThemeWagon</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
     <script src="~/VillaAgency-1.0.0/vendor/jquery/jquery.min.js"></script>
     <script src="~/VillaAgency-1.0.0/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/VillaAgency-1.0.0/assets/js/isotope.min.js"></script>
     <script src="~/VillaAgency-1.0.0/assets/js/owl-carousel.js"></script>
     <script src="~/VillaAgency-1.0.0/assets/js/counter.js"></script>
     <script src="~/VillaAgency-1.0.0/assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  </body>
+    <!-- Dropdown animasyonu için ek JavaScript -->
+    <script>
+        $(document).ready(function() {
+          // Dropdown açılış ve kapanış animasyonunu geliştir
+          $('.dropdown').on('show.bs.dropdown', function() {
+            $(this).find('.dropdown-menu').addClass('animated');
+          });
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
 </html>

@@ -1,0 +1,40 @@
+﻿@model List<ResultRegulationDto>
+@{
+    ViewData["Title"] = "Mevzuat Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-hover table-bordered">
+    @{
+        int count = 0;
+    }
+    <tr>
+        <th>#</th>
+        <th>Esnaf Ve Sanatkarlar Kanunu Tarihçesi</th>
+        <th>5362 Sayılı Esnaf Ve Sanatkarlar Kanunu</th>
+        <th>Yönetmelikler</th>
+        <th>Genelgeler</th>
+        <th>Tebliğler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td>@item.HistoryofTradesmenandCraftsmenLawUrl</td>
+            <td>@item.TradesmenArtisansLawNo5362Url</td>
+            <td>@item.RegulationsUrl</td>
+            <td>@item.CircularsUrl</td>
+            <td>@item.NotificationsUrl</td>
+            <td>
+                <a asp-controller="Regulation" asp-action="DeleteRegulation" asp-route-id="@item.Id" class="btn btn-outline-danger">Sil</a>
+                <a asp-controller="Regulation" asp-action="UpdateRegulation" asp-route-id="@item.Id" class="btn btn-outline-info">Güncelle</a>
+            </td>
+        </tr>
+
+    }
+
+</table>
+<a asp-controller="Regulation" asp-action="CreateRegulation" class="btn btn-outline-dark">Yeni Mevzuat Ekle</a>
+
+

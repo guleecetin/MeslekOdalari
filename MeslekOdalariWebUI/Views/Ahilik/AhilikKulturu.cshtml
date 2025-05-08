@@ -1,0 +1,276 @@
+﻿@{
+    ViewData["Title"] = "Ahilik Kültürü";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+
+<!-- Custom CSS -->
+<style>
+    .page-heading {
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.55)), url('/api/placeholder/1920/800');
+        background-position: center;
+        background-size: cover;
+        padding: 150px 0;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .page-heading h1 {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 64px !important;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+    .highlight-subtitle {
+        font-size: 32px !important;
+        color: #ffcc66;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        font-weight: 600;
+        display: inline-block;
+        padding: 5px 15px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        border-left: 4px solid #ffcc66;
+        border-right: 4px solid #ffcc66;
+    }
+
+    h2, h3 {
+        color: #1e3a5c;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 12px;
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+        h2:after, h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: #c8a97e;
+        }
+
+    p {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    .custom-list {
+        list-style: none;
+        padding-left: 5px;
+        margin-bottom: 30px;
+    }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+        }
+
+            .custom-list li i {
+                position: absolute;
+                left: 0;
+                top: 5px;
+                color: #c8a97e;
+                font-size: 18px;
+            }
+
+    .info-card {
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        padding: 30px;
+        transition: all 0.3s ease;
+        margin-bottom: 25px;
+        border-left: 6px solid #c8a97e;
+    }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+    .feature-item {
+        display: flex;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+    }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+    .feature-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        background-color: #1e3a5c;
+        color: #fff;
+        font-size: 32px;
+    }
+
+    .feature-content {
+        padding: 20px;
+        flex-grow: 1;
+    }
+
+        .feature-content h4 {
+            color: #1e3a5c;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature-content span {
+            color: #6c757d;
+            font-size: 16px;
+        }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .section-title h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+        }
+
+    @@media (max-width: 991px) {
+        .feature-item
+
+    {
+        margin-bottom: 15px;
+    }
+
+    }
+</style>
+
+<!-- Link to Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="page-heading header-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Ahilik Kültürü</h1>
+                <span class="highlight-subtitle">Anadolu'nun Köklü Meslek ve Esnaf Geleneği</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="info-card mb-4">
+                <h2>Ahilik Kültürü Hakkında</h2>
+                <p>
+                    Ahilik, 13. yüzyılda Anadolu'da kurulmuş, zanaatkârları ve esnafları bir araya getiren, onların mesleki gelişimini, ahlaki eğitimini ve sosyal dayanışmasını sağlayan bir teşkilattır.
+                    Ahilik, iş ahlakını, kaliteli üretimi, sosyal yardımlaşmayı ve dayanışmayı esas alan bir kültür olarak yüzyıllar boyunca varlığını sürdürmüştür.
+                </p>
+            </div>
+
+            <div class="info-card mb-4">
+                <h3>Ahilik Kültürünün Temel İlkeleri</h3>
+                <ul class="custom-list">
+                    <li><i class="fas fa-check-circle"></i> Doğruluk ve dürüstlük</li>
+                    <li><i class="fas fa-hammer"></i> Meslekte ustalık ve kaliteli üretim</li>
+                    <li><i class="fas fa-hands-helping"></i> Kardeşlik ve dayanışma</li>
+                    <li><i class="fas fa-hand-holding-heart"></i> Cömertlik ve misafirperverlik</li>
+                    <li><i class="fas fa-graduation-cap"></i> Ahlaki ve mesleki eğitim</li>
+                    <li><i class="fas fa-users"></i> Sosyal sorumluluk</li>
+                </ul>
+            </div>
+
+            <div class="info-card mb-4">
+                <h3>Ahilik Teşkilatı ve Yapısı</h3>
+                <p>
+                    Ahilik teşkilatı, yamak, çırak, kalfa ve usta hiyerarşisine dayanır. Bu süreç sadece mesleki bir eğitim değil, aynı zamanda ahlaki bir olgunlaşma sürecidir. Ahi teşkilatının başında bulunan "Ahi Baba" veya "Şeyh", meslek mensuplarının sorunlarıyla ilgilenir, anlaşmazlıkları çözer ve teşkilatı yönetirdi.
+                </p>
+            </div>
+
+            <div class="info-card mb-4">
+                <h3>Ahiliğin Türk Toplumuna Katkıları</h3>
+                <p>
+                    Ahilik, Türk toplumunun sosyal, ekonomik ve kültürel yapısında derin izler bırakmıştır. Esnaf ve zanaatkârlar arasında dayanışmayı sağlamış, kaliteli üretimi teşvik etmiş, meslek etiğini yerleştirmiş ve sosyal yaşamda bir düzen oluşturmuştur. Ayrıca, şehirlerin ekonomik kalkınmasına ve güvenliğine katkıda bulunmuştur.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Günümüzde Ahilik</h3>
+                <p>
+                    Bugün Ahilik kültürü, her yıl düzenlenen Ahilik Haftası kutlamalarıyla yaşatılmaktadır. Ayrıca, geleneksel mesleklerin korunması, iş ahlakının geliştirilmesi ve mesleki eğitimin desteklenmesi konularında referans alınmaktadır. Modern meslek odaları ve esnaf teşkilatları, Ahilik geleneğinin günümüzdeki temsilcileri olarak görülebilir.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Ahi Evran</h4>
+                    <span>Ahiliğin Kurucusu</span>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>13. Yüzyıl</h4>
+                    <span>Kuruluş Dönemi</span>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Fütüvvetname</h4>
+                    <span>Ahilik İlkeleri</span>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="feature-content">
+                    <h4>Şed Kuşanma</h4>
+                    <span>Ustalık Töreni</span>
+                </div>
+            </div>
+
+            <div class="info-card mt-4">
+                <h4 class="text-center mb-3">Ahilik Değerleri</h4>
+                <p class="text-center">
+                    <i class="fas fa-quote-left fa-lg text-muted me-2"></i>
+                    İşinde doğru, sözünde dürüst, üretiminde kaliteli olmak.
+                    <i class="fas fa-quote-right fa-lg text-muted ms-2"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

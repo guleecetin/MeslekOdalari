@@ -1,0 +1,33 @@
+﻿@model CreateRegulationDto
+@{
+    ViewData["Title"] = "Yeni Mevzuat Ekleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Esnaf Ve Sanatkarlar Kanunu Tarihçesi</label>
+    <input type="text" asp-for="HistoryofTradesmenandCraftsmenLawUrl" class="form-control" />
+    <br />
+
+    <label>5362 Sayılı Esnaf Ve Sanatkarlar Kanunu</label>
+    <input type="text" asp-for="TradesmenArtisansLawNo5362Url" class="form-control" />
+    <br />
+
+    <label>Yönetmelikler</label>
+    <input type="text" asp-for="RegulationsUrl" class="form-control" />
+    <br />
+
+    <label>Genelgeler</label>
+    <input type="text" asp-for="CircularsUrl" class="form-control" />
+    <br />
+
+    <label>Tebliğler</label>
+    <input type="text" asp-for="NotificationsUrl" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-dark">Kaydet</button>
+
+</form>
+
+
+

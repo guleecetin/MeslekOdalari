@@ -1,0 +1,171 @@
+﻿@model List<ResultProjectDto>
+@{
+    ViewData["Title"] = "Proje Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Proje Listesi</h3>
+            <p class="text-muted">Sistemdeki tüm projeleri burada görüntüleyebilirsiniz</p>
+        </div>
+        <a asp-controller="Project" asp-action="CreateProject" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-2"></i>Yeni Proje Ekle
+        </a>
+    </div>
+
+    <!-- Statistics Row -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4">
+                <div class="card-body d-flex align-items-center justify-content-between">
+                    <div>
+                        <h4 class="mb-0">@Model.Count()</h4>
+                        <div class="small">Toplam Projeler</div>
+                    </div>
+                    <i class="bi bi-kanban fs-1 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Table Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary"><i class="bi bi-list-ul me-2"></i>Proje Listesi</h5>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="bg-light">
+                        <tr>
+                            <th width="5%" class="ps-4">#</th>
+                            <th width="15%">Resim</th>
+                            <th width="25%">Başlık</th>
+                            <th width="30%">Açıklama</th>
+                            <th width="25%" class="text-end pe-4">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int count = 0;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <td class="ps-4 fw-bold">@count</td>
+                                <td>
+                                    <img src="@item.ImageUrl" class="img-thumbnail rounded shadow-sm" style="max-height:75px;max-width:75px" alt="@item.Title" />
+                                </td>
+                                <td>@item.Title</td>
+                                <td>
+                                    @if (item.Description != null && item.Description.Length > 100)
+                                    {
+                                        @(item.Description.Substring(0, 100) + "...")
+                                    }
+                                    else
+                                    {
+                                        @item.Description
+                                    }
+                                </td>
+                                <td class="text-end pe-4">
+                                    <a asp-controller="Project" asp-action="UpdateProject" asp-route-id="@item.Id"
+                                       class="btn btn-sm btn-outline-info me-2">
+                                        <i class="bi bi-pencil-square me-1"></i>Güncelle
+                                    </a>
+                                    <button onclick="deleteProject(this)" id="@item.Id" data-title="@item.Title"
+                                            class="btn btn-sm btn-outline-danger">
+                                        <i class="bi bi-trash me-1"></i>Sil
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                        @if (count == 0)
+                        {
+                            <tr>
+                                <td colspan="5" class="text-center py-5">
+                                    <div class="py-4">
+                                        <i class="bi bi-kanban fs-1 text-muted"></i>
+                                        <h5 class="mt-3">Henüz proje bulunmamaktadır</h5>
+                                        <p class="text-muted">Yeni bir proje eklemek için "Yeni Proje Ekle" butonunu kullanabilirsiniz</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .table th, .table td {
+        vertical-align: middle;
+        font-size: 1.15rem;
+    }
+
+    .card-body, .card-header, .btn, .small, .text-muted, h3, h4, h5, p {
+        font-size: 1.15rem;
+    }
+
+    .btn-sm {
+        font-size: 1.05rem;
+    }
+
+    .btn-outline-primary:hover,
+    .btn-outline-info:hover,
+    .btn-outline-danger:hover {
+        color: white;
+    }
+
+    .img-thumbnail {
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+
+        .img-thumbnail:hover {
+            transform: scale(1.05);
+        }
+</style>
+
+<script>
+    function deleteProject(button) {
+        var id = button.getAttribute("id");
+        var title = button.getAttribute("data-title");
+
+        Swal.fire({
+            title: "Projeyi Silmek İstediğinizden Emin Misiniz?",
+            html: '<strong>' + title + '</strong> başlıklı projeyi silmek üzeresiniz. Bu işlem geri alınamaz.',
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Evet, Sil!",
+            cancelButtonText: "İptal"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "/Project/DeleteProject/" + id;
+            }
+        });
+    }
+
+    // Sayfa yüklendiğinde çalışacak kod
+    $(document).ready(function() {
+        // Tooltip etkinleştirme
+        $('[data-bs-toggle="tooltip"]').tooltip();
+
+        // Tablo satırlarına hover animasyonu
+        $('tbody tr').hover(
+            function() {
+                $(this).css('transition', 'background-color 0.3s').css('background-color', '#f8f9fa');
+            },
+            function() {
+                $(this).css('background-color', '');
+            }
+        );
+    });
+</script>

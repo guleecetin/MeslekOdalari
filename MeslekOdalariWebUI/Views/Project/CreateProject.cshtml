@@ -1,0 +1,205 @@
+﻿@model CreateProjectDto
+@{
+    ViewData["Title"] = "Yeni Proje Ekleme";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Yeni Proje Ekle</h3>
+            <p class="text-muted">Sisteme yeni bir proje eklemek için aşağıdaki formu doldurunuz</p>
+        </div>
+        <a asp-controller="Project" asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Listeye Dön
+        </a>
+    </div>
+
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary"><i class="bi bi-plus-circle me-2"></i>Proje Bilgileri</h5>
+        </div>
+        <div class="card-body p-4">
+            <form method="post" id="projectForm">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="ImageUrl" class="form-label fw-bold">Resim URL</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-image"></i></span>
+                                <input type="text" asp-for="ImageUrl" class="form-control form-control-lg" placeholder="Resim bağlantısını giriniz" />
+                            </div>
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                            <div class="form-text">Proje için görsel URL'si ekleyin</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="Title" class="form-label fw-bold">Başlık</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-type"></i></span>
+                                <input type="text" asp-for="Title" class="form-control form-control-lg" placeholder="Proje başlığını giriniz" />
+                            </div>
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                            <div class="form-text">Projenin ana başlığını ekleyin</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <div class="form-group">
+                        <label for="Description" class="form-label fw-bold">Açıklama</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="bi bi-text-paragraph"></i></span>
+                            <textarea asp-for="Description" class="form-control form-control-lg" rows="5" placeholder="Proje açıklamasını giriniz"></textarea>
+                        </div>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                        <div class="form-text">Projenin detaylı açıklamasını ekleyin</div>
+                    </div>
+                </div>
+
+                <div class="form-preview mt-5 mb-4" id="imagePreview" style="display: none;">
+                    <h6 class="text-muted mb-3">Resim Önizleme:</h6>
+                    <div class="text-center p-3 bg-light rounded">
+                        <img id="previewImage" src="" class="img-fluid rounded shadow-sm" style="max-height: 200px;" alt="Proje Resmi" />
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <button type="button" class="btn btn-outline-secondary btn-lg" onclick="resetForm()">
+                        <i class="bi bi-x-circle me-2"></i>Temizle
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="bi bi-check-circle me-2"></i>Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control, .input-group-text {
+        font-size: 1.1rem;
+    }
+
+    .form-control-lg {
+        padding: 0.75rem 1rem;
+    }
+
+    .form-label {
+        font-size: 1.15rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-text {
+        font-size: 0.95rem;
+        color: #6c757d;
+    }
+
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.15rem;
+    }
+
+    .card-body, .card-header, .btn, .text-muted, h3, h5, p {
+        font-size: 1.15rem;
+    }
+
+    .input-group-text {
+        background-color: #f8f9fa;
+    }
+
+    .form-control:focus {
+        border-color: #80bdff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .form-preview {
+        transition: all 0.3s ease;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        // Resim URL değiştiğinde önizleme göster
+        $("#ImageUrl").on("input", function() {
+            var imageUrl = $(this).val();
+            if (imageUrl) {
+                $("#previewImage").attr("src", imageUrl);
+                $("#imagePreview").fadeIn();
+            } else {
+                $("#imagePreview").fadeOut();
+            }
+        });
+
+        // Form doğrulama
+        $("#projectForm").submit(function(event) {
+            var isValid = true;
+
+            // Title kontrol
+            if ($("#Title").val() === "") {
+                $("#Title").addClass("is-invalid");
+                $("<div class='invalid-feedback'>Başlık alanı zorunludur</div>").insertAfter("#Title");
+                isValid = false;
+            } else {
+                $("#Title").removeClass("is-invalid");
+            }
+
+            // Description kontrol
+            if ($("#Description").val() === "") {
+                $("#Description").addClass("is-invalid");
+                $("<div class='invalid-feedback'>Açıklama alanı zorunludur</div>").insertAfter("#Description");
+                isValid = false;
+            } else {
+                $("#Description").removeClass("is-invalid");
+            }
+
+            if (!isValid) {
+                event.preventDefault();
+
+                // Hata mesajı göster
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Form Eksik',
+                    text: 'Lütfen zorunlu alanları doldurunuz!',
+                    confirmButtonColor: '#3085d6'
+                });
+            } else {
+                // Başarılı mesaj
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Form Gönderiliyor',
+                    text: 'Proje kaydediliyor...',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            }
+        });
+    });
+
+    // Form temizleme fonksiyonu
+    function resetForm() {
+        Swal.fire({
+            title: "Formu Temizle",
+            text: "Tüm girdiğiniz bilgiler silinecek. Emin misiniz?",
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Evet, Temizle",
+            cancelButtonText: "İptal"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $("#Title").val("");
+                $("#ImageUrl").val("");
+                $("#Description").val("");
+                $("#imagePreview").fadeOut();
+                $(".is-invalid").removeClass("is-invalid");
+                $(".invalid-feedback").remove();
+            }
+        });
+    }
+</script>

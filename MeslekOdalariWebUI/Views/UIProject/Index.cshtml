@@ -1,0 +1,434 @@
+﻿@model List<ResultProjectDto>
+@{
+    ViewData["Title"] = "Projelerimiz";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<!-- Hero Section - Modernize edildi -->
+<section class="hero-section text-white py-6 mb-5 position-relative">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-index-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="icon-badge mb-4">
+                    <i class="bi bi-building"></i>
+                </div>
+                <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInDown">Projelerimiz</h1>
+                <p class="lead mb-4 animate__animated animate__fadeInUp">Hayallerinizi gerçeğe dönüştürdüğümüz çalışmalarımızı keşfedin</p>
+                <div class="d-flex justify-content-center gap-3 animate__animated animate__fadeInUp animate__delay-1s">
+                    <a href="#projects" class="btn btn-light btn-lg px-4">
+                        <i class="bi bi-collection me-2"></i>Projeleri Gör
+                    </a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+                        <i class="bi bi-chat-dots me-2"></i>İletişime Geç
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+            <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,42.7C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Projects Section - Daha modern kartlar -->
+<section id="projects" class="py-6">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <h2 class="section-title fw-bold mb-3">Başarı Hikayelerimiz</h2>
+                <div class="title-separator mx-auto mb-4"></div>
+                <p class="text-muted">En son tamamladığımız ve devam eden projelerimizle tanışın</p>
+            </div>
+        </div>
+
+        @if (Model.Count > 0)
+        {
+            <div class="row g-4">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="project-card card h-100 border-0 shadow-hover">
+                            <div class="position-relative card-img-wrapper">
+                                <img src="@item.ImageUrl" class="card-img-top" alt="@item.Title" onerror="this.src='/img/default-project.jpg'">
+                                <div class="project-card-overlay">
+                                    <div class="project-actions">
+                                        <a asp-controller="UIProject" asp-action="ProjectDetail" asp-route-id="@item.Id" class="btn btn-primary btn-circle">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <h4 class="card-title fw-bold">@item.Title</h4>
+                                <p class="card-text text-muted">
+                                    @(item.Description.Length > 100 ? item.Description.Substring(0, 100) + "..." : item.Description)
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0 p-4 pt-0">
+                                <a asp-controller="UIProject" asp-action="ProjectDetail" asp-route-id="@item.Id" class="btn btn-outline-primary w-100 rounded-pill">
+                                    <i class="bi bi-arrow-right me-2"></i>Detayları İncele
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-12">
+                    <div class="empty-state text-center p-5">
+                        <div class="empty-state-icon mb-4">
+                            <i class="bi bi-clipboard-data"></i>
+                        </div>
+                        <h3>Henüz Proje Bulunamadı</h3>
+                        <p class="text-muted mb-4">Projelerimiz yakında burada listelenecek. Bizi takipte kalın!</p>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-primary rounded-pill px-4">
+                            <i class="bi bi-house me-2"></i>Ana Sayfaya Dön
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<!-- Call To Action - Daha çekici hale getirildi ve iletişim bölümü olarak tanımlandı -->
+<section id="contact" class="cta-section py-6 position-relative bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <h2 class="section-title fw-bold mb-3">Bizimle İletişime Geçin</h2>
+                <div class="title-separator mx-auto mb-4"></div>
+                <p class="text-muted">Sorularınız veya projeleriniz için bize ulaşın</p>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-hover text-center p-4">
+                    <div class="card-body">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="bi bi-geo-alt text-primary fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Adresimiz</h4>
+                        <p class="text-muted mb-0">Atatürk Caddesi No:123<br>Merkez / İSTANBUL</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-hover text-center p-4">
+                    <div class="card-body">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="bi bi-telephone text-primary fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Telefon</h4>
+                        <p class="text-muted mb-2">0212 123 45 67</p>
+                        <p class="text-muted mb-0">0555 987 65 43</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-hover text-center p-4">
+                    <div class="card-body">
+                        <div class="icon-circle mb-4 mx-auto">
+                            <i class="bi bi-envelope text-primary fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">E-posta</h4>
+                        <p class="text-muted mb-2">info@sirketiniz.com</p>
+                        <p class="text-muted mb-0">destek@sirketiniz.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-wrapper bg-primary text-white p-5 rounded-lg shadow-lg">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Hayalinizdeki Projeyi Hayata Geçirelim</h2>
+                    <p class="lead mb-0">Size özel çözümler sunmak için hazırız. Hemen iletişime geçin!</p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Genel Stiller */
+    .py-6 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .z-index-1 {
+        z-index: 1;
+    }
+
+    .rounded-lg {
+        border-radius: 1rem;
+    }
+
+    .shadow-hover {
+        transition: all 0.3s ease;
+    }
+    
+    .shadow-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 1rem 3rem rgba(13, 110, 253, 0.15) !important;
+    }
+
+    /* Hero Section Stilleri */
+    .hero-section {
+        background: linear-gradient(135deg, #0d6efd, #0143a3);
+        padding-top: 7rem;
+        padding-bottom: 8rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQwIiBoZWlnaHQ9IjY0MCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTAgMGgxNDQwdjY0MEgweiIvPjxnIG9wYWNpdHk9Ii4xIiBmaWx0ZXI9InVybCgjYSkiPjxwYXRoIGQ9Ik0xMzcxLjM0IDEzNS42OTJjMzUuMDYgMTA3LjM4OS0xMTQuMDcgMjA4Ljk4LTIyOC4zNSAxNDIuNDMxLTcxLjgyLTQxLjc2Ni0xMjYuNTMtMjA4LjMxMS0yOTcuNDcyLTE4OC44MjlDNjg4LjYwMiAxMDUuNjkgNjY5LjAxMS0xLjcxIDUyOC41NDEuMDI5IDM4OC4wNzIgMS43NjcgMzQ2Ljk4NiAyMTYuMTk3IDMwMi42NjYgMjU0LjYxYy0zMS40MTQgMjcuMTc5LTk3LjAyMy0zLjcxMi0xNDYuMTE1LTQ3LjQ4NC01NS4wODQtNDkuMTM5LTEwMS41ODMtMTYuNzY5LTEzOS4zIDg5LjM4OC05OS4zOTcgMjc5LjA2OCAyNTEuNjYyIDM3Mi45MjMgMzY4LjM2NCAzNzcuNzIzIDIzNS4zMTMgOS42NzcgMzQyLjU5NS0xODkuNzQgNTA3LjYwNS0zNzIuNzE0IDEwNi43NC0xMTguMjcyIDE5MC0xMjcuMjUgMjQ4LjEyLTY1LjY5NyA1OC4xMiA2MS41NTMgMTk0Ljk3IDEzOC4yMyAyMzAuMDIgMjQ1LjYxNnoiIGZpbGw9IiNmZmYiLz48L2c+PHBhdGggb3BhY2l0eT0iLjA3IiBkPSJNMTIwNC4zNyA1ODcuMDI2Yy0zOS4zOC0xOC4yMDUtODUuNDMtMjUuMDI3LTExNi44NS04LjY4NS0zMS40MiAxNi4zNDItMzguMDQgNTUuNTQyLTgxLjA0IDg1LjM3OC00My4wMSAyOS44MzctMTIyLjM4IDUwLjMxLTE1MS41NiAyMy4yNTMtMjkuMTctMjcuMDU4LTguMTUtMTAxLjY0MyA4LjA4LTE0OS41NTUgMTYuMjItNDcuOTEyIDI3LjY1LTY5LjE2IDEyLjktOTYuNjc5LTE0Ljc1LTI3LjUxOS01NS42Ny02MS4zMS04OC45NC03NC40MDktMzMuMjYtMTMuMDk5LTU4Ljg3LTUuNTA5LTc5LjM4IDcuNjg0LTIwLjUxIDEzLjE5My0zNS45MiAzMS45ODgtNjQuOCAxOS41NTktMjguODktMTIuNDI5LTcxLjI0LTU2LjA4Mi05Ny4wNS0zMi40NjEtMjUuODEgMjMuNjItMzUuMDkgMTE0LjUxMy0zNS41MSAxODIuNDQ3LS40MyA2Ny45MzQgNy45OSAxMTIuOTEgMjIuNDQgMTQzLjI4NWwxODA2LjUxLS43MjZWMzAwLjU4NWMtMTcuNDYgNC4xNy0zMy4yIDkuNjk1LTQ4LjE0IDE2LjU3N2wtMTExLjkxIDUxLjkxOGMtNjEuMjkgMjguNDI0LTk1LjA1IDQ0LjU2OC0xNDYuMTggNjkuMzQtNTEuMTMgMjQuNzczLTExOS42MiA1OC4xNzUtMTc3Ljg4IDcyLjI1NS01OC4yNiAxNC4wOC0xMDYuMjkgOC44MzYtMTQ1LjY3LTkuMzY5LTM5LjM4LTE4LjIwNS04NS40My0yNS4wMjctMTE2Ljg1LTguNjg1LTMxLjQyIDE2LjM0Mi0zOC4wNCA1NS41NDItODEuMDQgODUuMzc4LTQzLjAxIDI5LjgzNy0xMjIuMzggNTAuMzEtMTUxLjU1IDIzLjI1M3oiIGZpbGw9IiNmZmYiLz48ZGVmcz48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI2NDAiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPjxmZVRvb2xib3ggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIi8+PGZlT2Zmc2V0IGR5PSI0Ii8+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTAiLz48ZmVUb29sYm94IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjI1IDAiLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0ic2hhcGUiLz48L2ZpbHRlcj48L2RlZnM+PC9zdmc+');
+        background-size: cover;
+        opacity: 0.8;
+    }
+
+    .wave-bottom {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .wave-bottom svg {
+        display: block;
+        width: 100%;
+    }
+
+    .icon-badge {
+        width: 80px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .icon-badge i {
+        font-size: 2.5rem;
+        color: white;
+    }
+
+    /* Animate.css Minimal */
+    .animate__animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+
+    .animate__delay-1s {
+        animation-delay: 1s;
+    }
+
+    @@keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -30px, 0);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .animate__fadeInDown {
+        animation-name: fadeInDown;
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .animate__fadeInUp {
+        animation-name: fadeInUp;
+    }
+
+    /* Section Title */
+    .section-title {
+        position: relative;
+        color: #333;
+    }
+
+    .title-separator {
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(to right, #0d6efd, #0143a3);
+        border-radius: 2px;
+    }
+
+    /* Project Card Styles */
+    .project-card {
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    .card-img-wrapper {
+        overflow: hidden;
+    }
+
+    .project-card img {
+        height: 250px;
+        object-fit: cover;
+        transition: all 0.8s ease;
+    }
+
+    .project-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .project-card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(13, 110, 253, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .project-card:hover .project-card-overlay {
+        opacity: 1;
+    }
+
+    .project-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .project-badge {
+        background-color: white;
+        color: #0d6efd;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.35rem 1rem;
+        border-radius: 2rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        position: relative;
+    }
+
+    .cta-wrapper {
+        border-radius: 1rem;
+        background: linear-gradient(135deg, #0d6efd, #0143a3);
+    }
+
+    /* Empty State */
+    .empty-state {
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        padding: 4rem 2rem;
+    }
+
+    .empty-state-icon {
+        width: 100px;
+        height: 100px;
+        background-color: rgba(13, 110, 253, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .empty-state-icon i {
+        font-size: 3rem;
+        color: #0d6efd;
+    }
+
+    /* Responsive Button */
+    .rounded-pill {
+        border-radius: 50rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-weight: 500;
+        transition: all 0.3s;
+    }
+
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+
+    .btn-outline-primary {
+        color: #0d6efd;
+        border-color: #0d6efd;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #0d6efd;
+        color: white;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        // Yumuşak kaydırma - hem projects hem contact için
+        $('a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 70
+            }, 500, 'linear');
+        });
+
+        // AOS Animasyon (isteğe bağlı - CDN eklemek gerekir)
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+        }
+    });
+</script>

@@ -20,6 +20,8 @@ namespace MeslekOdalari.DataAccess.Context
         public DbSet<Rooms> Roomss { get; set; }
         public DbSet<Video> Videos { get; set; }
         public DbSet<SubHeader> SubHeaders { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<Regulation> Regulations { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -33,6 +35,8 @@ namespace MeslekOdalari.DataAccess.Context
             modelBuilder.Entity<Rooms>().ToCollection("Roomss");
             modelBuilder.Entity<Video>().ToCollection("Videos");
             modelBuilder.Entity<SubHeader>().ToCollection("SubHeaders");
+            modelBuilder.Entity<Project>().ToCollection("Projects");
+            modelBuilder.Entity<Regulation>().ToCollection("Regulations");
         }
 
     }
