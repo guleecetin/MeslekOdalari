@@ -9,19 +9,19 @@
     <div class="project-overlay"></div>
     <div class="hero-image" style="background-image: url('@Model.ImageUrl');"></div>
     <div class="container position-relative z-index-1">
-        <div class="row min-vh-50 align-items-center">
+        <div class="row min-vh-40 align-items-end justify-content-center text-center pb-5">
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb" class="animate__animated animate__fadeIn">
-                    <ol class="breadcrumb mb-3">
+                    <ol class="breadcrumb justify-content-center mb-4">
                         <li class="breadcrumb-item"><a href="/" class="text-white opacity-75">Ana Sayfa</a></li>
                         <li class="breadcrumb-item"><a asp-controller="UIProject" asp-action="Index" class="text-white opacity-75">Projeler</a></li>
                         <li class="breadcrumb-item active text-white" aria-current="page">@Model.Title</li>
                     </ol>
                 </nav>
-                <div class="project-badge mb-3 animate__animated animate__fadeInUp">
+                <div class="project-badge mb-4 animate__animated animate__fadeInUp">
                     <i class="bi bi-building me-2"></i>Tamamlanan Proje
                 </div>
-                <h1 class="display-4 fw-bold text-white mb-3 animate__animated animate__fadeInUp">@Model.Title</h1>
+                <h1 class="display-3 fw-bold text-white mb-3 animate__animated animate__fadeInUp">@Model.Title</h1>
             </div>
         </div>
     </div>
@@ -507,6 +507,50 @@
             padding-top: 3rem !important;
             padding-bottom: 3rem !important;
         }
+    }
+    /* Ek Hero Bölüm Stilleri */
+    .project-hero {
+        height: 50vh; /* Daha küçük yükseklik */
+        min-height: 350px; /* Daha küçük minimum yükseklik */
+    }
+
+        .project-hero .display-3 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    .project-badge {
+        display: inline-block;
+        padding: 8px 20px;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        backdrop-filter: blur(5px);
+    }
+
+    /* Geliştirilmiş overlay */
+    .project-overlay {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 70%);
+    }
+
+    /* Daha küçük ekranlar için */
+    @@media (max-width: 991.98px) {
+        .project-hero
+
+    {
+        height: 40vh;
+        min-height: 300px;
+    }
+
+    .project-hero .display-3 {
+        font-size: 2.2rem;
+    }
+
+
     }
 </style>
 

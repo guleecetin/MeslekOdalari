@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Villa Agency - Real Estate HTML5 Template</title>
+    <title>Elazığ Esnaf Ve Sanatkarlar Odası</title>
 
     <!-- Bootstrap core CSS -->
     <link href="~/VillaAgency-1.0.0/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 
     <!-- Dropdown için geliştirilmiş özel CSS -->
     <style>
+
         .main-nav .nav .dropdown-menu {
             background-color: #f0f0f0;
             border-radius: 0;
@@ -60,7 +61,7 @@
         }
 
         .main-nav .nav .dropdown-menu .dropdown-item {
-            padding: 4px 12px !important; /* Üst padding'i artırdık */
+            padding: 4px 12px !important;
             margin: 0 !important;
             color: #000 !important;
             font-size: 18px !important;
@@ -79,31 +80,47 @@
             white-space: nowrap; /* kelimeler satıra sığsın, taşmasın */
         }
 
-            .main-nav .nav .dropdown-menu .dropdown-item:hover {
-                background-color: #e0e0e0 !important;
-                color: #f35525 !important;
-                padding-left: 15px !important;
-            }
+        /* Tüm dropdown öğeler için aynı stili uygulayalım */
+        .main-nav .nav .dropdown-menu li > .dropdown-item {
+            font-weight: 600 !important;
+            padding-top: 0px !important;
+            margin-top: 20px !important;
+            line-height: 1.1 !important;
+        }
 
-                .main-nav .nav .dropdown-menu .dropdown-item:hover::before {
-                    content: "›";
-                    position: absolute;
-                    left: 8px;
-                    color: #f35525;
-                    font-weight: bold;
-                }
+        /* İlk öğe için margin düzenlemesi (zaten var) */
+        .main-nav .nav .dropdown-menu li:nth-child(1) > .dropdown-item {
+            font-weight: 600 !important;
+            padding-top: 0px !important;
+            margin-top: 20px !important;
+            line-height: 1.1 !important;
+        }
 
-        .main-nav .nav .dropdown-menu li:nth-child(2) > .dropdown-item:hover {
+        /* İkinci ve sonraki öğeler için margin düzenlemesi */
+        .main-nav .nav .dropdown-menu li:not(:first-child) > .dropdown-item {
+            font-weight: 600 !important;
+            padding-top: 0px !important;
+            margin-top: -20px !important;
+            line-height: 1.1 !important;
+        }
+
+        /* Hover stilleri tüm öğeler için */
+        .main-nav .nav .dropdown-menu .dropdown-item:hover {
             background-color: #e0e0e0 !important;
             color: #f35525 !important;
             padding-left: 15px !important;
-            /* Daha hoş bir görünüm için ekstra stil */
-            padding-top: 12px !important;
-            padding-bottom: 6px !important;
-            border-radius: 4px;
         }
 
-        .main-nav .nav .dropdown-menu li:nth-child(1) > .dropdown-item:hover {
+            .main-nav .nav .dropdown-menu .dropdown-item:hover::before {
+                content: "›";
+                position: absolute;
+                left: 8px;
+                color: #f35525;
+                font-weight: bold;
+            }
+
+        /* Tüm öğeler için hover durumu */
+        .main-nav .nav .dropdown-menu li > .dropdown-item:hover {
             background-color: #e0e0e0 !important;
             color: #f35525 !important;
             padding-left: 15px !important;
@@ -157,15 +174,15 @@
         }
 
         .main-nav ul.nav > li > a {
-            font-size: 20px !important; /* Mevcut */
-            padding: 0 20px; /* YENİ - Menü öğeleri arasında eşit boşluk */
-            height: 100px; /* YENİ - Tüm menü öğelerinin eşit yükseklikte olması */
-            line-height: 100px; /* YENİ - Dikey hizalama için */
-            display: inline-block; /* YENİ - Blok element olarak görüntülenme */
-            font-weight: 400; /* YENİ - Tutarlı font kalınlığı */
-            text-transform: capitalize; /* YENİ - Metin dönüşümü tutarlılığı */
-            color: #1e1e1e; /* YENİ - Renk tutarlılığı */
-            transition: all 0.3s ease 0s; /* YENİ - Animasyon geçişleri için */
+            font-size: 20px !important;
+            padding: 0 20px;
+            height: 100px;
+            line-height: 100px;
+            display: inline-block;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: #1e1e1e;
+            transition: all 0.3s ease 0s;
         }
 
         .main-nav .dropdown-menu .dropdown-item {
@@ -181,24 +198,7 @@
             margin-left: 0;
         }
 
-     
-
-        /* İkinci öğe için padding-top ve margin-top düzenlemeleri */
-        .main-nav .nav .dropdown-menu li:nth-child(2) > .dropdown-item {
-            font-weight: 600 !important;
-            padding-top: 0px !important;
-            margin-top: -20px !important;
-            line-height: 1.1 !important;
-        }
-
-        .main-nav .nav .dropdown-menu li:nth-child(1) > .dropdown-item {
-            font-weight: 600 !important;
-            padding-top: 0px !important;
-            margin-top: 20px !important;
-            line-height: 1.1 !important;
-        }
-
-        main-nav ul.nav > li {
+        .main-nav ul.nav > li {
             display: inline-block;
             margin: 0;
             padding: 0;
@@ -215,11 +215,106 @@
                 margin-right: 5px;
             }
 
-            * YENİ - Hover ve active durumları için tutarlı görünüm */
+            /* YENİ - Hover ve active durumları için tutarlı görünüm */
             .main-nav ul.nav > li > a.active,
             .main-nav ul.nav > li > a:hover {
                 color: #f35525;
             }
+
+        .main-nav .nav .dropdown-menu.compact-dropdown {
+            background-color: #f0f0f0;
+            border-radius: 0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            margin: 0 !important;
+            padding: 5px 0 !important;
+            border: none;
+            min-width: 200px;
+            border-top: 3px solid #f35525;
+            animation: fadeIn 0.3s ease;
+            position: absolute;
+            text-align: left;
+            z-index: 1000;
+            left: 0 !important;
+            top: 100%;
+            width: max-content !important;
+        }
+
+            .main-nav .nav .dropdown-menu.compact-dropdown .dropdown-item {
+                padding: 4px 12px !important;
+                margin: 0 !important;
+                color: #000 !important;
+                font-size: 16px !important;
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                transition: all 0.2s ease-in-out;
+                background-color: transparent !important;
+                border-radius: 0 !important;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                line-height: 1.2 !important;
+                border: none !important;
+                height: auto !important;
+                white-space: nowrap;
+            }
+
+                .main-nav .nav .dropdown-menu.compact-dropdown .dropdown-item:hover {
+                    background-color: #e0e0e0 !important;
+                    color: #f35525 !important;
+                    padding-left: 15px !important;
+                }
+
+                    .main-nav .nav .dropdown-menu.compact-dropdown .dropdown-item:hover::before {
+                        content: "›";
+                        position: absolute;
+                        left: 8px;
+                        color: #f35525;
+                        font-weight: bold;
+                    }
+
+        .main-nav ul.nav {
+            display: flex;
+            align-items: center;
+            height: 100px;
+            flex-wrap: nowrap; /* Öğelerin sarmalanmasını önler */
+            justify-content: space-between; /* Öğeler arasında eşit boşluk dağılımı */
+        }
+
+            .main-nav ul.nav > li > a {
+                font-size: 18px !important; /* Font boyutunu biraz küçültüyoruz */
+                padding: 0 15px; /* Yatay dolguyu azaltıyoruz */
+                height: 100px;
+                line-height: 100px;
+                display: inline-block;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: #1e1e1e;
+                transition: all 0.3s ease 0s;
+                white-space: nowrap; /* Metin içeriğinin birden fazla satıra bölünmesini engeller */
+            }
+
+            /* Son öğeyi biraz daha küçültün */
+            .main-nav ul.nav > li:last-child > a {
+                font-size: 16px !important;
+                padding: 0 10px;
+            }
+
+        /* Daha küçük ekranlar için ek ayarlamalar */
+        @@media (max-width: 1200px) {
+            .main-nav ul.nav > li > a
+
+        {
+            font-size: 16px !important;
+            padding: 0 10px;
+        }
+
+        .main-nav ul.nav > li:last-child > a {
+            font-size: 15px !important;
+            padding: 0 8px;
+        }
+
+        }
 
     </style>
  
@@ -255,9 +350,31 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li><a href="#" class="active">AnaSayfa</a></li>
+                            <li><a href="#" class="active">Kurumsal</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" href="#" id="ahilikDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   Kurullar
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="ahilikDropdown">
+                                    <li><a class="dropdown-item" href="/Ahilik/AhilikKulturu">Yönetim Kurulu</a></li>
+                                    <li><a class="dropdown-item" href="/Ahilik/AhilikKulturu">Denetim Kurulu</a></li>
+                                    <li><a class="dropdown-item" href="/Ahilik/AhilikNedir">Disiplin Kurulu</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#properties">Odalar</a></li>
                             <li><a href="/UIProject/Index">Projeler</a></li>
-                            <li><a href="#">Mevzuat</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle nav-link" href="#" id="mevzuatDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mevzuat
+                                </a>
+                                <ul class="dropdown-menu shadow-sm" aria-labelledby="mevzuatDropdown">
+                                    <li><a class="dropdown-item py-2" href="https://www.tesk.org.tr/view/menu/goster.php?Guid=a6b4c6cf-f1da-11e9-b001-54213e5f8f01">Esnaf Ve Sanatkarlar Kanunu Tarihçesi</a></li>
+                                    <li><a class="dropdown-item py-2" href="https://www.resmigazete.gov.tr/eskiler/2005/06/20050621-1.htm">5362 Sayılı Esnaf Ve Sanatkarlar Kanunu</a></li>
+                                    <li><a class="dropdown-item py-2" href="https://www.tesk.org.tr/view/mevzuat/mevzuat.php?Guid=bffafcea-0ac4-11ea-9eaf-000c29b32a85">Yönetmelikler</a></li>
+                                    <li><a class="dropdown-item py-2" href="https://www.tesk.org.tr/view/mevzuat/mevzuat.php?Guid=fe1c1acf-09f9-11ea-8e6c-000ec68eac21">Genelgeler</a></li>
+                                    <li><a class="dropdown-item py-2" href="https://www.tesk.org.tr/view/mevzuat/mevzuat.php?Guid=9cc8eae1-0ac1-11ea-9eaf-000c29b32a85">Tebliğler</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle" href="#" id="ahilikDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Ahilik

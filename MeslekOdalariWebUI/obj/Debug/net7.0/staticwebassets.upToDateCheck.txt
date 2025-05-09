@@ -132,6 +132,7 @@ wwwroot\focus-2\images\favicon.png
 wwwroot\focus-2\images\logo.png
 wwwroot\focus-2\images\logo.svg
 wwwroot\focus-2\images\logo-text.png
+wwwroot\focus-2\images\meslekodasi.jpg
 wwwroot\focus-2\images\product\1.jpg
 wwwroot\focus-2\images\product\2.jpg
 wwwroot\focus-2\images\product\3.jpg
@@ -151,6 +152,9 @@ wwwroot\focus-2\images\profile\8.jpg
 wwwroot\focus-2\images\profile\9.jpg
 wwwroot\focus-2\images\profile\cover.jpg
 wwwroot\focus-2\images\profile\profile.png
+wwwroot\focus-2\images\resim1.jpeg
+wwwroot\focus-2\images\resim2.jpeg
+wwwroot\focus-2\images\resim3.jpeg
 wwwroot\focus-2\images\svg\actions.svg
 wwwroot\focus-2\images\svg\apps.svg
 wwwroot\focus-2\images\svg\arrow_down.svg

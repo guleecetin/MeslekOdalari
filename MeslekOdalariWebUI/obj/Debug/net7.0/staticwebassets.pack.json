@@ -773,6 +773,10 @@
       "PackagePath": "staticwebassets\\focus-2\\images\\logo.svg"
     },
     {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\images\\meslekodasi.jpg",
+      "PackagePath": "staticwebassets\\focus-2\\images\\meslekodasi.jpg"
+    },
+    {
       "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\images\\product\\1.jpg",
       "PackagePath": "staticwebassets\\focus-2\\images\\product\\1.jpg"
     },
@@ -847,6 +851,18 @@
     {
       "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\images\\profile\\profile.png",
       "PackagePath": "staticwebassets\\focus-2\\images\\profile\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\images\\resim1.jpeg",
+      "PackagePath": "staticwebassets\\focus-2\\images\\resim1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\images\\resim2.jpeg",
+      "PackagePath": "staticwebassets\\focus-2\\images\\resim2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\images\\resim3.jpeg",
+      "PackagePath": "staticwebassets\\focus-2\\images\\resim3.jpeg"
     },
     {
       "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\images\\svg\\actions.svg",

@@ -5,6 +5,22 @@
 
 <style>
     /* Genel Stil İyileştirmeleri */
+    body {
+        font-size: 1.1rem; /* Genel metin boyutunu artırıyorum */
+    }
+
+    p, li, .card-text {
+        font-size: 1.15rem; /* Paragraf ve liste metinlerini büyütüyorum */
+    }
+
+    .lead {
+        font-size: 1.3rem; /* Lead paragrafları daha da büyük */
+    }
+
+    h4 {
+        font-size: 1.5rem; /* Alt başlıkları büyütüyorum */
+    }
+
     section {
         padding: 80px 0;
     }
@@ -12,6 +28,7 @@
     .section-heading {
         position: relative;
         margin-bottom: 50px;
+        font-size: 2.5rem; /* Bölüm başlıklarını büyütüyorum */
     }
 
         .section-heading:after {
@@ -22,12 +39,12 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: #f35525;
+            background-color: #0d6efd;
         }
 
     /* Hero Bölümü */
     .hero-section {
-        background: linear-gradient(135deg, #1e1e1e 0%, #333 100%);
+        background: linear-gradient(135deg, #0d6efd, #0143a3);
         color: #fff;
         padding: 120px 0;
         position: relative;
@@ -46,32 +63,33 @@
         }
 
         .hero-section h1 {
-            font-size: 3.5rem;
+            font-size: 4rem; /* Hero başlığını büyütüyorum */
             font-weight: 700;
             margin-bottom: 20px;
             color: #fff;
         }
 
         .hero-section h2 {
-            color: #f35525;
+            color: #ffffff;
             font-weight: 600;
+            font-size: 2.5rem; /* Alt başlığı büyütüyorum */
         }
 
         .hero-section .btn {
-            background-color: #f35525;
-            color: #fff;
+            background-color: #ffffff;
+            color: #0d6efd;
             border: none;
             padding: 12px 30px;
-            font-size: 18px;
+            font-size: 1.2rem; /* Buton metnini büyütüyorum */
             font-weight: 600;
             transition: all 0.3s ease;
-            border-radius: 5px;
+            border-radius: 50rem;
         }
 
             .hero-section .btn:hover {
-                background-color: #e04010;
+                background-color: #f8f9fa;
                 transform: translateY(-2px);
-                box-shadow: 0 8px 15px rgba(243, 85, 37, 0.3);
+                box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
             }
 
     .hero-image {
@@ -94,7 +112,7 @@
 
     .feature-card {
         border: none;
-        border-radius: 10px;
+        border-radius: 1rem;
         transition: all 0.3s ease;
         height: 100%;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -109,7 +127,7 @@
     .card-icon {
         width: 80px;
         height: 80px;
-        background-color: #f35525;
+        background-color: #0d6efd;
         color: #fff;
         border-radius: 50%;
         display: flex;
@@ -122,11 +140,11 @@
 
     .feature-card:hover .card-icon {
         transform: rotateY(180deg);
-        background-color: #1e1e1e;
+        background-color: #0143a3;
     }
 
     .feature-card h4 {
-        color: #1e1e1e;
+        color: #0d6efd;
         font-weight: 600;
         margin-bottom: 15px;
     }
@@ -150,7 +168,7 @@
             top: 60px;
             bottom: -40px;
             width: 2px;
-            background-color: #f35525;
+            background-color: #0d6efd;
             z-index: 1;
         }
 
@@ -161,7 +179,7 @@
     .step-number {
         width: 50px;
         height: 50px;
-        background-color: #f35525;
+        background-color: #0d6efd;
         color: #fff;
         border-radius: 50%;
         display: flex;
@@ -172,16 +190,16 @@
         margin-right: 20px;
         flex-shrink: 0;
         z-index: 2;
-        box-shadow: 0 5px 15px rgba(243, 85, 37, 0.3);
+        box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
     }
 
     .step-item h4 {
-        color: #1e1e1e;
+        color: #0d6efd;
         font-weight: 600;
         margin-bottom: 10px;
     }
 
-    /* Testimonials Bölümü */
+    /* Testimonials Bölümü - YENİ TASARIM */
     .testimonial-section {
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         padding: 80px 0;
@@ -189,11 +207,13 @@
 
     .testimonial-card {
         background-color: #fff;
-        border-radius: 10px;
+        border-radius: 1rem;
         padding: 30px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         transition: all 0.3s ease;
         height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
         .testimonial-card:hover {
@@ -202,12 +222,58 @@
         }
 
     .testimonial-img {
-        width: 80px;
-        height: 80px;
+        width: 100px; /* Fotoğrafı büyüttüm */
+        height: 100px;
         border-radius: 50%;
         object-fit: cover;
-        border: 3px solid #f35525;
+        border: 3px solid #0d6efd;
         margin: 0 auto 15px;
+    }
+
+    .testimonial-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-content {
+        flex-grow: 1;
+        font-size: 1.15rem; /* Yorum metinlerini büyüttüm */
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+        .testimonial-content:after {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 0 15px 15px;
+            border-style: solid;
+            border-color: transparent transparent #f8f9fa;
+        }
+
+    .testimonial-footer {
+        text-align: center;
+    }
+
+    .testimonial-name {
+        font-size: 1.4rem; /* İsim yazısını büyüttüm */
+        margin-bottom: 5px;
+    }
+
+    .testimonial-position {
+        font-size: 1.1rem; /* Meslek yazısını büyüttüm */
+        color: #6c757d;
+    }
+
+    .testimonial-rating {
+        font-size: 1.2rem; /* Yıldızları büyüttüm */
+        color: #0d6efd;
+        margin-top: 5px;
     }
 
     /* Yasal Zorunluluklar Bölümü */
@@ -217,12 +283,16 @@
 
     .legal-card {
         background-color: #fff;
-        border-left: 4px solid #f35525;
+        border-left: 4px solid #0d6efd;
         border-radius: 8px;
-        padding: 20px;
+        padding: 25px; /* Padding arttırdım */
         margin-bottom: 20px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     }
+
+        .legal-card h4 {
+            color: #0d6efd;
+        }
 
     /* Belgeler Bölümü */
     .documents-section {
@@ -232,27 +302,31 @@
     .document-card {
         border: 1px solid #e9ecef;
         border-radius: 8px;
-        padding: 20px;
+        padding: 25px; /* Padding arttırdım */
         margin-bottom: 20px;
         transition: all 0.3s ease;
     }
 
         .document-card:hover {
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            border-color: #f35525;
+            border-color: #0d6efd;
+        }
+
+        .document-card h4 {
+            color: #0d6efd;
         }
 
     .document-icon {
-        width: 60px;
-        height: 60px;
-        background-color: #f8f9fa;
-        color: #f35525;
+        width: 70px; /* İkon boyutunu büyüttüm */
+        height: 70px;
+        background-color: rgba(13, 110, 253, 0.1);
+        color: #0d6efd;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 24px;
-        margin-right: 20px;
+        font-size: 28px; /* İkon boyutunu büyüttüm */
+        margin-right: 25px;
     }
 
     /* FAQ Bölümü */
@@ -269,8 +343,9 @@
 
     .faq-question {
         background-color: #f8f9fa;
-        padding: 15px 20px;
+        padding: 18px 25px; /* Padding arttırdım */
         font-weight: 600;
+        font-size: 1.2rem; /* Soru metnini büyüttüm */
         cursor: pointer;
         position: relative;
         transition: all 0.3s ease;
@@ -280,28 +355,29 @@
     }
 
         .faq-question:hover {
-            background-color: #f35525;
+            background-color: #0d6efd;
             color: #fff;
         }
 
         .faq-question.active {
-            background-color: #f35525;
+            background-color: #0d6efd;
             color: #fff;
         }
 
     .faq-answer {
-        padding: 20px;
+        padding: 25px; /* Padding arttırdım */
         display: none;
         background-color: #fff;
-        border-left: 2px solid #f35525;
-        border-right: 2px solid #f35525;
-        border-bottom: 2px solid #f35525;
+        border-left: 2px solid #0d6efd;
+        border-right: 2px solid #0d6efd;
+        border-bottom: 2px solid #0d6efd;
         border-radius: 0 0 8px 8px;
+        font-size: 1.15rem; /* Cevap metnini büyüttüm */
     }
 
     /* CTA Bölümü */
     .cta-section {
-        background: linear-gradient(135deg, #f35525 0%, #e04010 100%);
+        background: linear-gradient(135deg, #0d6efd 0%, #0143a3 100%);
         color: #fff;
         padding: 80px 0;
         position: relative;
@@ -321,49 +397,136 @@
 
         .cta-section .btn {
             background-color: #fff;
-            color: #f35525;
+            color: #0d6efd;
             border: none;
             font-weight: 600;
+            font-size: 1.2rem; /* Buton metnini büyüttüm */
             transition: all 0.3s ease;
+            border-radius: 50rem;
+            padding: 12px 30px; /* Padding arttırdım */
         }
 
             .cta-section .btn:hover {
-                background-color: #1e1e1e;
-                color: #fff;
+                background-color: #f8f9fa;
+                color: #0143a3;
                 transform: translateY(-2px);
-                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2);
             }
+
+    /* Badge Stilleri */
+    .badge {
+        border-radius: 50rem;
+        padding: 0.4rem 1.2rem; /* Padding arttırdım */
+        font-size: 1rem; /* Badge metnini büyüttüm */
+    }
+
+    .bg-danger {
+        background-color: #0d6efd !important;
+    }
+
+    /* Text Renk Ayarlamaları */
+    .text-warning {
+        color: #0d6efd !important;
+    }
+
+    .text-muted {
+        color: #6c757d !important;
+        font-size: 1.1rem; /* Muted metnini büyüttüm */
+    }
+
+    /* Dalga Efekti */
+    .wave-bottom {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+        .wave-bottom svg {
+            display: block;
+            width: 100%;
+        }
+
+    /* Animasyonlar */
+    .animate__animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+
+    .animate__fadeInUp {
+        animation-name: fadeInUp;
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translate3d(0, 30px, 0);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
 
     /* Responsive Düzenlemeler */
     @@media (max-width: 991px) {
-        .hero-section
+        .hero-section {
+            padding: 80px 0;
+        }
 
-    {
-        padding: 80px 0;
+            .hero-section h1 {
+                font-size: 3rem; /* Responsive için font boyutu */
+            }
+
+            .hero-section h2 {
+                font-size: 2rem; /* Responsive için font boyutu */
+            }
+
+        .hero-image {
+            margin-top: 40px;
+            transform: none;
+        }
+
+        .step-item {
+            flex-direction: column;
+        }
+
+        .step-number {
+            margin-bottom: 15px;
+        }
+
+        .step-item:after {
+            display: none;
+        }
     }
 
-    .hero-section h1 {
-        font-size: 2.5rem;
+    /* Buton Stilleri */
+    .btn {
+        padding: 0.7rem 1.8rem; /* Buton padding arttırdım */
+        font-weight: 500;
+        transition: all 0.3s;
+        border-radius: 50rem;
+        font-size: 1.1rem; /* Buton metnini büyüttüm */
     }
 
-    .hero-image {
-        margin-top: 40px;
-        transform: none;
+    .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        color: white;
     }
 
-    .step-item {
-        flex-direction: column;
+    .btn-outline-primary {
+        color: #0d6efd;
+        border-color: #0d6efd;
     }
 
-    .step-number {
-        margin-bottom: 15px;
-    }
-
-    .step-item:after {
-        display: none;
-    }
-
-    }
+        .btn-outline-primary:hover {
+            background-color: #0d6efd;
+            color: white;
+        }
 </style>
 
 <!-- Hero Section -->
@@ -374,13 +537,11 @@
                 <h1>Meslek Odası Üye Kayıt İşlemleri</h1>
                 <h2>Neden Üye Olmalısınız?</h2>
                 <p class="lead mb-5">5362 Sayılı Esnaf ve Sanatkarlar Meslek Kuruluşları Kanunu gereğince esnaf ve sanatkarlar, esnaf ve sanatkar siciline ve ilgili meslek odasına kayıt olmak zorundadır. Yasalara uygunluk sağlamanın yanı sıra, meslek odamız üyeliği size birçok fayda ve destek sağlar.</p>
-                <a asp-controller="Uye" asp-action="KayitFormu" class="btn btn-lg">
-                    Hemen Üye Ol <i class="fa fa-arrow-right ms-2"></i>
-                </a>
+               
             </div>
             <div class="col-lg-6">
                 <div class="hero-image">
-                    <img src="~/img/meslek-odasi.jpg" alt="Meslek Odası" class="img-fluid">
+                    <img src="~/focus-2/images/meslekodasi.jpg" alt="Meslek Odası" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -632,18 +793,18 @@
 </section>
 
 <!-- Testimonials Section -->
-<section class="testimonial-section">
+<section class="dark-section">
     <div class="container">
-        <div class="text-center">
+        <div class="text-center mb-5">
             <h2 class="section-heading">Üyelerimizin Deneyimleri</h2>
-            <p class="lead text-muted mb-5">Meslek odamız üyelerinden bazılarının görüşleri</p>
+            <p class="lead text-muted">Meslek odamız üyelerinden bazılarının görüşleri</p>
         </div>
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="testimonial-card">
                     <div class="text-center">
-                        <img src="~/img/user1.jpg" alt="Esnaf" class="testimonial-img">
-                        <h5>Ahmet Yılmaz</h5>
+                        <img src="~/focus-2/images/resim2.jpeg" alt="Esnaf" class="testimonial-img">
+                        <h5>Bahadır Sevim</h5>
                         <p class="text-muted">Mobilya Ustası, İstanbul</p>
                     </div>
                     <p class="mt-3">"Meslek odasına üye olmak benim için bir dönüm noktası oldu. Aldığım mesleki eğitimler sayesinde işimi büyüttüm ve daha profesyonel hizmet vermeye başladım."</p>
@@ -659,8 +820,8 @@
             <div class="col-md-4">
                 <div class="testimonial-card">
                     <div class="text-center">
-                        <img src="~/img/user2.jpg" alt="Esnaf" class="testimonial-img">
-                        <h5>Ayşe Demir</h5>
+                        <img src="~/focus-2/images/resim1.jpeg" alt="Esnaf" class="testimonial-img">
+                        <h5>Gülendam Çetin</h5>
                         <p class="text-muted">Kuaför, Ankara</p>
                     </div>
                     <p class="mt-3">"Hukuki bir sorunla karşılaştığımda meslek odamız bana büyük destek oldu. Yasal süreçlerde yanımda olmaları beni çok rahatlattı ve sorunumu çözmeme yardımcı oldular."</p>
@@ -676,10 +837,22 @@
             <div class="col-md-4">
                 <div class="testimonial-card">
                     <div class="text-center">
-                        <img src="~/img/user3.jpg" alt="Esnaf" class="testimonial-img">
-                        <h5>Mehmet Özkan</h5>
+                        <img src="~/focus-2/images/resim3.jpeg" alt="Esnaf" class="testimonial-img">
+                        <h5>Gülizar Tunç</h5>
                         <p class="text-muted">Terzi, İzmir</p>
                     </div>
                     <p class="mt-3">"Oda üyeliğinin sağladığı kredi imkanları sayesinde işyerimi büyütebildim. Düşük faizli esnaf kredisine ulaşmamda odamızın rehberliği çok değerliydi."</p>
                     <div class="text-warning text-center">
                         <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
