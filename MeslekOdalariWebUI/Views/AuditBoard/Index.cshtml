@@ -1,0 +1,38 @@
+﻿@model List<ResultAuditBoardDto>
+@{
+    ViewData["Title"] = "Denetim Kurulu Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-hover table-bordered">
+    @{
+        int count = 0;
+    }
+    <tr>
+        <th>#</th>
+        <th>Fotograf</th>
+        <th>Ad-Soyad</th>
+        <th>Unvan</th>
+        <th>Kurum Bilgisi</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <th>@count</th>
+            <td>@item.ImageUrl</td>
+            <td>@item.FullName</td>
+            <td>@item.SubTitle1</td>
+            <td>@item.SubTitle2 </td>
+            <td>
+                <a asp-controller="AuditBoard" asp-action="DeleteAuditBoard" asp-route-id="@item.Id" class="btn btn-outline-danger">Sil</a>
+                <a asp-controller="AuditBoard" asp-action="UpdateAuditBoard" asp-route-id="@item.Id" class="btn btn-outline-info">Güncelle</a>
+            </td>
+        </tr>
+
+    }
+
+</table>
+<a asp-controller="AuditBoard" asp-action="CreateAuditBoard" class="btn btn-outline-dark">Yeni Denetim Kurulu Ekle</a>
+
+

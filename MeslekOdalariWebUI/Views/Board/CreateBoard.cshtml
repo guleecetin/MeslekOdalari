@@ -1,0 +1,231 @@
+﻿@model CreateBoardDto
+@{
+    ViewData["Title"] = "Yeni Kurul Ekleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Yeni Kurul Üyesi Ekle</h3>
+            <p class="text-muted">Sisteme yeni bir kurul üyesi eklemek için aşağıdaki formu doldurunuz</p>
+        </div>
+        <a asp-controller="Board" asp-action="Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Listeye Dön
+        </a>
+    </div>
+
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary"><i class="bi bi-person-plus me-2"></i>Kurul Üyesi Bilgileri</h5>
+        </div>
+        <div class="card-body p-4">
+            <form method="post" id="createBoardForm">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="ImageUrl" class="form-label fw-bold">Fotoğraf URL</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-image"></i></span>
+                                <input type="text" asp-for="ImageUrl" class="form-control" placeholder="Fotoğraf URL adresini giriniz" />
+                            </div>
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                            <div class="form-text">Kurul üyesinin fotoğrafı için geçerli bir URL adresi giriniz</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="Title" class="form-label fw-bold">Başlık / Pozisyon</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-briefcase"></i></span>
+                                <input type="text" asp-for="Title" class="form-control" placeholder="Kurul üyesinin görev başlığını giriniz" />
+                            </div>
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-4">
+                        <div class="form-group">
+                            <label for="FullName" class="form-label fw-bold">Ad Soyad</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input type="text" asp-for="FullName" class="form-control" placeholder="Kurul üyesinin adını ve soyadını giriniz" />
+                            </div>
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="SubTitle1" class="form-label fw-bold">Unvan</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-award"></i></span>
+                                <input type="text" asp-for="SubTitle1" class="form-control" placeholder="Unvan bilgisini giriniz" />
+                            </div>
+                            <span asp-validation-for="SubTitle1" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="form-group">
+                            <label for="SubTitle2" class="form-label fw-bold">Kurum Bilgisi</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-building"></i></span>
+                                <input type="text" asp-for="SubTitle2" class="form-control" placeholder="Bağlı olduğu kurum bilgisini giriniz" />
+                            </div>
+                            <span asp-validation-for="SubTitle2" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-danger me-3" id="btnReset">
+                            <i class="bi bi-x-circle me-2"></i>Temizle
+                        </button>
+                        <button type="submit" class="btn btn-primary px-4">
+                            <i class="bi bi-save me-2"></i>Kaydet
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  
+
+<style>
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    .input-group-text {
+        background-color: #f8f9fa;
+        border-right: none;
+    }
+
+    .input-group .form-control {
+        border-left: none;
+    }
+
+    .form-label {
+        margin-bottom: 0.6rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .form-text {
+        font-size: 0.95rem;
+    }
+
+    .card-body, .card-header, .btn, .small, .text-muted, p {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    .input-group-text {
+        font-size: 1.2rem;
+    }
+
+    .form-control {
+        font-size: 1.2rem;
+        padding: 0.6rem 0.75rem;
+    }
+
+    .img-thumbnail {
+        transition: transform 0.3s;
+    }
+
+        .img-thumbnail:hover {
+            transform: scale(1.05);
+        }
+
+    .btn-outline-secondary:hover,
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s;
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        // Önizleme kaldırıldığı için bu kod bloğu kaldırıldı
+
+        // Önizleme kaldırıldı
+
+        // Form validasyon
+        $("#updateBoardForm").submit(function(e) {
+            var isValid = true;
+
+            // Basit validasyon kontrolleri
+            if (!$("#FullName").val().trim()) {
+                $("#FullName").addClass("is-invalid");
+                isValid = false;
+            } else {
+                $("#FullName").removeClass("is-invalid");
+            }
+
+            if (!$("#Title").val().trim()) {
+                $("#Title").addClass("is-invalid");
+                isValid = false;
+            } else {
+                $("#Title").removeClass("is-invalid");
+            }
+
+            // Validasyon başarısızsa formu durdur
+            if (!isValid) {
+                e.preventDefault();
+
+                // Uyarı mesajı göster
+                Swal.fire({
+                    title: "Form Eksik",
+                    text: "Lütfen zorunlu alanları doldurunuz.",
+                    icon: "warning",
+                    confirmButtonColor: "#3085d6"
+                });
+            } else {
+                // Başarılı işlem için onay mesajı (isteğe bağlı)
+                Swal.fire({
+                    title: "İşlem Onayı",
+                    text: "Kurul üyesi bilgilerini güncellemek istediğinize emin misiniz?",
+                    icon: "question",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Evet, Güncelle",
+                    cancelButtonText: "İptal"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Form gönderimi devam eder
+                    } else {
+                        e.preventDefault(); // İptal edilirse form gönderimini durdur
+                    }
+                });
+
+                return false; // SweetAlert onay diyaloğunu beklemek için form gönderimini engelle
+            }
+        });
+    });
+</script>
+
+

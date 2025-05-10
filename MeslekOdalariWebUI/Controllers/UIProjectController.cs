@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MeslekOdalari.Business.Abstract;
 using MeslekOdalari.Dto.Dtos.ProjectDtos;
-using MeslekOdalari.Dto.Dtos.RoomsDto;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 

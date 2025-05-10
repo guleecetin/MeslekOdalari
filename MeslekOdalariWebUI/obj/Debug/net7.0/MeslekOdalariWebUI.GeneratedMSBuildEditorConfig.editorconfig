@@ -28,6 +28,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWhpbGlrXEFoaWxpa05lZGlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/AuditBoard/CreateAuditBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRCb2FyZFxDcmVhdGVBdWRpdEJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/AuditBoard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRCb2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/AuditBoard/UpdateAuditBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXVkaXRCb2FyZFxVcGRhdGVBdWRpdEJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Banner/CreateBanner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFubmVyXENyZWF0ZUJhbm5lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +50,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Banner/UpdateBanner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFubmVyXFVwZGF0ZUJhbm5lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Board/CreateBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcQ3JlYXRlQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Board/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Board/UpdateBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcVXBkYXRlQm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Contact/CreateContact.cshtml]
@@ -262,6 +286,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/SubHeader/UpdateSubHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViSGVhZGVyXFVwZGF0ZVN1YkhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/UIBoard/DenetimKurulu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUlCb2FyZFxEZW5ldGltS3VydWx1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/UIBoard/YonetimKurulu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUlCb2FyZFxZb25ldGltS3VydWx1LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/UIProject/Index.cshtml]

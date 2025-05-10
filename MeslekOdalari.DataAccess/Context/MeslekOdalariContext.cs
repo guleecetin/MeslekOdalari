@@ -22,6 +22,8 @@ namespace MeslekOdalari.DataAccess.Context
         public DbSet<SubHeader> SubHeaders { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<Regulation> Regulations { get; set; }
+        public DbSet<Board> Boards { get; set; }
+        public DbSet<AuditBoard> AuditBoards { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,6 +39,8 @@ namespace MeslekOdalari.DataAccess.Context
             modelBuilder.Entity<SubHeader>().ToCollection("SubHeaders");
             modelBuilder.Entity<Project>().ToCollection("Projects");
             modelBuilder.Entity<Regulation>().ToCollection("Regulations");
+            modelBuilder.Entity<Board>().ToCollection("Boards");
+            modelBuilder.Entity<AuditBoard>().ToCollection("AuditBoards ");
         }
 
     }
