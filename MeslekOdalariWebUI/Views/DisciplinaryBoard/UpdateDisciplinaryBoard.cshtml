@@ -1,0 +1,139 @@
+﻿@model UpdateDisciplinaryBoardDto
+@{
+    ViewData["Title"] = "Disiplin Kurulu Güncelleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Disiplin Kurulu Üyesi Güncelleme</h3>
+            <p class="text-muted">Mevcut disiplin kurulu üyesi bilgilerini güncelleyebilirsiniz</p>
+        </div>
+        <a asp-controller="DisciplinaryBoard" asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Listeye Dön
+        </a>
+    </div>
+
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary"><i class="bi bi-person-gear me-2"></i>Disiplin Kurulu Üye Bilgilerini Güncelle</h5>
+        </div>
+        <div class="card-body">
+            <form asp-action="UpdateDisciplinaryBoard" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="FullName" class="form-label fw-bold">Ad Soyad</label>
+                            <input asp-for="FullName" class="form-control form-control-lg" placeholder="Üyenin adı ve soyadı" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="SubTitle1" class="form-label fw-bold">Ünvan</label>
+                            <input asp-for="SubTitle1" class="form-control form-control-lg" placeholder="Üyenin ünvanı" />
+                            <span asp-validation-for="SubTitle1" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="SubTitle2" class="form-label fw-bold">Kurum Bilgisi</label>
+                            <input asp-for="SubTitle2" class="form-control form-control-lg" placeholder="Üyenin kurumu" />
+                            <span asp-validation-for="SubTitle2" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="ImageUrl" class="form-label fw-bold">Profil Fotoğrafı URL</label>
+                            <input asp-for="ImageUrl" class="form-control form-control-lg" placeholder="Fotoğraf URL adresi" id="imageUrlInput" />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                            <div class="form-text">Resim için tam URL adresi giriniz (örn: https://example.com/images/photo.jpg)</div>
+                        </div>
+
+                        <div class="mt-4 text-center" id="imagePreviewContainer">
+                            <img id="imagePreview" src="@Model.ImageUrl" alt="Profil Önizleme" class="img-thumbnail rounded shadow-sm" style="max-height: 200px; max-width: 200px;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-4">
+                    <a asp-action="Index" class="btn btn-lg btn-outline-secondary me-3">
+                        <i class="bi bi-x-circle me-2"></i>İptal
+                    </a>
+                    <button type="submit" class="btn btn-lg btn-primary">
+                        <i class="bi bi-check-circle me-2"></i>Güncelle
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control, .btn, .form-check-label, .form-text, label {
+        font-size: 1.15rem;
+    }
+
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .form-control:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    #imagePreview {
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+
+        #imagePreview:hover {
+            transform: scale(1.05);
+        }
+</style>
+
+<script>
+    // Sayfa yüklendikten sonra çalışacak kod
+    $(document).ready(function() {
+        // Resim önizleme güncelleme
+        $('#imageUrlInput').on('input', function() {
+            let imageUrl = $(this).val();
+            if(imageUrl && imageUrl.trim() !== '') {
+                $('#imagePreview').attr('src', imageUrl);
+                $('#imagePreviewContainer').fadeIn(650);
+            } else {
+                $('#imagePreviewContainer').hide();
+            }
+        });
+
+        // Eğer model verisi doluysa, resim önizleme göster
+        if ($('#imageUrlInput').val()) {
+            $('#imagePreviewContainer').show();
+        } else {
+            $('#imagePreviewContainer').hide();
+        }
+
+        // Form doğrulama için Bootstrap validation etkinleştirme
+        (function() {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+
+            Array.prototype.slice.call(forms).forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    });
+</script>
+

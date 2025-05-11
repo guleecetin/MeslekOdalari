@@ -24,16 +24,10 @@ namespace MeslekOdalariWebUI.Controllers
         }
 
 
-        /*
+        
 
 
-public async Task<IActionResult> DisiplinKurulu()
-{
-    var values = await _boardService.TGetListAsync();
-    var valueList = _mapper.Map<List<ResultBoardDto>>(values);
-    return View(valueList);
-}
-*/
+
 
     }
 }
