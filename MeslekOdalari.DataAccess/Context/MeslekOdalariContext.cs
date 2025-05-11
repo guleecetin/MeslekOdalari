@@ -24,6 +24,7 @@ namespace MeslekOdalari.DataAccess.Context
         public DbSet<Regulation> Regulations { get; set; }
         public DbSet<Board> Boards { get; set; }
         public DbSet<AuditBoard> AuditBoards { get; set; }
+        public DbSet<DisciplinaryBoard> DisciplinaryBoards { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -41,6 +42,7 @@ namespace MeslekOdalari.DataAccess.Context
             modelBuilder.Entity<Regulation>().ToCollection("Regulations");
             modelBuilder.Entity<Board>().ToCollection("Boards");
             modelBuilder.Entity<AuditBoard>().ToCollection("AuditBoards ");
+            modelBuilder.Entity<DisciplinaryBoard>().ToCollection("DisciplinaryBoards");
         }
 
     }

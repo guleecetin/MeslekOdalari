@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\shared\\_uilayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\shared\\_uilayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\controllers\\uiboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\controllers\\uiboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\uiauditboard\\denetimkurulu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\uiauditboard\\denetimkurulu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\controllers\\uiauditboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\controllers\\uiauditboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1477,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +43,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DenetimKurulu.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\UIAuditBoard\\DenetimKurulu.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\UIAuditBoard\\DenetimKurulu.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\UIAuditBoard\\DenetimKurulu.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\UIAuditBoard\\DenetimKurulu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T12:12:33.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIAuditBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\UIAuditBoardController.cs",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Controllers\\UIAuditBoardController.cs",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\UIAuditBoardController.cs",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Controllers\\UIAuditBoardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:56:43.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UIBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\UIBoardController.cs",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Controllers\\UIBoardController.cs",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\UIBoardController.cs",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Controllers\\UIBoardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:51:02.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_UILayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
+              "ViewState": "AgIAAGMBAAAAAAAAAAAAAGsBAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T11:47:07.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T19:10:34.971Z",
+              "EditorCaption": ""
             }
           ]
         },

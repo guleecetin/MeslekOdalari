@@ -8,68 +8,68 @@
 <div class="container-fluid py-4">
     <!-- Sayfa Başlığı -->
     <div class="mb-4">
-        <h3 class="text-dark mb-2">Yeni Denetim Kurulu Üyesi Ekle</h3>
+        <h2 class="text-dark mb-2 fw-bold">Yeni Denetim Kurulu Üyesi Ekle</h2>
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
-                <li class="breadcrumb-item"><a asp-controller="AuditBoard" asp-action="Index">Denetim Kurulu</a></li>
+            <ol class="breadcrumb fs-5">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index" class="text-decoration-none">Anasayfa</a></li>
+                <li class="breadcrumb-item"><a asp-controller="AuditBoard" asp-action="Index" class="text-decoration-none">Denetim Kurulu</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Yeni Üye Ekle</li>
             </ol>
         </nav>
     </div>
 
     <!-- Form Kartı -->
-    <div class="card border-0 shadow-sm">
-        <div class="card-header bg-white py-3">
-            <h5 class="mb-0 text-primary"><i class="bi bi-person-plus me-2"></i>Üye Bilgileri</h5>
+    <div class="card border-0 shadow-lg rounded-3">
+        <div class="card-header bg-white py-4">
+            <h4 class="mb-0 text-purple fw-bold"><i class="bi bi-person-plus me-2"></i>Üye Bilgileri</h4>
         </div>
-        <div class="card-body p-4">
+        <div class="card-body p-5">
             <form method="post" class="needs-validation" novalidate>
                 <div class="row g-4">
                     <!-- Fotoğraf URL -->
                     <div class="col-md-12">
-                        <div class="form-floating mb-2">
-                            <input type="text" asp-for="ImageUrl" class="form-control" id="ImageUrl" placeholder="Fotoğraf URL" required />
-                            <label for="ImageUrl"><i class="bi bi-image me-1"></i>Fotoğraf URL</label>
+                        <div class="form-floating mb-3">
+                            <input type="text" asp-for="ImageUrl" class="form-control form-control-lg fs-5" id="ImageUrl" placeholder="Fotoğraf URL" required />
+                            <label for="ImageUrl" class="fs-5"><i class="bi bi-image me-1"></i>Fotoğraf URL</label>
                         </div>
-                        <div class="form-text text-muted">Üyenin fotoğrafı için yüklenmiş bir görselin URL'si</div>
-                        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        <div class="form-text text-muted fs-5 mb-2">Üyenin fotoğrafı için yüklenmiş bir görselin URL'si</div>
+                        <span asp-validation-for="ImageUrl" class="text-danger fs-5"></span>
                     </div>
 
                     <!-- Ad-Soyad -->
                     <div class="col-md-12">
-                        <div class="form-floating mb-2">
-                            <input type="text" asp-for="FullName" class="form-control" id="FullName" placeholder="Ad-Soyad" required />
-                            <label for="FullName"><i class="bi bi-person me-1"></i>Ad-Soyad</label>
+                        <div class="form-floating mb-3">
+                            <input type="text" asp-for="FullName" class="form-control form-control-lg fs-5" id="FullName" placeholder="Ad-Soyad" required />
+                            <label for="FullName" class="fs-5"><i class="bi bi-person me-1"></i>Ad-Soyad</label>
                         </div>
-                        <span asp-validation-for="FullName" class="text-danger"></span>
+                        <span asp-validation-for="FullName" class="text-danger fs-5"></span>
                     </div>
 
                     <!-- Unvan -->
                     <div class="col-md-6">
-                        <div class="form-floating mb-2">
-                            <input type="text" asp-for="SubTitle1" class="form-control" id="SubTitle1" placeholder="Unvan" required />
-                            <label for="SubTitle1"><i class="bi bi-award me-1"></i>Unvan</label>
+                        <div class="form-floating mb-3">
+                            <input type="text" asp-for="SubTitle1" class="form-control form-control-lg fs-5" id="SubTitle1" placeholder="Unvan" required />
+                            <label for="SubTitle1" class="fs-5"><i class="bi bi-award me-1"></i>Unvan</label>
                         </div>
-                        <span asp-validation-for="SubTitle1" class="text-danger"></span>
+                        <span asp-validation-for="SubTitle1" class="text-danger fs-5"></span>
                     </div>
 
                     <!-- Kurum Bilgisi -->
                     <div class="col-md-6">
-                        <div class="form-floating mb-2">
-                            <input type="text" asp-for="SubTitle2" class="form-control" id="SubTitle2" placeholder="Kurum Bilgisi" required />
-                            <label for="SubTitle2"><i class="bi bi-building me-1"></i>Kurum Bilgisi</label>
+                        <div class="form-floating mb-3">
+                            <input type="text" asp-for="SubTitle2" class="form-control form-control-lg fs-5" id="SubTitle2" placeholder="Kurum Bilgisi" required />
+                            <label for="SubTitle2" class="fs-5"><i class="bi bi-building me-1"></i>Kurum Bilgisi</label>
                         </div>
-                        <span asp-validation-for="SubTitle2" class="text-danger"></span>
+                        <span asp-validation-for="SubTitle2" class="text-danger fs-5"></span>
                     </div>
 
                     <!-- Butonlar -->
-                    <div class="col-12 mt-4">
-                        <div class="d-flex gap-2">
-                            <button type="submit" class="btn btn-primary">
+                    <div class="col-12 mt-5">
+                        <div class="d-flex gap-3">
+                            <button type="submit" class="btn btn-purple btn-lg px-5 py-3 fs-5 fw-bold text-white">
                                 <i class="bi bi-save me-2"></i>Kaydet
                             </button>
-                            <a asp-controller="AuditBoard" asp-action="Index" class="btn btn-outline-secondary">
+                            <a asp-controller="AuditBoard" asp-action="Index" class="btn btn-outline-secondary btn-lg px-5 py-3 fs-5">
                                 <i class="bi bi-x-circle me-2"></i>İptal
                             </a>
                         </div>
@@ -81,26 +81,120 @@
 </div>
 
 <style>
+    /* Mor tema rengi */
+    :root {
+        --theme-purple: #6f42c1;
+        --theme-purple-dark: #5a32a3;
+        --theme-purple-light: #9a75db;
+    }
+
+    /* Ana yazı büyüklükleri */
+    body {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    /* Form elemanları */
     .form-floating > label {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding-left: 1rem;
     }
 
-    .form-control:focus {
-        border-color: #80bdff;
-        box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    .form-control {
+        font-size: 1.25rem;
+        padding: 1.5rem 1rem;
+        height: auto;
     }
 
+        .form-control:focus {
+            border-color: var(--theme-purple);
+            box-shadow: 0 0 0 0.3rem rgba(111, 66, 193, 0.25);
+            border-width: 2px;
+        }
+
+    /* Kart stil geliştirmeleri */
     .card {
+        transition: all 0.3s ease;
+        border-radius: 15px;
+    }
+
+    .card-header {
+        border-radius: 15px 15px 0 0 !important;
+        border-bottom: 2px solid #f0f0f0;
+    }
+
+    /* Mor renk sınıfları */
+    .text-purple {
+        color: var(--theme-purple) !important;
+    }
+
+    .bg-purple {
+        background-color: var(--theme-purple) !important;
+    }
+
+    .btn-purple {
+        background-color: var(--theme-purple);
+        border-color: var(--theme-purple);
+        border-width: 2px;
+    }
+
+        .btn-purple:hover {
+            background-color: var(--theme-purple-dark);
+            border-color: var(--theme-purple-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(111, 66, 193, 0.3);
+        }
+
+    /* Buton stillerini geliştirme */
+    .btn {
+        font-size: 1.25rem;
+        padding: 0.7rem 2rem;
+        border-radius: 8px;
         transition: all 0.3s ease;
     }
 
-    .btn {
-        font-size: 1.1rem;
-        padding: 0.5rem 1.5rem;
+    .btn-outline-secondary {
+        border-width: 2px;
     }
 
+        .btn-outline-secondary:hover {
+            background-color: #6c757d;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+    /* Yardımcı metin */
     .form-text {
-        font-size: 0.875rem;
+        font-size: 1.1rem;
+        color: #6c757d;
+    }
+
+    /* Breadcrumb geliştirmeleri */
+    .breadcrumb-item + .breadcrumb-item::before {
+        font-size: 1.2rem;
+    }
+
+    /* Input alanları için hover efekti */
+    .form-control:hover {
+        background-color: #f8f9fa;
+    }
+
+    /* Validation iyileştirmeleri */
+    .was-validated .form-control:valid {
+        border-color: #198754;
+        border-width: 2px;
+    }
+
+    .was-validated .form-control:invalid {
+        border-color: #dc3545;
+        border-width: 2px;
     }
 </style>
 
@@ -137,10 +231,16 @@
                 text: 'Yeni denetim kurulu üyesi sisteme eklenecektir.',
                 icon: 'question',
                 showCancelButton: true,
-                confirmButtonColor: '#3085d6',
+                confirmButtonColor: '#6f42c1',
                 cancelButtonColor: '#6c757d',
                 confirmButtonText: 'Evet, Kaydet',
-                cancelButtonText: 'İptal'
+                cancelButtonText: 'İptal',
+                confirmButtonClass: 'btn btn-purple btn-lg',
+                cancelButtonClass: 'btn btn-secondary btn-lg',
+                buttonsStyling: false,
+                customClass: {
+                    popup: 'swal-large-text'
+                }
             }).then((result) => {
                 if (result.isConfirmed) {
                     this.submit();
@@ -148,4 +248,30 @@
             });
         }
     });
+
+    // Input alanlarına focus efektleri
+    document.querySelectorAll('.form-control').forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.classList.add('shadow-sm');
+        });
+
+        input.addEventListener('blur', function() {
+            this.parentElement.classList.remove('shadow-sm');
+        });
+    });
+
+    // SweetAlert için büyük yazı stili
+    var style = document.createElement('style');
+    style.innerHTML = `
+        .swal-large-text {
+            font-size: 1.2rem !important;
+        }
+        .swal-large-text .swal2-title {
+            font-size: 2rem !important;
+        }
+        .swal-large-text .swal2-content {
+            font-size: 1.5rem !important;
+        }
+    `;
+    document.head.appendChild(style);
 </script>

@@ -53,6 +53,9 @@ namespace MeslekOdalariWebUI.Extensions
             Services.AddScoped<IAuditBoardDal, EfAuditBoardDal>();
             Services.AddScoped<IAuditBoardService, AuditBoardManager>();
 
+            Services.AddScoped<IDisciplinaryBoardDal, EfDisciplinaryBoardDal>();
+            Services.AddScoped<IDisciplinaryBoardService, DisciplinaryBoardManager>();
+
 
             Services.AddScoped(typeof(IGenericDal<>), typeof(GenericRepository<>));
             Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));

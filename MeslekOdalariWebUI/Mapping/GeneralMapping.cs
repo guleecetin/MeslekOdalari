@@ -4,6 +4,7 @@ using MeslekOdalari.Dto.Dtos.BannerDtos;
 using MeslekOdalari.Dto.Dtos.BoardDtos;
 using MeslekOdalari.Dto.Dtos.ContactDtos;
 using MeslekOdalari.Dto.Dtos.CounterDtos;
+using MeslekOdalari.Dto.Dtos.DisciplinaryBoardDtos;
 using MeslekOdalari.Dto.Dtos.FeatureDtos;
 using MeslekOdalari.Dto.Dtos.MessageDtos;
 using MeslekOdalari.Dto.Dtos.NewsDtos;
@@ -76,6 +77,10 @@ namespace MeslekOdalariWebUI.Mapping
             CreateMap<ResultAuditBoardDto, AuditBoard>().ReverseMap();
             CreateMap<UpdateAuditBoardDto, AuditBoard>().ReverseMap();
             CreateMap<CreateAuditBoardDto, AuditBoard>().ReverseMap();
+
+            CreateMap<ResultDisciplinaryBoardDto, DisciplinaryBoard>().ReverseMap();
+            CreateMap<UpdateDisciplinaryBoardDto, DisciplinaryBoard>().ReverseMap();
+            CreateMap<CreateDisciplinaryBoardDto, DisciplinaryBoard>().ReverseMap();
 
 
         }

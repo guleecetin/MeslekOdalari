@@ -288,8 +288,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViSGVhZGVyXFVwZGF0ZVN1YkhlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/UIBoard/DenetimKurulu.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUlCb2FyZFxEZW5ldGltS3VydWx1LmNzaHRtbA==
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/UIAuditBoard/DenetimKurulu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUlBdWRpdEJvYXJkXERlbmV0aW1LdXJ1bHUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/UIBoard/YonetimKurulu.cshtml]
