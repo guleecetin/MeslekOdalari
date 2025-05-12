@@ -1,0 +1,157 @@
+﻿@model CreateAboutDto
+@{
+    ViewData["Title"] = "Yeni Hakkımızda Ekleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h3 class="text-dark mb-0">Yeni Hakkımızda Ekle</h3>
+            <p class="text-muted">Sisteme yeni hakkımızda bilgisi ekleyebilirsiniz</p>
+        </div>
+        <a asp-controller="About" asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left me-2"></i>Listeye Geri Dön
+        </a>
+    </div>
+
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 text-primary"><i class="bi bi-file-earmark-plus me-2"></i>Hakkımızda Bilgisi Ekleme Formu</h5>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="row mb-4">
+                    <div class="col-lg-12 mb-3">
+                        <label for="Title" class="form-label fw-bold">Başlık</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light border-end-0">
+                                <i class="bi bi-type-h1"></i>
+                            </span>
+                            <input type="text" asp-for="Title" class="form-control border-start-0 shadow-none" placeholder="Başlık giriniz..." />
+                        </div>
+                        <span asp-validation-for="Title" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <label for="Description" class="form-label fw-bold">Açıklama</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-light border-end-0">
+                                <i class="bi bi-textarea-t"></i>
+                            </span>
+                            <textarea asp-for="Description" class="form-control border-start-0 shadow-none" rows="6" placeholder="Detaylı açıklama giriniz..."></textarea>
+                        </div>
+                        <span asp-validation-for="Description" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end gap-2 mt-4">
+                    <a asp-controller="About" asp-action="Index" class="btn btn-outline-secondary">
+                        <i class="bi bi-x-circle me-2"></i>İptal
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle me-2"></i>Kaydet
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-control:focus, .input-group-text {
+        box-shadow: none;
+    }
+
+    .form-control, .input-group-text, .btn {
+        font-size: 1.15rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .card-body, .card-header, .btn, .small, .text-muted, h3, h4, h5, p, label {
+        font-size: 1.15rem;
+    }
+
+    textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    .input-group-text {
+        color: #6c757d;
+    }
+
+    .input-group:focus-within .input-group-text {
+        border-color: #86b7fe;
+        color: #0d6efd;
+    }
+
+    .btn-primary, .btn-secondary, .btn-outline-secondary {
+        border-radius: 0.25rem;
+        transition: all 0.3s;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+        }
+
+        .btn-outline-secondary:hover {
+            transform: translateY(-2px);
+        }
+</style>
+
+<script>
+    $(document).ready(function() {
+        // Form doğrulama animasyonları
+        $('form').on('submit', function(e) {
+            var titleValue = $('#Title').val().trim();
+            var descriptionValue = $('#Description').val().trim();
+            var isValid = true;
+
+            if (titleValue === '') {
+                $('#Title').addClass('is-invalid').parent().effect('shake', { times: 2, distance: 5 });
+                isValid = false;
+            } else {
+                $('#Title').removeClass('is-invalid').addClass('is-valid');
+            }
+
+            if (descriptionValue === '') {
+                $('#Description').addClass('is-invalid').parent().effect('shake', { times: 2, distance: 5 });
+                isValid = false;
+            } else {
+                $('#Description').removeClass('is-invalid').addClass('is-valid');
+            }
+
+            if (!isValid) {
+                e.preventDefault();
+                Swal.fire({
+                    title: 'Hata!',
+                    text: 'Lütfen tüm alanları doldurunuz.',
+                    icon: 'error',
+                    confirmButtonText: 'Tamam'
+                });
+            } else {
+                // Form başarıyla gönderildiğinde
+                Swal.fire({
+                    title: 'İşleniyor...',
+                    html: 'Bilgiler kaydediliyor, lütfen bekleyiniz...',
+                    didOpen: () => {
+                        Swal.showLoading();
+                    },
+                    showConfirmButton: false,
+                    allowOutsideClick: false
+                });
+            }
+        });
+
+        // Input animasyonları
+        $('.form-control').focus(function() {
+            $(this).parent().find('.input-group-text').css('color', '#0d6efd');
+        }).blur(function() {
+            $(this).parent().find('.input-group-text').css('color', '#6c757d');
+        });
+    });
+</script>

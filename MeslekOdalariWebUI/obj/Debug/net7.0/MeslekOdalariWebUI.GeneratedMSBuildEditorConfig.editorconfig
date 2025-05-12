@@ -20,6 +20,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 7.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/About/CreateAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcQ3JlYXRlQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/About/UpdateAbout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcVXBkYXRlQWJvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/Ahilik/AhilikKulturu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWhpbGlrXEFoaWxpa0t1bHR1cnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -298,6 +310,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/SubHeader/UpdateSubHeader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViSGVhZGVyXFVwZGF0ZVN1YkhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/UIAbout/Hakkımızda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVUlBYm91dFxIYWtrxLFtxLF6ZGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gulen/source/repos/MeslekOdalari/MeslekOdalariWebUI/Views/UIAuditBoard/DenetimKurulu.cshtml]
