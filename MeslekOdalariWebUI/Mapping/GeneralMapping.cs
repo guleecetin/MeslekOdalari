@@ -15,6 +15,7 @@ using MeslekOdalari.Dto.Dtos.RegulationDtos;
 using MeslekOdalari.Dto.Dtos.RoomsDto;
 using MeslekOdalari.Dto.Dtos.SubHeaderDtos;
 using MeslekOdalari.Dto.Dtos.VideoDtos;
+using MeslekOdalari.Dto.Dtos.VisionMissionDtos;
 using MeslekOdalari.Entity.Entities;
 
 namespace MeslekOdalariWebUI.Mapping
@@ -86,6 +87,10 @@ namespace MeslekOdalariWebUI.Mapping
             CreateMap<ResultAboutDto, About>().ReverseMap();
             CreateMap<UpdateAboutDto, About>().ReverseMap();
             CreateMap<CreateAboutDto, About>().ReverseMap();
+
+            CreateMap<ResultVisionMissionDto, VisionMission>().ReverseMap();
+            CreateMap<UpdateVisionMissionDto, VisionMission>().ReverseMap();
+            CreateMap<CreateVisionMissionDto, VisionMission>().ReverseMap();
 
 
         }

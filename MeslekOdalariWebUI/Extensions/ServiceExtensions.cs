@@ -59,6 +59,9 @@ namespace MeslekOdalariWebUI.Extensions
             Services.AddScoped<IAboutDal, EfAboutDal>();
             Services.AddScoped<IAboutService, AboutManager>();
 
+            Services.AddScoped<IVisionMissionDal, EfVisionMissionDal>();
+            Services.AddScoped<IVisionMissionService, VisionMissionManager>();
+
 
             Services.AddScoped(typeof(IGenericDal<>), typeof(GenericRepository<>));
             Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
