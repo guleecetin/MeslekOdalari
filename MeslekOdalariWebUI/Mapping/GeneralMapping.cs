@@ -7,6 +7,7 @@ using MeslekOdalari.Dto.Dtos.ContactDtos;
 using MeslekOdalari.Dto.Dtos.CounterDtos;
 using MeslekOdalari.Dto.Dtos.DisciplinaryBoardDtos;
 using MeslekOdalari.Dto.Dtos.FeatureDtos;
+using MeslekOdalari.Dto.Dtos.HistoryDtos;
 using MeslekOdalari.Dto.Dtos.MessageDtos;
 using MeslekOdalari.Dto.Dtos.NewsDtos;
 using MeslekOdalari.Dto.Dtos.ProjectDtos;
@@ -91,6 +92,11 @@ namespace MeslekOdalariWebUI.Mapping
             CreateMap<ResultVisionMissionDto, VisionMission>().ReverseMap();
             CreateMap<UpdateVisionMissionDto, VisionMission>().ReverseMap();
             CreateMap<CreateVisionMissionDto, VisionMission>().ReverseMap();
+
+
+            CreateMap<ResultHistoryDto, History>().ReverseMap();
+            CreateMap<UpdateHistoryDto, History>().ReverseMap();
+            CreateMap<CreateHistoryDto, History>().ReverseMap();
 
 
         }
