@@ -245,6 +245,42 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io.zip",
+      "PackagePath": "staticwebassets\\favicon_io.zip"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io\\about.txt",
+      "PackagePath": "staticwebassets\\favicon_io\\about.txt"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\favicon_io\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\favicon_io\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\favicon_io\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon_io\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon_io\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon_io\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon_io\\site.webmanifest",
+      "PackagePath": "staticwebassets\\favicon_io\\site.webmanifest"
+    },
+    {
       "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\.gitattributes",
       "PackagePath": "staticwebassets\\focus-2\\.gitattributes"
     },

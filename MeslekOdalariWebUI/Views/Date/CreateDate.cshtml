@@ -1,0 +1,275 @@
+﻿@model CreateDateDto
+@{
+    //ViewData["Title"] = "Yeni Rezervasyon Ekleme Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white py-4">
+                    <h1 class="mb-0 text-center" style="font-size: 36px; font-weight: 700;  color: white;">YENİ REZERVASYON OLUŞTUR</h1>
+                </div>
+                <div class="card-body p-5">
+                    <form method="post" id="rezervasyonForm" onsubmit="return validateForm()">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Randevu No</label>
+                                    <input type="text" asp-for="RandevuNo" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Randevu No alanı boş bırakılamaz!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Hizmet Türü</label>
+                                    <div class="select-wrapper">
+                                        <select asp-for="HizmetTuru" class="form-select custom-select" style="font-size: 20px; padding: 15px 20px; height: auto; appearance: none;" required>
+                                            <option value="">Hizmet Türü Seçiniz</option>
+                                            <option value="Sicil Kaydı">Sicil Kaydı</option>
+                                            <option value="İşyeri Tescil">İşyeri Tescil</option>
+                                            <option value="Meslek Belgesi">Meslek Belgesi</option>
+                                            <option value="Ustalık Belgesi">Ustalık Belgesi</option>
+                                            <option value="İş Yeri Açma Ruhsatı">İş Yeri Açma Ruhsatı</option>
+                                            <option value="Bilgi Güncelleme">Bilgi Güncelleme</option>
+                                            <option value="İşyeri Kapanış">İşyeri Kapanış</option>
+                                            <option value="Danışmanlık">Danışmanlık</option>
+                                            <option value="Diğer">Diğer</option>
+                                        </select>
+                                    </div>
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Lütfen bir hizmet türü seçin!</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Hizmet Detayı</label>
+                            <input type="text" asp-for="HizmetDetay" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                            <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Hizmet detayı alanı boş bırakılamaz!</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Randevu Tarihi</label>
+                                    <input type="date" asp-for="RandevuTarih" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Randevu tarihi seçmelisiniz!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Randevu Saati</label>
+                                    <input type="time" asp-for="RandevuSaat" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Randevu saati seçmelisiniz!</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Ad Soyad</label>
+                                    <input type="text" asp-for="AdSoyad" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Ad Soyad alanı boş bırakılamaz!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">TC No</label>
+                                    <input type="text" asp-for="TcNo" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required pattern="[0-9]{11}" maxlength="11" />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">TC No 11 haneli olmalıdır!</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Telefon</label>
+                                    <input type="tel" asp-for="Telefon" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required pattern="[0-9]{10,11}" maxlength="11" />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Geçerli bir telefon numarası girmelisiniz!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Email</label>
+                                    <input type="email" asp-for="Email" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Geçerli bir e-posta adresi girmelisiniz!</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">İşletme Adı</label>
+                                    <input type="text" asp-for="IsletmeAdi" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">İşletme adı alanı boş bırakılamaz!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Sicil No</label>
+                                    <input type="text" asp-for="SicilNo" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Sicil no alanı boş bırakılamaz!</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Oluşturma Tarihi</label>
+                                    <input type="date" asp-for="OlusturmaTarihi" class="form-control" style="font-size: 20px; padding: 15px 20px; height: auto;" required />
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Oluşturma tarihi seçmelisiniz!</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <label class="form-label mb-2" style="font-size: 22px; font-weight: 700;">Durum</label>
+                                    <div class="select-wrapper">
+                                        <select asp-for="Durum" class="form-select custom-select" style="font-size: 20px; padding: 15px 20px; height: auto; appearance: none;" required>
+                                            <option value="">Durum Seçiniz</option>
+                                            <option value="Aktif">Aktif</option>
+                                            <option value="Beklemede">Beklemede</option>
+                                            <option value="İptal">İptal</option>
+                                        </select>
+                                    </div>
+                                    <div class="invalid-feedback" style="font-size: 16px; font-weight: 500;">Lütfen bir durum seçin!</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 mt-5">
+                            <button type="submit" class="btn btn-primary btn-lg" style="font-size: 24px; font-weight: 700; padding: 15px 30px;">KAYDET</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-label {
+        color: #0d47a1;
+    }
+
+    .card {
+        border-radius: 15px;
+        overflow: hidden;
+        border: none;
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        border: none;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+    input.form-control, select.form-select {
+        border: 2px solid #dee2e6;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+        input.form-control:focus, select.form-select:focus {
+            border-color: #1e3c72;
+            box-shadow: 0 0 0 0.25rem rgba(30, 60, 114, 0.25);
+        }
+
+    .card-body {
+        background-color: #f8f9fa;
+    }
+
+    /* Custom styling for select dropdowns */
+    .select-wrapper {
+        position: relative;
+    }
+
+        .select-wrapper::after {
+            content: "▼";
+            font-size: 14px;
+            color: #1e3c72;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+    .custom-select {
+        background-color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .custom-select:hover {
+            border-color: #1e3c72;
+        }
+
+        .custom-select option {
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /* Improved focus styling for dropdowns */
+        .custom-select:focus {
+            border-color: #1e3c72;
+            box-shadow: 0 0 0 0.25rem rgba(30, 60, 114, 0.25);
+            outline: none;
+        }
+</style>
+
+<script>
+    function validateForm() {
+        let form = document.getElementById('rezervasyonForm');
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+            // Highlight all invalid fields
+            var invalidFields = form.querySelectorAll(':invalid');
+            invalidFields.forEach(function(field) {
+                field.classList.add('is-invalid');
+            });
+            return false;
+        }
+
+        // Remove invalid class from valid fields
+        var fields = form.querySelectorAll('input, select');
+        fields.forEach(function(field) {
+            field.addEventListener('input', function() {
+                if (this.checkValidity()) {
+                    this.classList.remove('is-invalid');
+                }
+            });
+        });
+
+        return true;
+    }
+
+    // Initialize form validation on load
+    document.addEventListener('DOMContentLoaded', function() {
+        var fields = document.querySelectorAll('input, select');
+        fields.forEach(function(field) {
+            field.addEventListener('blur', function() {
+                if (!this.checkValidity()) {
+                    this.classList.add('is-invalid');
+                } else {
+                    this.classList.remove('is-invalid');
+                }
+            });
+        });
+    });
+</script>

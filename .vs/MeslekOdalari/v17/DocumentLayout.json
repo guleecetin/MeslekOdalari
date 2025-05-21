@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\shared\\_uilayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\shared\\_uilayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\shared\\components\\_defaultfeature\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\shared\\components\\_defaultfeature\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\uidate\\createdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\uidate\\createdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\viewcomponents\\default-index\\_defaultfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\viewcomponents\\default-index\\_defaultfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\wwwroot\\villaagency-1.0.0\\vendor\\bootstrap\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\wwwroot\\villaagency-1.0.0\\vendor\\bootstrap\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\shared\\_uilayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\shared\\_uilayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\date\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\date\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\controllers\\uidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\controllers\\uidatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|c:\\users\\gulen\\source\\repos\\meslekodalari\\meslekodalariwebui\\views\\date\\updatedate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23A81F4F-BFD8-4F2C-8FE9-A5B2AB4CF911}|MeslekOdalariWebUI\\MeslekOdalariWebUI.csproj|solutionrelative:meslekodalariwebui\\views\\date\\updatedate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1260,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,54 +54,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Shared\\Components\\_DefaultFeature\\Default.cshtml",
-              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Shared\\Components\\_DefaultFeature\\Default.cshtml",
-              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Shared\\Components\\_DefaultFeature\\Default.cshtml",
-              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Shared\\Components\\_DefaultFeature\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T21:10:50.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_DefaultFeature.cs",
-              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\ViewComponents\\Default-Index\\_DefaultFeature.cs",
-              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\ViewComponents\\Default-Index\\_DefaultFeature.cs",
-              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\ViewComponents\\Default-Index\\_DefaultFeature.cs",
-              "RelativeToolTip": "MeslekOdalariWebUI\\ViewComponents\\Default-Index\\_DefaultFeature.cs",
+              "DocumentIndex": 3,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\bootstrap\\css\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\bootstrap\\css\\bootstrap.min.css",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\bootstrap\\css\\bootstrap.min.css",
+              "RelativeToolTip": "MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\vendor\\bootstrap\\css\\bootstrap.min.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T21:10:32.851Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-21T20:20:13.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
-              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
-              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T21:10:01.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "_UILayout.cshtml",
               "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
               "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
               "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
               "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Shared\\_UILayout.cshtml",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T21:09:44.418Z",
+              "WhenOpened": "2025-05-21T12:41:02.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateDate.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\UIDate\\CreateDate.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\UIDate\\CreateDate.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\UIDate\\CreateDate.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\UIDate\\CreateDate.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T12:34:44.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UIDateController.cs",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\UIDateController.cs",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Controllers\\UIDateController.cs",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Controllers\\UIDateController.cs",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Controllers\\UIDateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T12:16:34.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateDate.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Date\\UpdateDate.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Date\\UpdateDate.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Date\\UpdateDate.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Date\\UpdateDate.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T12:07:24.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Date\\Index.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Date\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Date\\Index.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Date\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T07:04:01.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "MeslekOdalariWebUI\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T07:01:42.067Z",
               "EditorCaption": ""
             }
           ]

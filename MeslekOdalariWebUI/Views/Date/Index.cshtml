@@ -1,0 +1,176 @@
+﻿@model List<ResultDateDto>
+@{
+    ViewData["Title"] = "Randevu Sayfası";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid px-4">
+    <h2 class="mt-4 mb-4 text-primary fw-bold">Randevu Listesi</h2>
+
+    <div class="card shadow border-0 mb-5">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center py-3 px-4">
+            <h5 class="mb-0 fw-bold">Tüm Randevular</h5>
+            <a asp-controller="Date" asp-action="CreateDate" class="btn btn-light text-primary fw-bold">
+                <i class="fas fa-plus-circle me-2"></i>Yeni Randevu Ekle
+            </a>
+        </div>
+
+        <div class="card-body px-4">
+
+            <!-- Filtre -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light"><i class="fas fa-filter"></i></span>
+                        <select id="hizmetTuruFilter" class="form-select">
+                            <option value="">Tüm Hizmet Türleri</option>
+                            <option>Sicil Kaydı</option>
+                            <option>İşyeri Tescil</option>
+                            <option>Meslek Belgesi</option>
+                            <option>Ustalık Belgesi</option>
+                            <option>İş Yeri Açma Ruhsatı</option>
+                            <option>Bilgi Güncelleme</option>
+                            <option>İşyeri Kapanış</option>
+                            <option>Danışmanlık</option>
+                            <option>Diğer</option>
+                        </select>
+                        <button id="filterReset" class="btn btn-outline-secondary" type="button">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tablo -->
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered align-middle" id="randevuTable">
+                    <thead class="table-light">
+                        <tr>
+                            <th>#</th>
+                            <th>Randevu No</th>
+                            <th>Hizmet Türü</th>
+                            <th>Hizmet Detay</th>
+                            <th>Tarih</th>
+                            <th>Saat</th>
+                            <th>Ad Soyad</th>
+                            <th>TC No</th>
+                            <th>Telefon</th>
+                            <th>Email</th>
+                            <th>İşletme Adı</th>
+                            <th>Sicil No</th>
+                            <th>Oluşturma</th>
+                            <th>Durum</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int count = 0;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <td><strong>@count</strong></td>
+                                <td>@item.RandevuNo</td>
+                                <td>@item.HizmetTuru</td>
+                                <td>@item.HizmetDetay</td>
+                                <td>@item.RandevuTarih.ToShortDateString()</td>
+                                <td>@item.RandevuSaat</td>
+                                <td><strong>@item.AdSoyad</strong></td>
+                                <td class="text-muted">@item.TcNo</td>
+                                <td>@item.Telefon</td>
+                                <td>@item.Email</td>
+                                <td>@item.IsletmeAdi</td>
+                                <td>@item.SicilNo</td>
+                                <td>@item.OlusturmaTarihi.ToShortDateString()</td>
+                                <td>
+                                    @if (item.Durum == "Aktif" || item.Durum == "Onaylandı")
+                                    {
+                                        <span class="badge bg-success">@item.Durum</span>
+                                    }
+                                    else if (item.Durum == "Beklemede")
+                                    {
+                                        <span class="badge bg-warning text-dark">@item.Durum</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">@item.Durum</span>
+                                    }
+                                </td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-controller="Date" asp-action="UpdateDate" asp-route-id="@item.Id"
+                                           class="btn btn-outline-primary btn-sm" data-bs-toggle="tooltip" title="Güncelle">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a asp-controller="Date" asp-action="DeleteDate" asp-route-id="@item.Id"
+                                           class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" title="Sil"
+                                           onclick="return confirm('Bu randevuyu silmek istediğinizden emin misiniz?')">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer bg-light text-muted d-flex justify-content-between align-items-center px-4 py-3">
+            <span>Toplam <strong>@count</strong> randevu bulundu</span>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (typeof $ !== 'undefined') {
+            const table = $('#randevuTable').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/Turkish.json"
+                },
+                "responsive": true,
+                "order": [[0, "desc"]]
+            });
+
+            $('#hizmetTuruFilter').on('change', function () {
+                const selected = $(this).val();
+                table.column(2).search(selected).draw();
+            });
+
+            $('#filterReset').on('click', function () {
+                $('#hizmetTuruFilter').val('');
+                table.column(2).search('').draw();
+            });
+        }
+
+        if (typeof bootstrap !== 'undefined') {
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        }
+    });
+</script>
+
+<style>
+    .table th, .table td {
+        font-size: 15px;
+    }
+
+    .badge {
+        font-size: 13px;
+        padding: 0.5em 0.75em;
+        border-radius: 0.5rem;
+    }
+
+    .btn-group .btn i {
+        margin: 0;
+    }
+
+    .card-header, .card-footer {
+        border-radius: 0 !important;
+    }
+</style>

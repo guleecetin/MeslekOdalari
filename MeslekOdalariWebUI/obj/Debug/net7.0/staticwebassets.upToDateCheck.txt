@@ -1,5 +1,14 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\favicon_io.zip
+wwwroot\favicon_io\about.txt
+wwwroot\favicon_io\android-chrome-192x192.png
+wwwroot\favicon_io\android-chrome-512x512.png
+wwwroot\favicon_io\apple-touch-icon.png
+wwwroot\favicon_io\favicon.ico
+wwwroot\favicon_io\favicon-16x16.png
+wwwroot\favicon_io\favicon-32x32.png
+wwwroot\favicon_io\site.webmanifest
 wwwroot\focus-2\.gitattributes
 wwwroot\focus-2\app-calender.html
 wwwroot\focus-2\app-profile.html

@@ -20,6 +20,7 @@
             height: 200px;
             overflow: hidden;
             position: relative;
+            background-color: #f8f9fa; /* Background color for image loading */
         }
 
             .room-card .img-container img {
@@ -27,6 +28,8 @@
                 height: 100%;
                 object-fit: cover;
                 transition: transform 0.3s ease;
+                /* Add fallback for broken images */
+                display: block;
             }
 
         .room-card:hover .img-container img {
@@ -42,13 +45,14 @@
             font-size: 18px;
             font-weight: 600;
             color: #333;
-            margin-bottom: 0;
-            height: 50px;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            margin-bottom: 10px;
+            min-height: 50px; /* Changed from fixed height to min-height */
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.3;
         }
 
         .room-card .view-more {
@@ -59,7 +63,7 @@
             display: inline-block;
         }
 
-    /* Modal Stilleri */
+    /* Modal Styles */
     .room-modal {
         display: none;
         position: fixed;
@@ -144,7 +148,7 @@
         border-bottom: 1px solid #e9e9e9;
     }
 
-    /* İletişim kartı stilleri tamamen yenilendi */
+    /* Contact card styles */
     .contact-list {
         margin: 0;
         padding: 0;
@@ -192,7 +196,7 @@
     }
 
     .contact-value {
-        padding-left: 42px; /* Simge genişliği + margin */
+        padding-left: 42px; /* Icon width + margin */
         color: #666;
         font-size: 14px;
         word-break: break-word;
@@ -206,6 +210,7 @@
         border-radius: 50%;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         margin-bottom: 15px;
+        background-color: #f8f9fa; /* Background color for image loading */
     }
 
     .room-logo {
@@ -215,16 +220,40 @@
         border-radius: 50%;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         margin-bottom: 15px;
+        background-color: #f8f9fa; /* Background color for image loading */
     }
 
     body.modal-open {
         overflow: hidden;
     }
 
-    /* Responsive düzeltmeler */
+    /* Image error fallback */
+    .img-error {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: #f8f9fa;
+        color: #6c757d;
+        font-size: 14px;
+    }
+
+    /* Responsive adjustments */
     @@media (max-width: 992px) {
         .modal-col {
             margin-bottom: 20px;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .room-card h4 {
+            font-size: 16px;
+            min-height: 42px;
+        }
+
+        .room-modal-content {
+            width: 95%;
+            margin: 5% auto;
         }
     }
 </style>
@@ -245,10 +274,10 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="room-card" onclick="openRoomModal('@item.Id')">
                         <div class="img-container">
-                            <img src="@item.ImageUrl" alt="@item.Title" />
+                            <img src="@item.ImageUrl" alt="@item.Title" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'img-error\'>Resim Yüklenemedi</div>';" />
                         </div>
                         <div class="content">
-                            <h4>@item.Title</h4>
+                            <h4 title="@item.Title">@item.Title</h4>
                             <span class="view-more">Detayları Gör</span>
                         </div>
                     </div>
@@ -263,11 +292,12 @@
                         </div>
                         <div class="room-modal-body">
                             <div class="row detail-row">
-                                <!-- Oda Bilgileri -->
+                                <!-- Chamber Information -->
                                 <div class="col-lg-4 col-md-6 modal-col">
                                     <div class="detail-card h-100">
                                         <div class="text-center mb-4">
-                                            <img src="@item.ImageUrl" alt="@item.Title" class="room-logo">
+                                            <img src="@item.ImageUrl" alt="@item.Title" class="room-logo"
+                                                 onerror="this.onerror=null; this.src='/images/default-logo.png';" />
                                             <h5>@item.Title</h5>
                                             <p class="text-muted mb-2">
                                                 <i class="bi bi-award me-1"></i>Lisans: @item.LicenseNumber
@@ -298,12 +328,13 @@
                                     </div>
                                 </div>
 
-                                <!-- Başkan Bilgileri -->
+                                <!-- President Information -->
                                 <div class="col-lg-4 col-md-6 modal-col">
                                     <div class="detail-card h-100">
                                         <h5 class="detail-title">Başkan Bilgileri</h5>
                                         <div class="text-center">
-                                            <img src="@item.PresidentImageUrl" alt="@item.PresidentName" class="president-image">
+                                            <img src="@item.PresidentImageUrl" alt="@item.PresidentName" class="president-image"
+                                                 onerror="this.onerror=null; this.src='/images/default-president.png';" />
                                             <h5>@item.PresidentName</h5>
                                             <p class="text-muted">Oda Başkanı</p>
                                         </div>
@@ -329,7 +360,7 @@
                                     </div>
                                 </div>
 
-                                <!-- İletişim Bilgileri - Tamamen Yeni Yapı -->
+                                <!-- Contact Information -->
                                 <div class="col-lg-4 col-md-12 modal-col">
                                     <div class="detail-card h-100">
                                         <h5 class="detail-title">İletişim Bilgileri</h5>
@@ -376,7 +407,7 @@
                                 </div>
                             </div>
 
-                            <!-- Açıklama Bölümü -->
+                            <!-- Description Section -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="detail-card">
@@ -400,6 +431,21 @@
 </div>
 
 <script>
+    // Check for image loading errors when page loads
+    window.addEventListener('load', function() {
+        // Add default image path for failed images
+        var defaultRoomImage = '/images/default-logo.png';
+        var defaultPresidentImage = '/images/default-president.png';
+
+        // Check all room card images
+        document.querySelectorAll('.room-card .img-container img').forEach(function(img) {
+            img.addEventListener('error', function() {
+                this.onerror = null;
+                this.parentNode.innerHTML = '<div class="img-error">Resim Yüklenemedi</div>';
+            });
+        });
+    });
+
     function openRoomModal(roomId) {
         document.getElementById('roomModal_' + roomId).style.display = 'block';
         document.body.classList.add('modal-open');
@@ -410,7 +456,7 @@
         document.body.classList.remove('modal-open');
     }
 
-    // Dışarı tıklayınca modalı kapatma
+    // Close modal when clicking outside
     window.onclick = function(event) {
         if (event.target.classList.contains('room-modal')) {
             event.target.style.display = 'none';
@@ -418,7 +464,7 @@
         }
     }
 
-    // ESC tuşuna basınca modalı kapatma
+    // Close modal with ESC key
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
             var modals = document.getElementsByClassName('room-modal');
