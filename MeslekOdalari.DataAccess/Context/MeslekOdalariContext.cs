@@ -1,10 +1,12 @@
 ﻿using MeslekOdalari.Entity.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MongoDB.Bson;
 using MongoDB.EntityFrameworkCore.Extensions;
 
 namespace MeslekOdalari.DataAccess.Context
 {
-    public class MeslekOdalariContext:DbContext
+    public class MeslekOdalariContext:IdentityDbContext<AppUser,AppRole,ObjectId>
     {
         public MeslekOdalariContext(DbContextOptions options):base(options)
         {
@@ -32,25 +34,26 @@ namespace MeslekOdalari.DataAccess.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Banner>().ToCollection("Banners");
-            modelBuilder.Entity<Contact>().ToCollection("Contacts");
-            modelBuilder.Entity<Counter>().ToCollection("Counters");
-            modelBuilder.Entity<Feature>().ToCollection("Features");
-            modelBuilder.Entity<Message>().ToCollection("Messages");
-            modelBuilder.Entity<News>().ToCollection("Newss");
-            modelBuilder.Entity<Quest>().ToCollection("Quests");
-            modelBuilder.Entity<Rooms>().ToCollection("Roomss");
-            modelBuilder.Entity<Video>().ToCollection("Videos");
-            modelBuilder.Entity<SubHeader>().ToCollection("SubHeaders");
-            modelBuilder.Entity<Project>().ToCollection("Projects");
-            modelBuilder.Entity<Regulation>().ToCollection("Regulations");
-            modelBuilder.Entity<Board>().ToCollection("Boards");
-            modelBuilder.Entity<AuditBoard>().ToCollection("AuditBoards ");
-            modelBuilder.Entity<DisciplinaryBoard>().ToCollection("DisciplinaryBoards");
-            modelBuilder.Entity<About>().ToCollection("Abouts");
-            modelBuilder.Entity<VisionMission>().ToCollection("VisionMissions");
-            modelBuilder.Entity<History>().ToCollection("Histories");
-            modelBuilder.Entity<Date>().ToCollection("Dates");
+            base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<Banner>().ToCollection("Banners");
+            //modelBuilder.Entity<Contact>().ToCollection("Contacts");
+            //modelBuilder.Entity<Counter>().ToCollection("Counters");
+            //modelBuilder.Entity<Feature>().ToCollection("Features");
+            //modelBuilder.Entity<Message>().ToCollection("Messages");
+            //modelBuilder.Entity<News>().ToCollection("Newss");
+            //modelBuilder.Entity<Quest>().ToCollection("Quests");
+            //modelBuilder.Entity<Rooms>().ToCollection("Roomss");
+            //modelBuilder.Entity<Video>().ToCollection("Videos");
+            //modelBuilder.Entity<SubHeader>().ToCollection("SubHeaders");
+            //modelBuilder.Entity<Project>().ToCollection("Projects");
+            //modelBuilder.Entity<Regulation>().ToCollection("Regulations");
+            //modelBuilder.Entity<Board>().ToCollection("Boards");
+            //modelBuilder.Entity<AuditBoard>().ToCollection("AuditBoards ");
+            //modelBuilder.Entity<DisciplinaryBoard>().ToCollection("DisciplinaryBoards");
+            //modelBuilder.Entity<About>().ToCollection("Abouts");
+            //modelBuilder.Entity<VisionMission>().ToCollection("VisionMissions");
+            //modelBuilder.Entity<History>().ToCollection("Histories");
+            //modelBuilder.Entity<Date>().ToCollection("Dates");
         }
 
     }

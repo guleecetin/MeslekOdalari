@@ -1,0 +1,243 @@
+﻿@model RegisterDto
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Elazığ Esnaf ve Sanatkarlar Odası - Kayıt</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="~/Registerteması_connection/login-form-20/css/style.css">
+	<style>
+		body {
+			font-family: "Lato", Arial, sans-serif;
+			font-size: 18px; /* Temel font boyutu artırıldı */
+			color: #fff;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			position: relative;
+		}
+
+			body:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0.3);
+			}
+
+		.ftco-section {
+			padding: 7em 0;
+			position: relative;
+			z-index: 1;
+		}
+
+		.heading-section {
+			font-size: 3.5rem !important; /* Başlık çok büyük yapıldı */
+			color: #fff;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+
+			.heading-section + p {
+				font-size: 1.8rem !important; /* Alt başlık büyütüldü */
+				color: #fff;
+				opacity: 0.9;
+			}
+
+		.login-wrap {
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(10px);
+			border-radius: 15px;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+			padding: 3rem !important; /* Padding artırıldı */
+		}
+
+			.login-wrap h3 {
+				font-size: 2rem !important; /* Form başlığı büyütüldü */
+				color: #fff;
+				font-weight: 600;
+			}
+
+		.form-control {
+			height: 65px !important; /* Input yüksekliği artırıldı */
+			font-size: 1.3rem !important; /* Input font boyutu */
+			padding: 0 20px !important;
+			background: rgba(255, 255, 255, 0.9);
+			border: 2px solid rgba(255, 255, 255, 0.3);
+			border-radius: 8px;
+			color: #333 !important;
+			font-weight: 500;
+		}
+
+			.form-control::placeholder {
+				font-size: 1.2rem;
+				color: #666 !important;
+				opacity: 0.8;
+			}
+
+			.form-control:focus {
+				background: rgba(255, 255, 255, 0.95);
+				border-color: #007bff;
+				box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+				color: #333 !important;
+			}
+
+		.btn-primary {
+			background: linear-gradient(45deg, #007bff, #0056b3);
+			border: none;
+			height: 65px !important; /* Buton yüksekliği artırıldı */
+			font-size: 1.4rem !important; /* Buton font boyutu */
+			font-weight: 600;
+			border-radius: 8px;
+			transition: all 0.3s ease;
+		}
+
+			.btn-primary:hover {
+				background: linear-gradient(45deg, #0056b3, #004085);
+				transform: translateY(-2px);
+				box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+			}
+
+		.field-icon {
+			float: right;
+			margin-left: -35px;
+			margin-top: -35px;
+			position: relative;
+			z-index: 2;
+			font-size: 1.3rem !important; /* Icon boyutu artırıldı */
+			color: #666;
+			cursor: pointer;
+		}
+
+		.checkbox-wrap {
+			font-size: 1.1rem !important; /* Checkbox metni büyütüldü */
+			color: #fff;
+		}
+
+			.checkbox-wrap input[type="checkbox"] {
+				transform: scale(1.3); /* Checkbox boyutu artırıldı */
+				margin-right: 10px;
+			}
+
+		.w-50 a {
+			font-size: 1.1rem !important; /* Link boyutu artırıldı */
+			color: #fff !important;
+			text-decoration: none;
+		}
+
+			.w-50 a:hover {
+				text-decoration: underline;
+			}
+
+		.form-group {
+			margin-bottom: 25px; /* Form grupları arası boşluk artırıldı */
+		}
+		@@media (max-width: 768px) {
+			.heading-section
+
+		{
+			font-size: 2.5rem !important;
+		}
+
+		.heading-section + p {
+			font-size: 1.4rem !important;
+		}
+
+		.login-wrap {
+			padding: 2rem !important;
+		}
+
+			.login-wrap h3 {
+				font-size: 1.6rem !important;
+			}
+
+		.form-control {
+			height: 55px !important;
+			font-size: 1.1rem !important;
+		}
+
+		.btn-primary {
+			height: 55px !important;
+			font-size: 1.2rem !important;
+		}
+
+		}
+	</style>
+</head>
+<body class="img js-fullheight" style="background-image: url('@Url.Content("~/Registerteması_connection/login-form-20/images/bg.jpg")');">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 text-center mb-5">
+					<h2 class="heading-section">Elazığ Esnaf ve Sanatkarlar Odası</h2>
+					<p>Üyelik Kayıt Sayfası</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-lg-6">
+					<div class="login-wrap p-0">
+						<h3 class="mb-4 text-center">Hesabınız yok mu? Kayıt olun.</h3>
+						<form method="post" class="register-form" id="register-form" asp-controller="Account" asp-action="Register">
+
+							<div class="form-group">
+								<input type="text"  asp-for="NameSurname" id="name"class="form-control" placeholder="Adınız Soyadınız" required>
+							</div>
+
+							<div class="form-group">
+								<input type="email" asp-for="Email" id="email" class="form-control" placeholder="Email" required>
+							</div>
+
+							<div class="form-group">
+								<input type="text" asp-for="UserName" id="username" class="form-control" placeholder="Kullanıcı Adı" required>
+							</div>
+
+							<div class="form-group">
+								<input id="password-field" type="password" class="form-control" placeholder="Şifre" required>
+								<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="form-control btn btn-primary submit px-3">Kayıt Ol</button>
+							</div>
+						</form>
+						<div class="w-50 text-md-right">
+							<p>Zaten üye misiniz? <a href="/Account/Login">Giriş Yap</a></p>
+						</div>
+
+					</div>
+							
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="~/Registerteması_connection/login-form-20/js/jquery.min.js"></script>
+	<script src="~/Registerteması_connection/login-form-20/js/popper.js"></script>
+	<script src="~/Registerteması_connection/login-form-20/js/bootstrap.min.js"></script>
+	<script src="~/Registerteması_connection/login-form-20/js/main.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".toggle-password").click(function() {
+				$(this).toggleClass("fa-eye fa-eye-slash");
+				var input = $($(this).attr("toggle"));
+				if (input.attr("type") == "password") {
+					input.attr("type", "text");
+				} else {
+					input.attr("type", "password");
+				}
+			});
+		});
+	</script>
+</body>
+</html>

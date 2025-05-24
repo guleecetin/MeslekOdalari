@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Adminteması_connection\login-form-20\.DS_Store" />
+    <None Include="wwwroot\Adminteması_connection\login-form-20\css\.DS_Store" />
+    <None Include="wwwroot\Adminteması_connection\login-form-20\css\bootstrap\.DS_Store" />
+    <None Include="wwwroot\Adminteması_connection\login-form-20\css\bootstrap\mixins\.DS_Store" />
+    <None Include="wwwroot\Adminteması_connection\login-form-20\fonts\.DS_Store" />
+    <None Include="wwwroot\Adminteması_connection\login-form-20\images\.DS_Store" />
+    <None Include="wwwroot\Adminteması_connection\login-form-20\js\.DS_Store" />
+    <None Include="wwwroot\Adminteması_connection\login-form-20\scss\.DS_Store" />
+    <None Include="wwwroot\Adminteması_connection\login-form-20\scss\bootstrap\.DS_Store" />
     <None Include="wwwroot\focus-2\.git\COMMIT_EDITMSG" />
     <None Include="wwwroot\focus-2\.git\config" />
     <None Include="wwwroot\focus-2\.git\description" />
@@ -4556,6 +4565,15 @@
     <None Include="wwwroot\focus-2\.git\objects\ff\fee4cc7e43e77f84d805c2e5b80c5c38be9ff0" />
     <None Include="wwwroot\focus-2\.git\refs\heads\main" />
     <None Include="wwwroot\focus-2\.git\refs\remotes\origin\main" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\.DS_Store" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\css\.DS_Store" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\css\bootstrap\.DS_Store" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\css\bootstrap\mixins\.DS_Store" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\fonts\.DS_Store" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\images\.DS_Store" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\js\.DS_Store" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\scss\.DS_Store" />
+    <None Include="wwwroot\Registerteması_connection\login-form-20\scss\bootstrap\.DS_Store" />
   </ItemGroup>
 
   <ItemGroup>
@@ -4576,6 +4594,7 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
     <PackageReference Include="jQuery" Version="3.7.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
     <PackageReference Include="MongoDB.Driver" Version="2.22.0" />
     <PackageReference Include="MongoDB.Driver.Core" Version="2.22.0" />

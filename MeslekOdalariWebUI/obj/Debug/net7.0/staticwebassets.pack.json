@@ -5,6 +5,858 @@
       "PackagePath": "staticwebassets\\MeslekOdalariWebUI.1cfence7s7.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection.rar",
+      "PackagePath": "staticwebassets\\Adminteması_connection.rar"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\bootstrap\\_media.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\bootstrap\\_media.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_border-radius.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_border-radius.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_reset-text.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_reset-text.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_screen-reader.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_screen-reader.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_text-hide.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_text-hide.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_visibility.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_visibility.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\bootstrap\\utilities\\_stretched-link.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\bootstrap\\utilities\\_stretched-link.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\css\\style.css",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\images\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\index.html",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\js\\main.js",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\main.html",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\main.html"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Adminteması_connection\\login-form-20\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap\\_media.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap\\_media.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_border-radius.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_border-radius.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_reset-text.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_reset-text.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_screen-reader.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_screen-reader.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_text-hide.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_text-hide.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_visibility.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap\\mixins\\_visibility.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap\\utilities\\_stretched-link.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap\\utilities\\_stretched-link.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\style.css",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\images\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\index.html",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\js\\main.js",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\main.html",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\main.html"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\scss\\style.scss"
+    },
+    {
       "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\VillaAgency-1.0.0\\assets\\css\\animate.css",
       "PackagePath": "staticwebassets\\VillaAgency-1.0.0\\assets\\css\\animate.css"
     },
