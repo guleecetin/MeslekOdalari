@@ -8,10 +8,12 @@ namespace MeslekOdalariWebUI.Controllers
     public class AccountController : Controller
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
 
-        public AccountController(UserManager<AppUser> userManager)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         public IActionResult Register()
@@ -28,7 +30,7 @@ namespace MeslekOdalariWebUI.Controllers
                 UserName = registerDto.UserName,
               
             };
-            var result = await _userManager.CreateAsync(user);
+            var result = await _userManager.CreateAsync(user,registerDto.Password);
             if (!result.Succeeded)
             {
                 foreach(var item in result.Errors)
@@ -38,6 +40,27 @@ namespace MeslekOdalariWebUI.Controllers
                 return View();
             }
             return RedirectToAction("Login");
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult>Login(LoginDto loginDto)
+        {
+            var user = await _userManager.FindByNameAsync(loginDto.UserName);
+            if (user == null)
+            {
+                ModelState.AddModelError("","Kullanıcı adı veya Şifre hatalı");
+                return View();
+            }
+            var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "Kullanıcı adı veya Şifre hatalı");
+                return View();
+            }
+            return RedirectToAction("Index","Default");
         }
     }
 }

@@ -396,7 +396,17 @@
                             </li>
                             <li><a href="/Default/Index#contact">İletişim</a></li>
                             <li><a href="/UIDate/CreateDate">Randevu</a></li>
-                            <li><a href="/Uye/KayitBilgileri">Kayıt İşlemleri</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle ps-4" href="#" id="kayıtDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Giriş/Kayıt
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="kayıtDropdown">
+                                    <li><a class="dropdown-item" href="/Account/Login">Giriş Yap</a></li>
+                                    <li><a class="dropdown-item" href="/Account/Register">Kayıt Ol</a></li>
+                                    <li><a class="dropdown-item" href="/Uye/KayitBilgileri">Kayıt İşlemleri</a></li>
+                                    
+                                </ul>
+                            </li>
                         </ul>
 
                         <a class='menu-trigger'>

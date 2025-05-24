@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeslekOdalari.Dto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fd18e304cae9b17125adc3e89e26e0c3755fcc9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+103aaf6d3b6f9bd652d3780b64f930e47017b90f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeslekOdalari.Dto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeslekOdalari.Dto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

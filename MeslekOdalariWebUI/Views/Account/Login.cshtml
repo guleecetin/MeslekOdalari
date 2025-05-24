@@ -1,4 +1,4 @@
-﻿@model RegisterDto
+﻿@model LoginDto
 @{
     Layout = null;
 }
@@ -6,12 +6,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Elazığ Esnaf ve Sanatkarlar Odası - Kayıt</title>
+	<title>Elazığ Esnaf ve Sanatkarlar Odası - Giriş</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="~/Registerteması_connection/login-form-20/css/style.css">
+	<link rel="stylesheet" href="~/Adminteması_connection/login-form-20/css/style.css">
 	<style>
 		body {
 			font-family: "Lato", Arial, sans-serif;
@@ -77,7 +77,7 @@
 		.form-control {
 			height: 65px !important; /* Input yüksekliği artırıldı */
 			font-size: 1.3rem !important; /* Input font boyutu */
-			padding: 0 20px !important;
+			padding: 0 50px 0 20px !important; /* Sağdan padding artırıldı icon için */
 			background: rgba(255, 255, 255, 0.9);
 			border: 2px solid rgba(255, 255, 255, 0.3);
 			border-radius: 8px;
@@ -86,23 +86,18 @@
 			width: 100%;
 		}
 
-		/* Password input için özel padding */
-		.password-container .form-control {
-			padding: 0 50px 0 20px !important; /* Sağdan padding artırıldı icon için */
-		}
+			.form-control::placeholder {
+				font-size: 1.2rem;
+				color: #666 !important;
+				opacity: 0.8;
+			}
 
-		.form-control::placeholder {
-			font-size: 1.2rem;
-			color: #666 !important;
-			opacity: 0.8;
-		}
-
-		.form-control:focus {
-			background: rgba(255, 255, 255, 0.95);
-			border-color: #007bff;
-			box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
-			color: #333 !important;
-		}
+			.form-control:focus {
+				background: rgba(255, 255, 255, 0.95);
+				border-color: #007bff;
+				box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+				color: #333 !important;
+			}
 
 		.btn-primary {
 			background: linear-gradient(45deg, #007bff, #0056b3);
@@ -183,9 +178,6 @@
 		.form-control {
 			height: 55px !important;
 			font-size: 1.1rem !important;
-		}
-
-		.password-container .form-control {
 			padding: 0 40px 0 15px !important;
 		}
 
@@ -202,28 +194,20 @@
 		}
 	</style>
 </head>
-<body class="img js-fullheight" style="background-image: url('@Url.Content("~/Registerteması_connection/login-form-20/images/bg.jpg")');">
+<body class="img js-fullheight" style="background-image: url('@Url.Content("~/Adminteması_connection/login-form-20/images/bg.jpg")');">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-8 text-center mb-5">
 					<h2 class="heading-section">Elazığ Esnaf ve Sanatkarlar Odası</h2>
-					<p>Üyelik Kayıt Sayfası</p>
+					<p>Üye Giriş Sayfası</p>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-8 col-lg-6">
 					<div class="login-wrap p-0">
 
-						<form method="post" class="register-form" id="register-form" asp-controller="Account" asp-action="Register">
-
-							<div class="form-group">
-								<input type="text" asp-for="NameSurname" id="name" class="form-control" placeholder="Adınız Soyadınız" required>
-							</div>
-
-							<div class="form-group">
-								<input type="email" asp-for="Email" id="email" class="form-control" placeholder="Email" required>
-							</div>
+						<form method="post" class="login-form" id="register-form" asp-controller="Account" asp-action="Login">
 
 							<div class="form-group">
 								<input type="text" asp-for="UserName" id="username" class="form-control" placeholder="Kullanıcı Adı" required>
@@ -237,12 +221,12 @@
 							</div>
 
 							<div class="form-group">
-								<button type="submit" class="form-control btn btn-primary submit px-3">Kayıt Ol</button>
+								<button type="submit" class="form-control btn btn-primary submit px-3">Giriş Yap</button>
 							</div>
 						</form>
 
 						<div class="text-center mt-3">
-							<p>Üye misiniz? <a href="/Account/Login" class="text-primary font-weight-bold">Giriş Yap</a></p>
+							<p>Henüz üye değil misiniz? <a href="/Account/Register" class="text-primary font-weight-bold">Kayıt Ol</a></p>
 						</div>
 
 					</div>
@@ -252,10 +236,10 @@
 		</div>
 	</section>
 
-	<script src="~/Registerteması_connection/login-form-20/js/jquery.min.js"></script>
-	<script src="~/Registerteması_connection/login-form-20/js/popper.js"></script>
-	<script src="~/Registerteması_connection/login-form-20/js/bootstrap.min.js"></script>
-	<script src="~/Registerteması_connection/login-form-20/js/main.js"></script>
+	<script src="~/Adminteması_connection/login-form-20/js/jquery.min.js"></script>
+	<script src="~/Adminteması_connection/login-form-20/js/popper.js"></script>
+	<script src="~/Adminteması_connection/login-form-20/js/bootstrap.min.js"></script>
+	<script src="~/Adminteması_connection/login-form-20/js/main.js"></script>
 	<script>
 		$(document).ready(function(){
 			// Göz ikonu toggle işlevi
