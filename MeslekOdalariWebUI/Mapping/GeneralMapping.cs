@@ -103,6 +103,8 @@ namespace MeslekOdalariWebUI.Mapping
             CreateMap<UpdateDateDto, Date>().ReverseMap();
             CreateMap<CreateDateDto, Date>().ReverseMap();
 
+          
+
 
         }
     }

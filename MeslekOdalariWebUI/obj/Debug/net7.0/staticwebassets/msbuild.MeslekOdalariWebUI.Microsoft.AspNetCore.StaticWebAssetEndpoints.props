@@ -1296,6 +1296,102 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"362"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022pAGv4ietcJNk/EwsQZ5BN9\u002BK4MuNYS2a9wl4Jw\u002Bq9D0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 08:50:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/DiplomaVeyaBelge.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\DiplomaVeyaBelge.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/DiplomaVeyaBelge.xoxjdow3j4.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\DiplomaVeyaBelge.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoxjdow3j4"},{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/DiplomaVeyaBelge.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/EsnafSicilBeyannamesi.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\EsnafSicilBeyannamesi.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/EsnafSicilBeyannamesi.xoxjdow3j4.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\EsnafSicilBeyannamesi.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoxjdow3j4"},{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/EsnafSicilBeyannamesi.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/IkametgahBelgesi.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\IkametgahBelgesi.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/IkametgahBelgesi.xoxjdow3j4.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\IkametgahBelgesi.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoxjdow3j4"},{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/IkametgahBelgesi.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/ImzaBeyannamesi.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\ImzaBeyannamesi.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/ImzaBeyannamesi.xoxjdow3j4.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\ImzaBeyannamesi.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoxjdow3j4"},{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/ImzaBeyannamesi.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/IsyeriRuhsati.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\IsyeriRuhsati.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/IsyeriRuhsati.xoxjdow3j4.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\IsyeriRuhsati.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoxjdow3j4"},{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/IsyeriRuhsati.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/NufusCuzdani.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\NufusCuzdani.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/NufusCuzdani.xoxjdow3j4.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\NufusCuzdani.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoxjdow3j4"},{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/NufusCuzdani.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/OdaKayitFormu.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\OdaKayitFormu.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/OdaKayitFormu.xoxjdow3j4.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\OdaKayitFormu.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoxjdow3j4"},{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/OdaKayitFormu.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/VergiLevhasi.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\VergiLevhasi.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/VergiLevhasi.xoxjdow3j4.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Documents\42345678901_20250526152203\VergiLevhasi.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xoxjdow3j4"},{"Name":"integrity","Value":"sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/Documents/42345678901_20250526152203/VergiLevhasi.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"308507"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 12:22:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

@@ -68,6 +68,8 @@ namespace MeslekOdalariWebUI.Extensions
             Services.AddScoped<IDateDal, EfDateDal>();
             Services.AddScoped<IDateService, DateManager>();
 
+           
+
 
             Services.AddScoped(typeof(IGenericDal<>), typeof(GenericRepository<>));
             Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));

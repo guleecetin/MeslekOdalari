@@ -353,7 +353,7 @@
                             <li><a href="/Default/Index" class="active">AnaSayfa</a></li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   Kurumsal
+                                    Kurumsal
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="kurumsalDropdown">
                                     <li><a class="dropdown-item" href="/UIAbout/Hakkımızda">Hakkımızda</a></li>
@@ -363,7 +363,7 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle" href="#" id="kurulDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                   Kurullar
+                                    Kurullar
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="kurulDropdown">
                                     <li><a class="dropdown-item" href="/UIBoard/YonetimKurulu">Yönetim Kurulu</a></li>
@@ -395,18 +395,40 @@
                                 </ul>
                             </li>
                             <li><a href="/Default/Index#contact">İletişim</a></li>
-                            <li><a href="/UIDate/CreateDate">Randevu</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle ps-4" href="#" id="kayıtDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Giriş/Kayıt
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="kayıtDropdown">
-                                    <li><a class="dropdown-item" href="/Account/Login">Giriş Yap</a></li>
-                                    <li><a class="dropdown-item" href="/Account/Register">Kayıt Ol</a></li>
-                                    <li><a class="dropdown-item" href="/Uye/KayitBilgileri">Kayıt İşlemleri</a></li>
-                                    
-                                </ul>
-                            </li>
+                            @if (User.Identity != null && User.Identity.IsAuthenticated && !string.IsNullOrEmpty(User.Identity.Name))
+                            {
+                                var userRoleClaim = User.FindFirst("UserRole");
+                                if (userRoleClaim != null && userRoleClaim.Value == "1")
+                                {
+                                    <li><a href="/UIDate/CreateDate">Randevu</a></li>
+                                }
+                            }
+
+                            @if (User.Identity != null && User.Identity.IsAuthenticated && !string.IsNullOrEmpty(User.Identity.Name))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle ps-4" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user me-1"></i>@User.Identity.Name
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                        <li><a class="dropdown-item" href="/Account/Profile">Profilim</a></li>
+                                        <li><a class="dropdown-item" href="/Account/Logout">Çıkış Yap</a></li>
+                                    </ul>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle ps-4" href="#" id="kayıtDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Giriş/Kayıt
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="kayıtDropdown">
+                                        <li><a class="dropdown-item" href="/Account/Login">Giriş Yap</a></li>
+                                        <li><a class="dropdown-item" href="/Account/Register">Kayıt Ol</a></li>
+                                        <li><a class="dropdown-item" href="/Uye/KayitBilgileri">Kayıt İşlemleri</a></li>
+                                    </ul>
+                                </li>
+                            }
                         </ul>
 
                         <a class='menu-trigger'>

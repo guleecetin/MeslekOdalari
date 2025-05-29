@@ -200,7 +200,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-8 text-center mb-5">
 					<h2 class="heading-section">Elazığ Esnaf ve Sanatkarlar Odası</h2>
-					<p>Üye Giriş Sayfası</p>
+					<p>Admin/Esnaf Giriş Sayfası</p>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -210,8 +210,10 @@
 						<form method="post" class="login-form" id="register-form" asp-controller="Account" asp-action="Login">
 
 							<div class="form-group">
-								<input type="text" asp-for="UserName" id="username" class="form-control" placeholder="Kullanıcı Adı" required>
+								<input type="text" asp-for="TC" id="kimlikno" class="form-control" placeholder="Kimlik No" required
+									   pattern="\d{11}" title="TC kimlik numarası 11 rakamdan oluşmalıdır" maxlength="11">
 							</div>
+
 
 							<div class="form-group">
 								<div class="password-container">

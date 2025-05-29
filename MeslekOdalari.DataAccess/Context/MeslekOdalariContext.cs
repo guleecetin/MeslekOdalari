@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Bson;
-using MongoDB.EntityFrameworkCore.Extensions;
 
 namespace MeslekOdalari.DataAccess.Context
 {
@@ -31,6 +30,7 @@ namespace MeslekOdalari.DataAccess.Context
         public DbSet<VisionMission> VisionMissions{ get; set; }
         public DbSet<History> Histories { get; set; }
         public DbSet<Date> Dates { get; set; }
+       
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

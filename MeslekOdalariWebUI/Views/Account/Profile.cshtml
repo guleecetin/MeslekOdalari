@@ -1,0 +1,591 @@
+﻿@model MeslekOdalari.Dto.Dtos.IdentityDtos.ProfileDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Bilgileri</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --secondary-blue: #1e40af;
+            --light-blue: #dbeafe;
+            --extra-light-blue: #f0f9ff;
+            --dark-blue: #1e3a8a;
+            --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            --gradient-secondary: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-heavy: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1e293b;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(147, 197, 253, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 60%, rgba(96, 165, 250, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .profile-container {
+            padding: 3rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .profile-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: var(--shadow-heavy);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background: var(--gradient-primary);
+            border: none;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: translate(30px, -30px);
+        }
+        
+        .card-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            transform: translate(-50px, 50px);
+        }
+        
+        .card-header h4 {
+            font-weight: 700;
+            margin: 0;
+            color: white;
+            font-size: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .card-body {
+            padding: 2.5rem;
+            position: relative;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--dark-blue);
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .form-label i {
+            color: var(--primary-blue);
+            width: 16px;
+            text-align: center;
+        }
+        
+        .form-control {
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            padding: 1rem 1.25rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: rgba(248, 250, 252, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+            background: white;
+            transform: translateY(-1px);
+        }
+        
+        .form-control:hover {
+            border-color: var(--secondary-blue);
+        }
+        
+        .form-control[readonly] {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-color: #cbd5e1;
+            color: #64748b;
+        }
+        
+        .form-group {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .btn {
+            border-radius: 12px;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .btn-primary:hover {
+            background: var(--gradient-secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+            color: white;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, #475569 0%, #334155 100%);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .alert {
+            border-radius: 16px;
+            border: none;
+            padding: 1.25rem 1.5rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .alert-success {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+            color: #065f46;
+            border-left: 4px solid #10b981;
+        }
+        
+        .alert-danger {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+            color: #991b1b;
+            border-left: 4px solid #ef4444;
+        }
+        
+        .stats-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 2rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .stats-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-heavy);
+        }
+        
+        .stats-header {
+            background: var(--gradient-secondary);
+            border: none;
+            padding: 1.5rem 2rem;
+            position: relative;
+        }
+        
+        .stats-header h5 {
+            color: white;
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+        
+        .stats-body {
+            padding: 2rem;
+        }
+        
+        .stat-item {
+            padding: 1.5rem;
+            border-radius: 16px;
+            background: rgba(37, 99, 235, 0.03);
+            border: 1px solid rgba(37, 99, 235, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .stat-item:hover {
+            background: rgba(37, 99, 235, 0.08);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-light);
+        }
+        
+        .stat-item i {
+            display: block;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-item h6 {
+            color: #64748b;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .stat-item p {
+            color: var(--dark-blue);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        
+        .form-text {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .text-danger {
+            color: #dc2626 !important;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .is-invalid {
+            border-color: #dc2626 !important;
+            box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1) !important;
+        }
+        
+        .is-valid {
+            border-color: #16a34a !important;
+            box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.1) !important;
+        }
+        
+        /* Animasyonlar */
+        @@keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .profile-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .stats-card {
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+        
+        /* Responsive */
+        @@media screen and (max-width: 768px) {
+            .profile-container {
+                padding: 1.5rem 1rem;
+            }
+            
+            .card-body {
+                padding: 1.5rem;
+            }
+            
+            .stats-body {
+                padding: 1.5rem;
+            }
+            
+            .btn {
+                padding: 0.875rem 1.5rem;
+                font-size: 0.95rem;
+            }
+            
+            .card-header {
+                padding: 1.5rem;
+            }
+            
+            .card-header h4 {
+                font-size: 1.25rem;
+            }
+        }
+        
+        @@media screen and (max-width: 576px) {
+            .profile-container {
+                padding: 1rem 0.5rem;
+            }
+            
+            .card-body {
+                padding: 1rem;
+            }
+            
+            .form-control {
+                padding: 0.875rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container profile-container">
+        <div class="row justify-content-center w-100">
+            <div class="col-lg-8 col-xl-7">
+                <div class="card profile-card">
+                    <div class="card-header">
+                        <h4 class="mb-0">
+                            <i class="fas fa-user me-2"></i> Profil Bilgileri
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        @if (ViewBag.Message != null)
+                        {
+                            var alertType = ViewBag.MessageType == "success" ? "success" : "danger";
+                            var iconType = ViewBag.MessageType == "success" ? "check-circle" : "exclamation-triangle";
+                            <div class="alert alert-@alertType alert-dismissible fade show" role="alert">
+                                <i class="fas fa-@iconType me-2"></i>
+                                @ViewBag.Message
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        }
+
+                        <form asp-action="Profile" method="post" novalidate>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="TC" class="form-label">
+                                            <i class="fas fa-id-card"></i>
+                                            TC Kimlik No
+                                        </label>
+                                        <input asp-for="TC" class="form-control" readonly />
+                                        <small class="form-text">
+                                            <i class="fas fa-info-circle"></i>
+                                            TC kimlik numarası değiştirilemez.
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="UserName" class="form-label">
+                                            <i class="fas fa-user"></i>
+                                            Kullanıcı Adı
+                                        </label>
+                                        <input asp-for="UserName" class="form-control" />
+                                        <span asp-validation-for="UserName" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="NameSurName" class="form-label">
+                                            <i class="fas fa-signature"></i>
+                                            Ad Soyad
+                                        </label>
+                                        <input asp-for="NameSurName" class="form-control" />
+                                        <span asp-validation-for="NameSurName" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="Email" class="form-label">
+                                            <i class="fas fa-envelope"></i>
+                                            Email
+                                        </label>
+                                        <input asp-for="Email" class="form-control" type="email" />
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column flex-md-row gap-3 justify-content-md-end mt-4">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save me-2"></i> Güncelle
+                                </button>
+                                <a asp-controller="Default" asp-action="Index" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left me-2"></i> Geri Dön
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Hesap İstatistikleri Kartı -->
+                <div class="card stats-card">
+                    <div class="stats-header">
+                        <h5 class="mb-0">
+                            <i class="fas fa-chart-bar me-2"></i> Hesap Bilgileri
+                        </h5>
+                    </div>
+                    <div class="stats-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="stat-item text-center">
+                                    <i class="fas fa-calendar-alt fa-2x text-primary"></i>
+                                    <h6>Kayıt Tarihi</h6>
+                                    <p>@Model.RegistrationDate.ToString("dd/MM/yyyy")</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="stat-item text-center">
+                                    <i class="fas fa-user-check fa-2x" style="color: #16a34a;"></i>
+                                    <h6>Profil Durumu</h6>
+                                    <p style="color: #16a34a;">Güncel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validasyonu
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const inputs = this.querySelectorAll('input[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                const errorSpan = input.parentNode.querySelector('.text-danger');
+                if (errorSpan) {
+                    errorSpan.textContent = '';
+                }
+                
+                if (!input.value.trim()) {
+                    isValid = false;
+                    if (errorSpan) {
+                        errorSpan.textContent = 'Bu alan zorunludur.';
+                    }
+                    input.classList.add('is-invalid');
+                    input.classList.remove('is-valid');
+                } else {
+                    input.classList.remove('is-invalid');
+                    input.classList.add('is-valid');
+                }
+            });
+            
+            // Email validasyonu
+            const emailInput = document.querySelector('input[type="email"]');
+            if (emailInput && emailInput.value) {
+                const emailRegex = /^[^\s]+[^\s]+\.[^\s]+$/;
+                if (!emailRegex.test(emailInput.value)) {
+                    isValid = false;
+                    const errorSpan = emailInput.parentNode.querySelector('.text-danger');
+                    if (errorSpan) {
+                        errorSpan.textContent = 'Geçerli bir email adresi giriniz.';
+                    }
+                    emailInput.classList.add('is-invalid');
+                    emailInput.classList.remove('is-valid');
+                }
+            }
+            
+            if (!isValid) {
+                e.preventDefault();
+                // Geçersiz alana scroll
+                const firstInvalid = this.querySelector('.is-invalid');
+                if (firstInvalid) {
+                    firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstInvalid.focus();
+                }
+            }
+        });
+        
+        // Alert otomatik kapatma
+        setTimeout(function() {
+            const alerts = document.querySelectorAll('.alert');
+            alerts.forEach(alert => {
+                if (alert.classList.contains('show')) {
+                    alert.classList.remove('show');
+                    setTimeout(() => alert.remove(), 300);
+                }
+            });
+        }, 5000);
+        
+        // Input animasyonları
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.classList.remove('focused');
+            });
+        });
+    </script>
+</body>
+</html>

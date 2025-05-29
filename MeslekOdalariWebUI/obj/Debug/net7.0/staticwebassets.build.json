@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wzZEhlE+eD46cRAj03w1YRDLgXPdgdjl9ZKfPErBabg=",
+  "Hash": "B7QqCaJLOrbWhR/u1Kbdc1lQvf7ElvmkcG8UL4XklB8=",
   "Source": "MeslekOdalariWebUI",
   "BasePath": "_content/MeslekOdalariWebUI",
   "Mode": "Default",
@@ -2325,6 +2325,174 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\DiplomaVeyaBelge.pdf",
+      "SourceId": "MeslekOdalariWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\",
+      "BasePath": "_content/MeslekOdalariWebUI",
+      "RelativePath": "Documents/42345678901_20250526152203/DiplomaVeyaBelge#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoxjdow3j4",
+      "Integrity": "UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\42345678901_20250526152203\\DiplomaVeyaBelge.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\EsnafSicilBeyannamesi.pdf",
+      "SourceId": "MeslekOdalariWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\",
+      "BasePath": "_content/MeslekOdalariWebUI",
+      "RelativePath": "Documents/42345678901_20250526152203/EsnafSicilBeyannamesi#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoxjdow3j4",
+      "Integrity": "UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\42345678901_20250526152203\\EsnafSicilBeyannamesi.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\IkametgahBelgesi.pdf",
+      "SourceId": "MeslekOdalariWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\",
+      "BasePath": "_content/MeslekOdalariWebUI",
+      "RelativePath": "Documents/42345678901_20250526152203/IkametgahBelgesi#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoxjdow3j4",
+      "Integrity": "UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\42345678901_20250526152203\\IkametgahBelgesi.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\ImzaBeyannamesi.pdf",
+      "SourceId": "MeslekOdalariWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\",
+      "BasePath": "_content/MeslekOdalariWebUI",
+      "RelativePath": "Documents/42345678901_20250526152203/ImzaBeyannamesi#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoxjdow3j4",
+      "Integrity": "UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\42345678901_20250526152203\\ImzaBeyannamesi.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\IsyeriRuhsati.pdf",
+      "SourceId": "MeslekOdalariWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\",
+      "BasePath": "_content/MeslekOdalariWebUI",
+      "RelativePath": "Documents/42345678901_20250526152203/IsyeriRuhsati#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoxjdow3j4",
+      "Integrity": "UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\42345678901_20250526152203\\IsyeriRuhsati.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\NufusCuzdani.pdf",
+      "SourceId": "MeslekOdalariWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\",
+      "BasePath": "_content/MeslekOdalariWebUI",
+      "RelativePath": "Documents/42345678901_20250526152203/NufusCuzdani#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoxjdow3j4",
+      "Integrity": "UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\42345678901_20250526152203\\NufusCuzdani.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\OdaKayitFormu.pdf",
+      "SourceId": "MeslekOdalariWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\",
+      "BasePath": "_content/MeslekOdalariWebUI",
+      "RelativePath": "Documents/42345678901_20250526152203/OdaKayitFormu#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoxjdow3j4",
+      "Integrity": "UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\42345678901_20250526152203\\OdaKayitFormu.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\VergiLevhasi.pdf",
+      "SourceId": "MeslekOdalariWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\",
+      "BasePath": "_content/MeslekOdalariWebUI",
+      "RelativePath": "Documents/42345678901_20250526152203/VergiLevhasi#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoxjdow3j4",
+      "Integrity": "UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Documents\\42345678901_20250526152203\\VergiLevhasi.pdf"
     },
     {
       "Identity": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\favicon.ico",
@@ -101271,6 +101439,662 @@
         {
           "Name": "integrity",
           "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/DiplomaVeyaBelge.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\DiplomaVeyaBelge.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/DiplomaVeyaBelge.xoxjdow3j4.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\DiplomaVeyaBelge.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xoxjdow3j4"
+        },
+        {
+          "Name": "label",
+          "Value": "Documents/42345678901_20250526152203/DiplomaVeyaBelge.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/EsnafSicilBeyannamesi.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\EsnafSicilBeyannamesi.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/EsnafSicilBeyannamesi.xoxjdow3j4.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\EsnafSicilBeyannamesi.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xoxjdow3j4"
+        },
+        {
+          "Name": "label",
+          "Value": "Documents/42345678901_20250526152203/EsnafSicilBeyannamesi.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/IkametgahBelgesi.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\IkametgahBelgesi.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/IkametgahBelgesi.xoxjdow3j4.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\IkametgahBelgesi.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xoxjdow3j4"
+        },
+        {
+          "Name": "label",
+          "Value": "Documents/42345678901_20250526152203/IkametgahBelgesi.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/ImzaBeyannamesi.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\ImzaBeyannamesi.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/ImzaBeyannamesi.xoxjdow3j4.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\ImzaBeyannamesi.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xoxjdow3j4"
+        },
+        {
+          "Name": "label",
+          "Value": "Documents/42345678901_20250526152203/ImzaBeyannamesi.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/IsyeriRuhsati.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\IsyeriRuhsati.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/IsyeriRuhsati.xoxjdow3j4.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\IsyeriRuhsati.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xoxjdow3j4"
+        },
+        {
+          "Name": "label",
+          "Value": "Documents/42345678901_20250526152203/IsyeriRuhsati.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/NufusCuzdani.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\NufusCuzdani.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/NufusCuzdani.xoxjdow3j4.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\NufusCuzdani.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xoxjdow3j4"
+        },
+        {
+          "Name": "label",
+          "Value": "Documents/42345678901_20250526152203/NufusCuzdani.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/OdaKayitFormu.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\OdaKayitFormu.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/OdaKayitFormu.xoxjdow3j4.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\OdaKayitFormu.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xoxjdow3j4"
+        },
+        {
+          "Name": "label",
+          "Value": "Documents/42345678901_20250526152203/OdaKayitFormu.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/VergiLevhasi.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\VergiLevhasi.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
+        }
+      ]
+    },
+    {
+      "Route": "Documents/42345678901_20250526152203/VergiLevhasi.xoxjdow3j4.pdf",
+      "AssetFile": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\VergiLevhasi.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "308507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 12:22:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xoxjdow3j4"
+        },
+        {
+          "Name": "label",
+          "Value": "Documents/42345678901_20250526152203/VergiLevhasi.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UX566mCbKHdZuXjlUAro6a0u5IU8P7Ne9WltXnU/lLk="
         }
       ]
     },

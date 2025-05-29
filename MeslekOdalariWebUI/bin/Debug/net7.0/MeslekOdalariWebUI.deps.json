@@ -2718,6 +2718,7 @@
       },
       "MeslekOdalari.Dto/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.3.0",
           "MongoDB.Bson": "2.22.0"
         },
         "runtime": {
@@ -2729,6 +2730,7 @@
       },
       "MeslekOdalari.Entity/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.3.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.20",
           "MongoDB.Bson": "2.22.0"
         },

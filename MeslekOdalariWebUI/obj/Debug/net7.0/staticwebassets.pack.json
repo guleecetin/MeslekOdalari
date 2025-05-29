@@ -433,6 +433,38 @@
       "PackagePath": "staticwebassets\\Adminteması_connection\\login-form-20\\scss\\style.scss"
     },
     {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\DiplomaVeyaBelge.pdf",
+      "PackagePath": "staticwebassets\\Documents\\42345678901_20250526152203\\DiplomaVeyaBelge.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\EsnafSicilBeyannamesi.pdf",
+      "PackagePath": "staticwebassets\\Documents\\42345678901_20250526152203\\EsnafSicilBeyannamesi.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\IkametgahBelgesi.pdf",
+      "PackagePath": "staticwebassets\\Documents\\42345678901_20250526152203\\IkametgahBelgesi.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\ImzaBeyannamesi.pdf",
+      "PackagePath": "staticwebassets\\Documents\\42345678901_20250526152203\\ImzaBeyannamesi.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\IsyeriRuhsati.pdf",
+      "PackagePath": "staticwebassets\\Documents\\42345678901_20250526152203\\IsyeriRuhsati.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\NufusCuzdani.pdf",
+      "PackagePath": "staticwebassets\\Documents\\42345678901_20250526152203\\NufusCuzdani.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\OdaKayitFormu.pdf",
+      "PackagePath": "staticwebassets\\Documents\\42345678901_20250526152203\\OdaKayitFormu.pdf"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Documents\\42345678901_20250526152203\\VergiLevhasi.pdf",
+      "PackagePath": "staticwebassets\\Documents\\42345678901_20250526152203\\VergiLevhasi.pdf"
+    },
+    {
       "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\Registerteması_connection\\login-form-20\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\Registerteması_connection\\login-form-20\\css\\bootstrap.min.css"
     },

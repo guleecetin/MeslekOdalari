@@ -2,10 +2,12 @@
 using MeslekOdalari.Business.Abstract;
 using MeslekOdalari.Dto.Dtos.DateDtos;
 using MeslekOdalari.Entity.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MeslekOdalariWebUI.Controllers
 {
+
     public class UIDateController : Controller
     {
         private readonly IDateService _dateService;
@@ -17,12 +19,15 @@ namespace MeslekOdalariWebUI.Controllers
             _dateService = dateService;
         }
 
+
+
         // Randevu alma formunu göster
         [HttpGet]
-        public async Task< IActionResult> CreateDate()
+        public async Task<IActionResult> CreateDate()
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> CreateDate(CreateDateDto createDateDto)
         {
@@ -34,10 +39,11 @@ namespace MeslekOdalariWebUI.Controllers
             var newDate = _mapper.Map<Date>(createDateDto); // DTO -> Entity
             await _dateService.TCreateAsync(newDate); // Veritabanına kaydet
 
-            return RedirectToAction("Index", "Default"); 
+            return RedirectToAction("Index", "Default");
         }
 
 
 
     }
 }
+//datecontroller

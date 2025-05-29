@@ -106,6 +106,14 @@ wwwroot\Adminteması_connection\login-form-20\scss\bootstrap\utilities\_visibili
 wwwroot\Adminteması_connection\login-form-20\scss\bootstrap\vendor\_rfs.scss
 wwwroot\Adminteması_connection\login-form-20\scss\style.scss
 wwwroot\css\site.css
+wwwroot\Documents\42345678901_20250526152203\DiplomaVeyaBelge.pdf
+wwwroot\Documents\42345678901_20250526152203\EsnafSicilBeyannamesi.pdf
+wwwroot\Documents\42345678901_20250526152203\IkametgahBelgesi.pdf
+wwwroot\Documents\42345678901_20250526152203\ImzaBeyannamesi.pdf
+wwwroot\Documents\42345678901_20250526152203\IsyeriRuhsati.pdf
+wwwroot\Documents\42345678901_20250526152203\NufusCuzdani.pdf
+wwwroot\Documents\42345678901_20250526152203\OdaKayitFormu.pdf
+wwwroot\Documents\42345678901_20250526152203\VergiLevhasi.pdf
 wwwroot\favicon.ico
 wwwroot\favicon_io.zip
 wwwroot\favicon_io\about.txt
