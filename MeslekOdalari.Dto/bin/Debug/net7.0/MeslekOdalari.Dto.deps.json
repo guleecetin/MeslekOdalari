@@ -9,7 +9,8 @@
       "MeslekOdalari.Dto/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.3.0",
-          "MongoDB.Bson": "2.22.0"
+          "MongoDB.Bson": "2.22.0",
+          "System.ServiceModel.Syndication": "9.0.5"
         },
         "runtime": {
           "MeslekOdalari.Dto.dll": {}
@@ -47,7 +48,15 @@
         }
       },
       "System.Memory/4.5.5": {},
-      "System.Runtime.CompilerServices.Unsafe/5.0.0": {}
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
+      "System.ServiceModel.Syndication/9.0.5": {
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Syndication.dll": {
+            "assemblyVersion": "9.0.0.5",
+            "fileVersion": "9.0.525.21509"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -90,6 +99,13 @@
       "sha512": "sha512-ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
       "path": "system.runtime.compilerservices.unsafe/5.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    },
+    "System.ServiceModel.Syndication/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gO8FeyiSgCN4jnzCUu8Uk2kv1JMUii2jBcZPXR7srd7GQzFNdEr+LRK5j5VyvH/7F9PYXuyvFlqIB05u4X6l5Q==",
+      "path": "system.servicemodel.syndication/9.0.5",
+      "hashPath": "system.servicemodel.syndication.9.0.5.nupkg.sha512"
     }
   }
 }

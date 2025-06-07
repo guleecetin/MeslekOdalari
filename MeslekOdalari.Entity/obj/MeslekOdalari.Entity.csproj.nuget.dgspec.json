@@ -62,6 +62,10 @@
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "System.ServiceModel.Syndication": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [

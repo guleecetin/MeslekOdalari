@@ -24,6 +24,13 @@ builder.Services.AddDbContext<MeslekOdalariContext>(option =>
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<MeslekOdalariContext>();
 builder.Services.AddScoped<IRoleSeedService, RoleSeedService>();
 builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+
+// RSS servisleri ekle
+builder.Services.AddHttpClient<MeslekOdalariWebUI.Services.IRssService, MeslekOdalariWebUI.Services.RssService>();
+builder.Services.AddScoped<MeslekOdalariWebUI.Services.IRssService, MeslekOdalariWebUI.Services.RssService>();
+
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

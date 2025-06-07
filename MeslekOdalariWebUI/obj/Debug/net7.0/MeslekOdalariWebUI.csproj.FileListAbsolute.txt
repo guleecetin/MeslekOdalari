@@ -277,3 +277,4 @@ C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\Sy
 C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\System.Text.Encodings.Web.dll
 C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+C:\Users\gulen\source\repos\MeslekOdalari\MeslekOdalariWebUI\bin\Debug\net7.0\System.ServiceModel.Syndication.dll

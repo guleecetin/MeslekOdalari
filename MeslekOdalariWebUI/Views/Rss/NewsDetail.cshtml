@@ -1,0 +1,472 @@
+﻿@model MeslekOdalariWebUI.Models.NewsDetail
+@{
+    ViewData["Title"] = "NewsDetail";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="container-fluid">
+    <!-- Header Section -->
+    <div class="news-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="breadcrumb-nav">
+                        <a href="@Url.Action("Index", "Rss")" class="breadcrumb-link">
+                            <i class="fas fa-arrow-left"></i> Haberlere Dön
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Content -->
+    <div class="news-content-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <article class="news-article">
+                        <!-- News Title -->
+                        <header class="news-article-header">
+                            <h1 class="news-article-title">@Model.Title</h1>
+                            <div class="news-article-meta">
+                                <span class="meta-item">
+                                    <i class="far fa-calendar-alt"></i>
+                                    @Model.PublishDate.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("tr-TR"))
+                                </span>
+                                <span class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    @Model.PublishDate.ToString("HH:mm")
+                                </span>
+                                @if (!string.IsNullOrEmpty(Model.Author))
+                                {
+                                    <span class="meta-item">
+                                        <i class="far fa-user"></i>
+                                        @Model.Author
+                                    </span>
+                                }
+                            </div>
+                        </header>
+
+                        <!-- News Description -->
+                        @if (!string.IsNullOrEmpty(Model.Description))
+                        {
+                            <div class="news-article-summary">
+                                <p class="summary-text">@Model.Description</p>
+                            </div>
+                        }
+
+                        <!-- News Content -->
+                        <div class="news-article-content">
+                            @if (!string.IsNullOrEmpty(Model.Content) && Model.Content != "İçerik şu anda yüklenemiyor. Lütfen orijinal haberi okumak için aşağıdaki linke tıklayın.")
+                            {
+                                <div class="content-text">
+                                    @Html.Raw(Model.Content.Replace("\n", "<br>"))
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="content-notice">
+                                    <div class="notice-icon">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div>
+                                    <div class="notice-content">
+                                        <h4>İçerik Yüklenemedi</h4
+                                    </div>
+                                </div>
+                            }
+                        </div>
+<!-- News Actions -->
+  <div class="news-article-actions">
+                            <div class="action-buttons">
+                                <a href="https://www.haberturk.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Habertürk Ana Sayfa
+                                </a>
+                                <a href="@Url.Action("Index", "Rss")" class="btn btn-outline-secondary btn-lg">
+                                    <i class="fas fa-list"></i>
+                                    Diğer Haberler
+                                </a>                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@functions {
+    public string GetNewsUrl(string originalUrl)
+    {
+        if (string.IsNullOrEmpty(originalUrl))
+            return null;
+
+        try
+        {
+            var uri = new Uri(originalUrl);
+
+            // Resim dosyası uzantılarını kontrol et
+            var imageExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".svg" };
+            var path = uri.AbsolutePath.ToLower();
+
+            // URL bir resim dosyasına işaret ediyorsa haber URL'sini çıkarmaya çalış
+            if (imageExtensions.Any(ext => path.EndsWith(ext)))
+            {
+                // Habertürk için özel çözüm
+                if (uri.Host.Contains("haberturk.com"))
+                {
+                    // https://im.haberturk.com/l/2025/06/05/ver1749137532/3797258/jpg/1280x1280
+                    // Buradan haber ID'sini (3797258) çıkarıp haber URL'si oluştur
+                    var segments = uri.AbsolutePath.Split('/');
+
+                    // Haber ID'sini bul (genellikle jpg'den önceki sayı)
+                    for (int i = 0; i < segments.Length - 1; i++)
+                    {
+                        if (segments[i] == "jpg" && i > 0)
+                        {
+                            var newsId = segments[i - 1];
+                            if (long.TryParse(newsId, out _))
+                            {
+                                return $"https://www.haberturk.com/haber/{newsId}";
+                            }
+                        }
+                    }
+
+                    // Alternatif pattern dene
+                    var match = System.Text.RegularExpressions.Regex.Match(uri.AbsolutePath, @"/(\d+)/jpg/");
+                    if (match.Success)
+                    {
+                        var newsId = match.Groups[1].Value;
+                        return $"https://www.haberturk.com/haber/{newsId}";
+                    }
+                }
+                // CNN Türk için
+                else if (uri.Host.Contains("cnnturk.com"))
+                {
+                    var match = System.Text.RegularExpressions.Regex.Match(uri.AbsolutePath, @"/(\d+)\.jpg");
+                    if (match.Success)
+                    {
+                        var newsId = match.Groups[1].Value;
+                        return $"https://www.cnnturk.com/haber/{newsId}";
+                    }
+                }
+                // NTV için
+                else if (uri.Host.Contains("ntv.com.tr"))
+                {
+                    var match = System.Text.RegularExpressions.Regex.Match(uri.AbsolutePath, @"/(\d+)");
+                    if (match.Success)
+                    {
+                        var newsId = match.Groups[1].Value;
+                        return $"https://www.ntv.com.tr/haber/{newsId}";
+                    }
+                }
+
+                // Genel çözüm - resim URL'sinden haber ID'si çıkarmaya çalış
+                var generalMatch = System.Text.RegularExpressions.Regex.Match(uri.AbsolutePath, @"/(\d{6,})");
+                if (generalMatch.Success)
+                {
+                    var newsId = generalMatch.Groups[1].Value;
+                    var baseHost = uri.Host.Replace("im.", "www.").Replace("img.", "www.");
+                    return $"{uri.Scheme}://{baseHost}/haber/{newsId}";
+                }
+
+                // Eğer haber ID'si bulunamazsa orijinal URL'i döndür
+                return null;
+            }
+
+            // Normal URL ise olduğu gibi döndür
+            return originalUrl;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .news-header {
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        padding: 20px 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .breadcrumb-nav {
+        margin: 0;
+    }
+
+    .breadcrumb-link {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        border-radius: 20px;
+        background: rgba(255,255,255,0.1);
+        transition: all 0.3s ease;
+    }
+
+        .breadcrumb-link:hover {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            transform: translateX(-2px);
+        }
+
+    .news-content-section {
+        padding: 40px 0;
+    }
+
+    .news-article {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+    .news-article-header {
+        padding: 40px 40px 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .news-article-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #1e40af;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .news-article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+        .meta-item i {
+            color: #3b82f6;
+        }
+
+    .news-article-summary {
+        padding: 0 40px 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .summary-text {
+        font-size: 1.1rem;
+        color: #555;
+        font-style: italic;
+        background: #eff6ff;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 4px solid #3b82f6;
+        margin: 0;
+    }
+
+    .news-article-content {
+        padding: 30px 40px;
+    }
+
+    .content-text {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #333;
+    }
+
+    .content-notice {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid #60a5fa;
+    }
+
+    .notice-icon i {
+        font-size: 2rem;
+        color: #2563eb;
+    }
+
+    .notice-content h4 {
+        color: #1e40af;
+        margin-bottom: 8px;
+    }
+
+    .notice-content p {
+        color: #475569;
+        margin: 0;
+    }
+
+    .notice-link-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #3b82f6;
+        color: white !important;
+        text-decoration: none !important;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+        .notice-link-btn:hover {
+            background: #1e40af;
+            color: white !important;
+            text-decoration: none !important;
+            transform: translateY(-1px);
+        }
+
+    .news-article-actions {
+        padding: 30px 40px 40px;
+        background: #f8f9fa;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, #3b82f6, #1e40af);
+        color: white;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+    .btn-outline-secondary {
+        background: transparent;
+        color: #475569;
+        border: 2px solid #475569;
+    }
+
+        .btn-outline-secondary:hover {
+            background: #475569;
+            color: white;
+            text-decoration: none;
+            transform: translateY(-1px);
+        }
+
+    .btn-warning {
+        background: linear-gradient(135deg, #60a5fa, #3b82f6);
+        color: white;
+    }
+
+        .btn-warning:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(96, 165, 250, 0.4);
+        }
+
+    .btn-secondary {
+        background: #475569;
+        color: white;
+    }
+
+    .btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .alert-warning {
+        color: #1e40af;
+        background-color: #eff6ff;
+        border-color: #93c5fd;
+    }
+
+    /* Responsive Design */
+    @@media (max-width: 768px) {
+        .news-article-header, .news-article-summary, .news-article-content, .news-article-actions {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .news-article-title {
+            font-size: 1.8rem;
+        }
+
+        .news-article-meta {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .action-buttons {
+            flex-direction: column;
+        }
+
+        .btn-lg {
+            padding: 12px 20px;
+            font-size: 1rem;
+        }
+    }
+</style>

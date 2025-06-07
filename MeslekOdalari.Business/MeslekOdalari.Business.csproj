@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="MongoDB.Bson" Version="2.22.0" />
+    <PackageReference Include="System.ServiceModel.Syndication" Version="9.0.5" />
   </ItemGroup>
 
   <ItemGroup>

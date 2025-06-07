@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Elazığ Esnaf Ve Sanatkarlar Odası</title>
+    <title>Elazığ Kuaförler ve Berberler Odası</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -314,6 +314,57 @@
             font-size: 15px !important;
             padding: 0 8px;
         }
+            /* Logo kayma sorunu çözümü */
+            .logo {
+                flex-shrink: 0 !important;
+                max-width: 300px !important;
+            }
+
+                .logo h1 {
+                    white-space: nowrap !important;
+                    overflow: hidden !important;
+                    text-overflow: ellipsis !important;
+                    font-size: clamp(18px, 3vw, 24px) !important;
+                    line-height: 1.2 !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
+
+            .main-nav {
+                display: flex !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+            }
+        @@media (max-width: 768px) {
+                .logo h1
+
+        {
+            white-space: normal !important;
+            text-align: center !important;
+        }
+
+        }
+
+            .main-nav .logo h1 {
+                font-size: 16px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                line-height: 1.3 !important;
+                color: #1e1e1e !important;
+                font-weight: 600 !important;
+                white-space: normal !important; /* ← BUNU ZORLA */
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+                display: block !important;
+                text-align: left !important;
+                width: 100% !important;
+            }
+
+            .main-nav .logo {
+                display: block !important;
+                height: auto !important;
+                text-decoration: none !important;
+                max-width: 350
 
         }
 
@@ -345,7 +396,7 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         <a href="/Default/Index" class="logo">
-                            <h1>ElazığESO</h1>
+                            <h1 id="logoText">ESO</h1>
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
@@ -371,6 +422,7 @@
                                     <li><a class="dropdown-item" href="/UIDisciplinaryBoard/DisiplinKurulu">Disiplin Kurulu</a></li>
                                 </ul>
                             </li>
+                           <li><a href="/Rss/Index">Haberler</a></li>
                             <li><a href="/Default/Index#properties">Odalar</a></li>
                             <li><a href="/UIProject/Index">Projeler</a></li>
                             <li class="nav-item dropdown">
@@ -447,7 +499,7 @@
         <div class="container">
             <div class="col-lg-8">
                 <p class="footer-text text-center">
-                    © @DateTime.Now.Year Elazığ Esnaf ve Sanatkârlar Odaları Birliği | Tüm Hakları Saklıdır <br>
+                    © @DateTime.Now.Year Elazığ Esnaf ve sanatkarlar odası | Tüm Hakları Saklıdır <br>
                     
                 </p>
             </div>
@@ -470,6 +522,44 @@
           // Dropdown açılış ve kapanış animasyonunu geliştir
           $('.dropdown').on('show.bs.dropdown', function() {
             $(this).find('.dropdown-menu').addClass('animated');
+          });
+
+          // Logo değişimi için - URL parametresine göre kontrol et
+          function updateLogo() {
+            var currentUrl = window.location.href;
+            var logoText = document.getElementById('logoText');
+            var urlParams = new URLSearchParams(window.location.search);
+
+            // URL parametrelerini kontrol et - kuaför websitesinden geliyorsa EKBO yap
+            if (urlParams.get('source') === 'kuafor' ||
+                urlParams.get('from') === 'kuafor' ||
+                sessionStorage.getItem('logoType') === 'EKBO' ||
+                currentUrl.includes('kuafor') || currentUrl.includes('berber') ||
+                currentUrl.includes('Kuafor') || currentUrl.includes('Berber') ||
+                currentUrl.includes('KUAFOR') || currentUrl.includes('BERBER')) {
+              logoText.textContent = 'EKBO';
+              sessionStorage.setItem('logoType', 'EKBO');
+            } else {
+              logoText.textContent = 'ESO';
+              sessionStorage.setItem('logoType', 'ESO');
+            }
+          }
+
+          // Sayfa yüklendiğinde logo kontrol et
+          updateLogo();
+
+          // Web sitesi ziyaret et butonlarına tıklandığında session'a kaydet
+          $('a:contains("Web Sitesi Ziyaret Et"), a[href*="Default/Index"]').click(function() {
+            var href = $(this).attr('href');
+            if (href && href.includes('Default/Index')) {
+              sessionStorage.setItem('logoType', 'EKBO');
+            }
+          });
+
+          // Ana sayfa linkine direkt tıklandığında ESO yap (logo'ya tıklama gibi)
+          $('.logo').click(function() {
+            sessionStorage.setItem('logoType', 'ESO');
+            document.getElementById('logoText').textContent = 'ESO';
           });
         });
     </script>

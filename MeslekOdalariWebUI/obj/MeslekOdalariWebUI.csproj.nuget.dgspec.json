@@ -65,6 +65,10 @@
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "System.ServiceModel.Syndication": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -149,6 +153,10 @@
             "MongoDB.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0-preview.1, )"
+            },
+            "System.ServiceModel.Syndication": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -225,6 +233,10 @@
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "System.ServiceModel.Syndication": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -305,6 +317,10 @@
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "System.ServiceModel.Syndication": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -414,6 +430,10 @@
             "MongoDB.Driver.Core": {
               "target": "Package",
               "version": "[2.22.0, )"
+            },
+            "System.ServiceModel.Syndication": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             },
             "jQuery": {
               "target": "Package",

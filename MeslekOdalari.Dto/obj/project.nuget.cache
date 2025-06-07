@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WqeMXlDiwPs=",
+  "dgSpecHash": "Y33y97U218s=",
   "success": true,
   "projectFilePath": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalari.Dto\\MeslekOdalari.Dto.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,8 @@
     "C:\\Users\\gulen\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\gulen\\.nuget\\packages\\mongodb.bson\\2.22.0\\mongodb.bson.2.22.0.nupkg.sha512",
     "C:\\Users\\gulen\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
-    "C:\\Users\\gulen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    "C:\\Users\\gulen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\gulen\\.nuget\\packages\\system.servicemodel.syndication\\9.0.5\\system.servicemodel.syndication.9.0.5.nupkg.sha512"
   ],
   "logs": []
 }

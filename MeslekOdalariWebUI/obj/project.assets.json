@@ -3921,6 +3921,22 @@
           }
         }
       },
+      "System.ServiceModel.Syndication/9.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.ServiceModel.Syndication.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Syndication.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp2.0/System.ServiceModel.Syndication.targets": {}
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4184,7 +4200,8 @@
           "FluentValidation": "11.11.0",
           "MeslekOdalari.DataAccess": "1.0.0",
           "MeslekOdalari.Entity": "1.0.0",
-          "MongoDB.Bson": "2.22.0"
+          "MongoDB.Bson": "2.22.0",
+          "System.ServiceModel.Syndication": "9.0.5"
         },
         "compile": {
           "bin/placeholder/MeslekOdalari.Business.dll": {}
@@ -4200,7 +4217,8 @@
           "MeslekOdalari.Entity": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.20",
           "Microsoft.EntityFrameworkCore": "7.0.20",
-          "MongoDB.EntityFrameworkCore": "7.0.0-preview.1"
+          "MongoDB.EntityFrameworkCore": "7.0.0-preview.1",
+          "System.ServiceModel.Syndication": "9.0.5"
         },
         "compile": {
           "bin/placeholder/MeslekOdalari.DataAccess.dll": {}
@@ -4214,7 +4232,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.3.0",
-          "MongoDB.Bson": "2.22.0"
+          "MongoDB.Bson": "2.22.0",
+          "System.ServiceModel.Syndication": "9.0.5"
         },
         "compile": {
           "bin/placeholder/MeslekOdalari.Dto.dll": {}
@@ -4229,7 +4248,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.3.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.20",
-          "MongoDB.Bson": "2.22.0"
+          "MongoDB.Bson": "2.22.0",
+          "System.ServiceModel.Syndication": "9.0.5"
         },
         "compile": {
           "bin/placeholder/MeslekOdalari.Entity.dll": {}
@@ -11081,6 +11101,34 @@
         "version.txt"
       ]
     },
+    "System.ServiceModel.Syndication/9.0.5": {
+      "sha512": "gO8FeyiSgCN4jnzCUu8Uk2kv1JMUii2jBcZPXR7srd7GQzFNdEr+LRK5j5VyvH/7F9PYXuyvFlqIB05u4X6l5Q==",
+      "type": "package",
+      "path": "system.servicemodel.syndication/9.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.ServiceModel.Syndication.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.ServiceModel.Syndication.targets",
+        "lib/net462/System.ServiceModel.Syndication.dll",
+        "lib/net462/System.ServiceModel.Syndication.xml",
+        "lib/net8.0/System.ServiceModel.Syndication.dll",
+        "lib/net8.0/System.ServiceModel.Syndication.xml",
+        "lib/net9.0/System.ServiceModel.Syndication.dll",
+        "lib/net9.0/System.ServiceModel.Syndication.xml",
+        "lib/netstandard2.0/System.ServiceModel.Syndication.dll",
+        "lib/netstandard2.0/System.ServiceModel.Syndication.xml",
+        "system.servicemodel.syndication.9.0.5.nupkg.sha512",
+        "system.servicemodel.syndication.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Text.Encoding/4.3.0": {
       "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "type": "package",
@@ -11901,6 +11949,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.12",
       "MongoDB.Driver >= 2.22.0",
       "MongoDB.Driver.Core >= 2.22.0",
+      "System.ServiceModel.Syndication >= 9.0.5",
       "jQuery >= 3.7.1"
     ]
   },
@@ -11995,6 +12044,10 @@
           "MongoDB.Driver.Core": {
             "target": "Package",
             "version": "[2.22.0, )"
+          },
+          "System.ServiceModel.Syndication": {
+            "target": "Package",
+            "version": "[9.0.5, )"
           },
           "jQuery": {
             "target": "Package",
