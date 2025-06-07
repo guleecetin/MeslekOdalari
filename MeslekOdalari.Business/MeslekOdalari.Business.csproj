@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="MailKit" Version="4.12.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.0-preview.5.25277.114" />
     <PackageReference Include="MongoDB.Bson" Version="2.22.0" />
     <PackageReference Include="System.ServiceModel.Syndication" Version="9.0.5" />
   </ItemGroup>

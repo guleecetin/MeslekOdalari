@@ -50956,13 +50956,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MeslekOdalariWebUI.1cfence7s7.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1cfence7s7"},{"Name":"integrity","Value":"sha256-3/PpcOHNCo2uXv4qpqJs6A2uRwPnqac1he581D5/zvQ="},{"Name":"label","Value":"_content/MeslekOdalariWebUI/MeslekOdalariWebUI.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223/PpcOHNCo2uXv4qpqJs6A2uRwPnqac1he581D5/zvQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Apr 2025 14:16:19 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223/PpcOHNCo2uXv4qpqJs6A2uRwPnqac1he581D5/zvQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 15:57:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/MeslekOdalariWebUI.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MeslekOdalariWebUI.1cfence7s7.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3/PpcOHNCo2uXv4qpqJs6A2uRwPnqac1he581D5/zvQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223/PpcOHNCo2uXv4qpqJs6A2uRwPnqac1he581D5/zvQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Apr 2025 14:16:19 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223/PpcOHNCo2uXv4qpqJs6A2uRwPnqac1he581D5/zvQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Jun 2025 15:57:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MeslekOdalariWebUI/Registerteması_connection/login-form-20/css/bootstrap.min.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Registerteması_connection\login-form-20\css\bootstrap.min.css'))</AssetFile>

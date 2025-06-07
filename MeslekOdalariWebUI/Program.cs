@@ -8,6 +8,8 @@ using System.Reflection;
 using MeslekOdalari.Business.Services;
 using Microsoft.AspNetCore.Identity;
 using MeslekOdalari.Entity.Entities.Enums;
+using MeslekOdalariWebUI.Models.Services;
+using MeslekOdalariWebUI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +26,11 @@ builder.Services.AddDbContext<MeslekOdalariContext>(option =>
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<MeslekOdalariContext>();
 builder.Services.AddScoped<IRoleSeedService, RoleSeedService>();
 builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+//mail için
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddTransient<EmailService>();
+
 
 
 // RSS servisleri ekle

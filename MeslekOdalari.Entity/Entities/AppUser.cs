@@ -8,6 +8,11 @@ namespace MeslekOdalari.Entity.Entities
 {
     public class AppUser:IdentityUser<ObjectId>
     {
+        public AppUser()
+        {
+            Id = ObjectId.GenerateNewId();
+        }
+
         public string NameSurName { get; set; }
         public string TC { get; set; }
         public UserRoles UserRole { get; set; }
