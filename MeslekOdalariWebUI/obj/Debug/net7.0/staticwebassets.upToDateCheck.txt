@@ -124,6 +124,10 @@ wwwroot\favicon_io\favicon.ico
 wwwroot\favicon_io\favicon-16x16.png
 wwwroot\favicon_io\favicon-32x32.png
 wwwroot\favicon_io\site.webmanifest
+wwwroot\faviconio-logo.zip
+wwwroot\faviconio-logo\about.txt
+wwwroot\faviconio-logo\logo.png
+wwwroot\faviconio-logo\logo.svg
 wwwroot\focus-2\.gitattributes
 wwwroot\focus-2\app-calender.html
 wwwroot\focus-2\app-profile.html

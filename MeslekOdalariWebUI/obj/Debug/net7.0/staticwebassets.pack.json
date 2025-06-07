@@ -1165,6 +1165,22 @@
       "PackagePath": "staticwebassets\\favicon_io\\site.webmanifest"
     },
     {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\faviconio-logo.zip",
+      "PackagePath": "staticwebassets\\faviconio-logo.zip"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\faviconio-logo\\about.txt",
+      "PackagePath": "staticwebassets\\faviconio-logo\\about.txt"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\faviconio-logo\\logo.png",
+      "PackagePath": "staticwebassets\\faviconio-logo\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\faviconio-logo\\logo.svg",
+      "PackagePath": "staticwebassets\\faviconio-logo\\logo.svg"
+    },
+    {
       "Id": "C:\\Users\\gulen\\source\\repos\\MeslekOdalari\\MeslekOdalariWebUI\\wwwroot\\focus-2\\.gitattributes",
       "PackagePath": "staticwebassets\\focus-2\\.gitattributes"
     },
