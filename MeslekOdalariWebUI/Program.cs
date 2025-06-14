@@ -23,7 +23,19 @@ builder.Services.AddDbContext<MeslekOdalariContext>(option =>
     option.UseMongoDB(mongoDatabase.Client, mongoDatabase.DatabaseNamespace.DatabaseName);
 });
 
-builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<MeslekOdalariContext>();
+// Identity konfigürasyonu - Token Provider'lar eklendi
+builder.Services.AddIdentity<AppUser, AppRole>(options =>
+{
+    // Ýsteðe baðlý: Identity seçeneklerini burada yapýlandýrabilirsiniz
+    options.Password.RequireDigit = true;
+    options.Password.RequiredLength = 6;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireLowercase = true;
+})
+.AddEntityFrameworkStores<MeslekOdalariContext>()
+.AddDefaultTokenProviders(); // Bu satýr önemli - Token provider'larý ekler
+
 builder.Services.AddScoped<IRoleSeedService, RoleSeedService>();
 builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
@@ -36,6 +48,12 @@ builder.Services.AddTransient<EmailService>();
 // RSS servisleri ekle
 builder.Services.AddHttpClient<MeslekOdalariWebUI.Services.IRssService, MeslekOdalariWebUI.Services.RssService>();
 builder.Services.AddScoped<MeslekOdalariWebUI.Services.IRssService, MeslekOdalariWebUI.Services.RssService>();
+
+
+builder.WebHost.UseUrls("http://localhost:5184", "http://192.168.96.136:5184", "https://localhost:7181");
+
+
+
 
 
 builder.Services.AddControllersWithViews();
