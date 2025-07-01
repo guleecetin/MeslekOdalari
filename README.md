@@ -44,7 +44,7 @@ Kullanıcıya özel işlem izinleri
 Her odanın başkanı, iletişim bilgileri ve görsel tanıtımı sisteme eklenebilir.
 
 👥 Geliştiriciler
-İsim	Rol	Açıklama
-Gülendam Çetin	Backend Developer	ASP.NET Core, MongoDB, Identity, altyapısını geliştirdi
-Gülizar Tunç	Mobile Developer	.NET MAUI ile mobil kullanıcı arayüzünü ve kullanıcı deneyimini oluşturdu
+Gülendam Çetin	Backend Developer	ASP.NET Core, MongoDB, Identity, altyapısını geliştirdi.
+
+Gülizar Tunç	Mobile Developer	.NET MAUI ile mobil kullanıcı arayüzünü ve kullanıcı deneyimini oluşturdu.
 
